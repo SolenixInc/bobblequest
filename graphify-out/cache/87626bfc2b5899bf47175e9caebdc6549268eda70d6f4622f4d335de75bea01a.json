@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_tests_infrastructure_posthoganalyticstrackerimpl_test_ts",
+      "label": "PostHogAnalyticsTrackerImpl.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\PostHogAnalyticsTrackerImpl.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_test_maketracker",
+      "label": "makeTracker()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\PostHogAnalyticsTrackerImpl.test.ts",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_tests_infrastructure_posthoganalyticstrackerimpl_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\PostHogAnalyticsTrackerImpl.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_posthoganalyticstrackerimpl_test_ts",
+      "target": "packages_analytics_tests_setup_stublogging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\PostHogAnalyticsTrackerImpl.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_posthoganalyticstrackerimpl_test_ts",
+      "target": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\PostHogAnalyticsTrackerImpl.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_posthoganalyticstrackerimpl_test_ts",
+      "target": "posthoganalyticstrackerimpl_test_maketracker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\PostHogAnalyticsTrackerImpl.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

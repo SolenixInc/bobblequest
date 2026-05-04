@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "database_db_package",
+      "label": "@t/db package",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_dbclient_port",
+      "label": "DbClient port",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_dbclient_impl",
+      "label": "DbClientImpl (postgres.js)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_register_db_di",
+      "label": "registerDbDI",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_railway_postgres",
+      "label": "Railway Postgres + pgvector",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_supabase_legacy",
+      "label": "Supabase legacy client",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_clerk_user_sync",
+      "label": "Clerk user-sync webhook (clerk_user_id)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_migration_tool",
+      "label": "Migration tool decision (Drizzle/node-pg-migrate/Atlas)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "database_vector_search",
+      "label": "vectorSearch on port (pgvector)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "database_db_package",
+      "target": "database_dbclient_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_package",
+      "target": "database_dbclient_impl",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_package",
+      "target": "database_register_db_di",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_dbclient_impl",
+      "target": "database_dbclient_port",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_register_db_di",
+      "target": "database_dbclient_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_dbclient_impl",
+      "target": "database_railway_postgres",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_package",
+      "target": "database_supabase_legacy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_package",
+      "target": "database_clerk_user_sync",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_db_package",
+      "target": "database_migration_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "database_dbclient_port",
+      "target": "database_vector_search",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/database.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

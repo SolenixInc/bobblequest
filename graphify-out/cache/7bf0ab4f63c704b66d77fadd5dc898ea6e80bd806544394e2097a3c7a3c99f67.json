@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_entities_types_analyticstrackeroptions_ts",
+      "label": "AnalyticsTrackerOptions.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\entities\\types\\AnalyticsTrackerOptions.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_entities_types_analyticstrackeroptions_ts",
+      "target": "packages_analytics_src_entities_types_environment_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\entities\\types\\AnalyticsTrackerOptions.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_entities_types_analyticstrackeroptions_ts",
+      "target": "packages_analytics_src_entities_types_service_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\entities\\types\\AnalyticsTrackerOptions.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

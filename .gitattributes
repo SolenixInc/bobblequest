@@ -1,0 +1,22 @@
+* text=auto eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.pdf binary
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Generated / machine files
+bun.lock linguist-generated=true merge=binary
+graphify-out/* linguist-generated=true

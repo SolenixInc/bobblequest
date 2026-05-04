@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "type": "http"
+    },
+    "graphify": {
+      "command": "python",
+      "args": ["-m", "graphify.serve", "./graphify-out/graph.json"]
+    }
+  }
+}

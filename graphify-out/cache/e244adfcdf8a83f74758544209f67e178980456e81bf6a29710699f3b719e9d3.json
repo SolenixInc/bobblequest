@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_infrastructure_4xx_unprocessableentityerror_ts",
+      "label": "UnprocessableEntityError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "unprocessableentityerror_unprocessableentityerror",
+      "label": "UnprocessableEntityError",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "unprocessableentityerror_unprocessableentityerror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L39"
+    },
+    {
+      "id": "unprocessableentityerror_unprocessableentityerror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "unprocessableentityerror_unprocessableentityerror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "unprocessableentityerror_unprocessableentityerror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L65"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_infrastructure_4xx_unprocessableentityerror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_4xx_unprocessableentityerror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_4xx_unprocessableentityerror_ts",
+      "target": "unprocessableentityerror_unprocessableentityerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "unprocessableentityerror_unprocessableentityerror",
+      "target": "unprocessableentityerror_unprocessableentityerror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "unprocessableentityerror_unprocessableentityerror",
+      "target": "unprocessableentityerror_unprocessableentityerror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "unprocessableentityerror_unprocessableentityerror",
+      "target": "unprocessableentityerror_unprocessableentityerror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "unprocessableentityerror_unprocessableentityerror",
+      "target": "unprocessableentityerror_unprocessableentityerror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "unprocessableentityerror_unprocessableentityerror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\UnprocessableEntityError.ts",
+      "source_location": "L70"
+    }
+  ]
+}

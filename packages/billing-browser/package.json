@@ -1,0 +1,52 @@
+{
+  "name": "@t/billing-browser",
+  "description": "RevenueCat browser/web client used by apps/web.",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./react": {
+      "types": "./src/react/index.ts",
+      "import": "./src/react/index.ts"
+    },
+    "./dependency-injection": {
+      "types": "./src/dependency-injection/registerBillingBrowserDI.ts",
+      "import": "./src/dependency-injection/registerBillingBrowserDI.ts"
+    }
+  },
+  "scripts": {
+    "check": "biome check .",
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@revenuecat/purchases-js": "^1.36.0",
+    "@t/billing": "workspace:*",
+    "@t/config": "workspace:*",
+    "@t/dependency-injection": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19",
+    "awilix": "^12"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "jsdom": "^25.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.5"
+  }
+}

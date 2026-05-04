@@ -1,0 +1,50 @@
+# Build outputs
+dist/
+dist-electron/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+
+# Generated TypeScript
+next-env.d.ts
+*.generated.ts
+*.gen.ts
+
+# Lock files
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Graphify itself
+graphify-out/
+.graphify_*
+.graphify_python
+
+# Git
+.git/

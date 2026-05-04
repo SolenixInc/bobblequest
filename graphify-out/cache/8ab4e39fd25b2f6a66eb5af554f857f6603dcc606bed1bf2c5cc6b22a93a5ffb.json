@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    {
+      "id": "index_phase1_index",
+      "label": "Analytics Phase 1 index",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "index_phase_order",
+      "label": "Phase order table (01-08)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "index_future_phases",
+      "label": "Future Phase 2+ scope",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "index_phase1_index",
+      "target": "analytics_spec_target",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_01_package_skeleton",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_02_types_and_schemas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_03_port_definitions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_04_config_schema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_05_implementations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_06_di_registrar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_07_tests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "phase_08_readme_and_handoff",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "index_phase_order",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_phase1_index",
+      "target": "index_future_phases",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "analytics_phase_chain",
+      "label": "Analytics Phase 1 sequential chain",
+      "nodes": [
+        "phase_01_package_skeleton",
+        "phase_02_types_and_schemas",
+        "phase_03_port_definitions",
+        "phase_04_config_schema",
+        "phase_05_implementations",
+        "phase_06_di_registrar",
+        "phase_07_tests",
+        "phase_08_readme_and_handoff"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/index.md"
+    }
+  ]
+}

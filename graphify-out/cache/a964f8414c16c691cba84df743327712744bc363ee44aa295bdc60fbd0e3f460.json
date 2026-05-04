@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_logging",
+      "label": "@t/logging bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_logging_winston_otlp",
+      "label": "Winston + PostHog OTLP transport",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_logging_naming_p0",
+      "label": "@template/* vs @t/* monorepo rename P0",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_logging_browser_missing",
+      "label": "Browser logging adapter missing (node-only today)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_logging",
+      "target": "prd_pkg_logging_winston_otlp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_logging",
+      "target": "prd_pkg_logging_naming_p0",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_logging",
+      "target": "prd_pkg_logging_browser_missing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_logging",
+      "target": "readme_logging",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_logging_winston_otlp",
+      "target": "readme_logging_transports",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "prd_pkg_logging_naming_p0",
+      "target": "prd_pkg_di",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "docs/prd-status/packages/logging.md",
+      "source_location": null,
+      "weight": 0.7
+    }
+  ],
+  "hyperedges": []
+}

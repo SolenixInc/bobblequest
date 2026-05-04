@@ -1,0 +1,41 @@
+{
+  "name": "@t/billing",
+  "description": "Server-side billing — RevenueCat (primary) plus Stripe processor.",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./ports": {
+      "types": "./src/ports/BillingTracker.ts",
+      "import": "./src/ports/BillingTracker.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "check": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@t/config": "workspace:*",
+    "@t/dependency-injection": "workspace:*",
+    "@t/logging": "workspace:*",
+    "stripe": "^19.1.0",
+    "zod": "^3.23.0"
+  },
+  "peerDependencies": {
+    "awilix": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.5"
+  }
+}

@@ -1,0 +1,43 @@
+# lychee config — updated 2026-04-30
+max_retries = 1
+retry_wait_time = 2
+accept = ["200", "429"]
+exclude_loopback = true
+exclude_link_local = true
+exclude_private = true
+exclude = [
+    '^https?://localhost',
+    '^https?://127\.',
+    '^https://(www\.)?linkedin\.com',
+    '^https://(www\.)?conventionalcommits\.org',
+]
+cache = true
+max_cache_age = "1d"
+
+# Only scan markdown files — source files, HTML, TSX, JSON are excluded via
+# the positional glob arg in the workflow; exclude_path covers directory trees
+# that would otherwise be walked if the glob matches something inside them.
+exclude_path = [
+    "node_modules",
+    "dist/",
+    "build/",
+    "\\.next/",
+    "out/",
+    "coverage/",
+    "test-results/",
+    "playwright-report/",
+    "\\.playwright-cli/",
+    "graphify-out/",
+    "bun\\.lock",
+    "package-lock\\.json",
+    "pnpm-lock\\.yaml",
+    "yarn\\.lock",
+    "\\.dev-logs/",
+    "\\.turbo/",
+    "\\.cache/",
+    "\\.git/",
+    # Agent skill/rule directories contain stub doc paths that intentionally
+    # reference files in author repos — not present in consumer repos.
+    "^\\.agents(/|$)",
+    "^\\.claude(/|$)",
+]

@@ -1,0 +1,668 @@
+{
+  "nodes": [
+    {
+      "id": "stack_blueprint_interactive_doc",
+      "label": "Stack Blueprint Interactive (PDF)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_bun",
+      "label": "Bun (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_typescript",
+      "label": "TypeScript (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_gcp",
+      "label": "GCP (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_pulumi",
+      "label": "Pulumi TypeScript (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_pulumi_esc",
+      "label": "Pulumi ESC (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_cloud_run",
+      "label": "Cloud Run per-request (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_cloudflare",
+      "label": "Cloudflare free tier (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_supabase",
+      "label": "Supabase platform (interactive cards)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_trpc",
+      "label": "tRPC (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_zod",
+      "label": "Zod (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_nextjs",
+      "label": "Next.js (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_react_native_expo",
+      "label": "React Native + Expo (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_electron",
+      "label": "Electron (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_tailwind_shadcn",
+      "label": "Tailwind + Shadcn (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_zustand_tanstack",
+      "label": "Zustand + TanStack Query (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_bun_workspaces",
+      "label": "Bun workspaces monorepo (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_github_actions",
+      "label": "GitHub Actions (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_biome",
+      "label": "Biome (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_bun_test_playwright",
+      "label": "Bun test + Playwright (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_changesets",
+      "label": "Changesets (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_posthog",
+      "label": "PostHog (interactive cards)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_stripe",
+      "label": "Stripe (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_revenuecat",
+      "label": "RevenueCat (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_resend_react_email",
+      "label": "Resend + React Email (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_openrouter",
+      "label": "OpenRouter (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_vercel_ai_sdk",
+      "label": "Vercel AI SDK (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_claude_code_sdk",
+      "label": "Claude Code SDK / OpenCode (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_gemini_embedding",
+      "label": "Gemini Embedding (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_claude_code",
+      "label": "Claude Code (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "stack_blueprint_interactive_trpc_panel",
+      "label": "tRPC Panel (interactive card)",
+      "file_type": "paper",
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "stack_blueprint_interactive_doc",
+      "target": "golden_path_stack_blueprint_doc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_bun",
+      "target": "golden_path_stack_blueprint_bun",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_typescript",
+      "target": "golden_path_stack_blueprint_typescript",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_gcp",
+      "target": "golden_path_stack_blueprint_gcp",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_pulumi",
+      "target": "golden_path_stack_blueprint_pulumi",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_pulumi_esc",
+      "target": "golden_path_stack_blueprint_pulumi_esc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_cloud_run",
+      "target": "golden_path_stack_blueprint_cloud_run",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_cloudflare",
+      "target": "golden_path_stack_blueprint_cloudflare",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_supabase",
+      "target": "golden_path_stack_blueprint_supabase",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_trpc",
+      "target": "golden_path_stack_blueprint_trpc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_zod",
+      "target": "golden_path_stack_blueprint_zod",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_nextjs",
+      "target": "golden_path_stack_blueprint_nextjs",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_react_native_expo",
+      "target": "golden_path_stack_blueprint_react_native_expo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_electron",
+      "target": "golden_path_stack_blueprint_electron",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_tailwind_shadcn",
+      "target": "golden_path_stack_blueprint_tailwind_shadcn",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_zustand_tanstack",
+      "target": "golden_path_stack_blueprint_zustand",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_zustand_tanstack",
+      "target": "golden_path_stack_blueprint_tanstack_query",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_bun_workspaces",
+      "target": "golden_path_stack_blueprint_bun_workspaces_monorepo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_github_actions",
+      "target": "golden_path_stack_blueprint_github_actions",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_biome",
+      "target": "golden_path_stack_blueprint_biome",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_bun_test_playwright",
+      "target": "golden_path_stack_blueprint_bun_test_playwright",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_changesets",
+      "target": "golden_path_stack_blueprint_changesets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_posthog",
+      "target": "golden_path_stack_blueprint_posthog",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_stripe",
+      "target": "golden_path_stack_blueprint_stripe",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_revenuecat",
+      "target": "golden_path_stack_blueprint_revenuecat",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_resend_react_email",
+      "target": "golden_path_stack_blueprint_resend_react_email",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_openrouter",
+      "target": "golden_path_stack_blueprint_openrouter",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_vercel_ai_sdk",
+      "target": "golden_path_stack_blueprint_vercel_ai_sdk",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_claude_code_sdk",
+      "target": "golden_path_stack_blueprint_claude_code_sdk",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_gemini_embedding",
+      "target": "golden_path_stack_blueprint_gemini_embedding",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_claude_code",
+      "target": "golden_path_stack_blueprint_claude_code",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "stack_blueprint_interactive_trpc_panel",
+      "target": "golden_path_stack_blueprint_trpc_panel",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/artifacts/stack-blueprint-interactive.pdf",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

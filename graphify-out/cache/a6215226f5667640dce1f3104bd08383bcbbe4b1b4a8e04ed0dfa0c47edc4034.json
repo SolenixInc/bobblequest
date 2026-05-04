@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "apps_desktop_src_preload_index_d_ts",
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\preload\\index.d.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_tests_registercachedi_test_ts",
+      "label": "registerCacheDI.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registercachedi_test_fakeredis",
+      "label": "FakeRedis",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "registercachedi_test_fakeredis_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "registercachedi_test_fakeredis_duplicate",
+      "label": ".duplicate()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "registercachedi_test_fakeredis_on",
+      "label": ".on()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "registercachedi_test_fakeredis_quit",
+      "label": ".quit()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "registercachedi_test_fakeredis_disconnect",
+      "label": ".disconnect()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "registercachedi_test_makeconfig",
+      "label": "makeConfig()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L37"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "registercachedi_test_fakeredis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "registercachedi_test_fakeredis",
+      "target": "registercachedi_test_fakeredis_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "registercachedi_test_fakeredis",
+      "target": "registercachedi_test_fakeredis_duplicate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "registercachedi_test_fakeredis",
+      "target": "registercachedi_test_fakeredis_on",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "registercachedi_test_fakeredis",
+      "target": "registercachedi_test_fakeredis_quit",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "registercachedi_test_fakeredis",
+      "target": "registercachedi_test_fakeredis_disconnect",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "packages_cache_src_dependency_injection_registercachedi_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "packages_cache_src_entities_ports_cacheclient_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_registercachedi_test_ts",
+      "target": "registercachedi_test_makeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\registerCacheDI.test.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

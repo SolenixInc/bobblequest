@@ -1,0 +1,12 @@
+{
+  "name": "testing-skills",
+  "default": "test-driven-development",
+  "members": [
+    "test-driven-development",
+    "systematic-debugging",
+    "javascript-testing-patterns",
+    "e2e-testing-patterns",
+    "verification-before-completion",
+    "behavioral-evals"
+  ]
+}

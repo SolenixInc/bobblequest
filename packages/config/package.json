@@ -1,0 +1,41 @@
+{
+  "name": "@t/config",
+  "description": "Zod env-var schemas, runtime resolution, and DI registration.",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "import": "./index.ts"
+    },
+    "./browser": {
+      "types": "./entities/index.ts",
+      "import": "./entities/index.ts"
+    },
+    "./biome": "./biome.json",
+    "./tailwind": "./tailwind.config.ts",
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/nextjs": "./tsconfig/nextjs.json",
+    "./tsconfig/react-library": "./tsconfig/react-library.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "check": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@t/dependency-injection": "workspace:*",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@vitest/coverage-v8": "^4.1.5",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.5"
+  }
+}

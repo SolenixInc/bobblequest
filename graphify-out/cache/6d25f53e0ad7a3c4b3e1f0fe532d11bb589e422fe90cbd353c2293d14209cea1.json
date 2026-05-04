@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "label": "registerAuthDI.ts",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerauthdi_registerauthdi",
+      "label": "registerAuthDI()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "registerauthdi_pickprovider",
+      "label": "pickProvider()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L64"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "packages_auth_src_entities_ports_authprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "packages_auth_src_entities_types_usersynccallback_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "registerauthdi_registerauthdi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "registerauthdi_pickprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "registerauthdi_registerauthdi",
+      "target": "registerauthdi_pickprovider",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registerauthdi_registerauthdi",
+      "callee": "register",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "registerauthdi_registerauthdi",
+      "callee": "singleton",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "registerauthdi_registerauthdi",
+      "callee": "asClass",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "registerauthdi_pickprovider",
+      "callee": "createGlobalLogger",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "registerauthdi_pickprovider",
+      "callee": "warning",
+      "source_file": "packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L83"
+    }
+  ]
+}

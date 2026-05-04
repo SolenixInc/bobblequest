@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_src_entities_ports_cacheclient_ts",
+      "label": "CacheClient.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\entities\\ports\\CacheClient.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

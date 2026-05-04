@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_normalizefactoryarg",
+      "label": "normalizeFactoryArg()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "index_createlogger",
+      "label": "createLogger()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "index_creategloballogger",
+      "label": "createGlobalLogger()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "index_createrequestlogger",
+      "label": "createRequestLogger()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L40"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_index_ts",
+      "target": "packages_logging_entities_types_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "packages_logging_infrastructure_globallogger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "packages_logging_infrastructure_requestlogger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "packages_logging_infrastructure_winstonlogger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "index_normalizefactoryarg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "index_createlogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "index_creategloballogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_index_ts",
+      "target": "index_createrequestlogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "index_createlogger",
+      "target": "index_normalizefactoryarg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "index_creategloballogger",
+      "target": "index_createlogger",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\index.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

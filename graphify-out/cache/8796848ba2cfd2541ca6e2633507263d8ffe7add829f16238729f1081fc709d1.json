@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\index.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "mobile_readme",
+      "label": "@t/mobile README",
+      "file_type": "document",
+      "source_file": "apps/mobile/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mobile_nativewind_pin",
+      "label": "NativeWind v4 + Tailwind v3 pin rationale",
+      "file_type": "document",
+      "source_file": "apps/mobile/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "mobile_readme",
+      "target": "mobile_nativewind_pin",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/mobile/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mobile_readme",
+      "target": "apps_mobile_doc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "apps/mobile/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mobile_nativewind_pin",
+      "target": "agents_banned_libs",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "apps/mobile/README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

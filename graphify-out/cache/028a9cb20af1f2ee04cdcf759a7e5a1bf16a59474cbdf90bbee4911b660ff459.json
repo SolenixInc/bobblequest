@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "architecture_intent_snapshot",
+      "label": "Architecture intent snapshot",
+      "file_type": "document",
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "architecture_intent_module_index",
+      "label": "Module index (port/impl/zoom-in doc)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "architecture_intent_app_index",
+      "label": "App index (stack/role/zoom-in doc)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "architecture_intent_drift_log",
+      "label": "Drift noted (broken db link, stale checklist)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "architecture_intent_snapshot",
+      "target": "architecture_intent_module_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_intent_snapshot",
+      "target": "architecture_intent_app_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_intent_snapshot",
+      "target": "architecture_intent_drift_log",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_intent_module_index",
+      "target": "database_db_package",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_intent_module_index",
+      "target": "logging_logging_package",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_intent_module_index",
+      "target": "analytics_spec_target",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "architecture_intent_drift_log",
+      "target": "analytics_old_doc_superseded",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "docs/prd-status/architecture-intent.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_entities_types_otlpconfig_ts",
+      "label": "otlpConfig.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\entities\\types\\otlpConfig.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

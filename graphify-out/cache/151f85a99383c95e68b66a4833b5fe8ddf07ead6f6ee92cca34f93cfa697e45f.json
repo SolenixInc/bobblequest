@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_auth_src_entities_schemas_authuserschema_ts",
+      "label": "AuthUserSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\entities\\schemas\\AuthUserSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_auth_src_entities_schemas_authuserschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\entities\\schemas\\AuthUserSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

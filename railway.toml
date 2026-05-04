@@ -1,0 +1,138 @@
+# railway.toml — Config-as-Code for all Railway-deployable services
+#
+# OPINIONATED OVERRIDES
+# ---------------------
+# - region           = "us-east4-eqdc4a"  (US East Metal — east-coast latency)
+# - sleepApplication = true               (serverless: sleep on idle for cost)
+# Everything else (restart policy, replicas, healthcheck timeout, zero-downtime
+# overlap/drain) uses Railway defaults — change only if you actually need to.
+#
+# OPERATIONAL MUST-HAVES (per service, can't omit)
+# ------------------------------------------------
+# - root                : per-service root directory in the monorepo
+# - builder + dockerfilePath  : how Railway builds the service
+# - healthcheckPath     : readiness gate for zero-downtime deploys
+# - preDeployCommand    : api only — run db migrations before container start
+# - watch.patterns      : limit redeploys to changes that actually affect the service
+# - env                 : Railway interpolation bindings (no secret values here)
+#
+# DASHBOARD-ONLY (set once at service creation, then leave alone)
+# ---------------------------------------------------------------
+# - Source repo + Branch
+# - Wait for CI
+# - Public Networking / custom domains
+# - Replica resource caps (vCPU / RAM)
+#
+# Note: cronSchedule is TOML-settable as of Railway's 2025 update — configure
+# it in this file under the relevant service's deploy block, not the dashboard.
+# Metal is implicit in the region — all four current Railway regions are
+# Metal-tier bare-metal, so picking a region IS picking Metal.
+#
+# RESOLUTION PRIORITY
+# -------------------
+# environment-specific code > base code > dashboard
+# e.g. [environments.production.api.deploy] beats [api.deploy] beats dashboard.
+#
+# SERVICES IN THIS FILE
+# ---------------------
+# api      — Hono API server  (apps/api,     EXPOSE 3000)
+# web      — Next.js web app  (apps/web,     EXPOSE 3000)
+# website  — Next.js website  (apps/website, EXPOSE 3002)
+# redis    — Self-hosted Redis managed image
+# postgres — Self-hosted Postgres (pgvector) managed image
+
+# ─── api ────────────────────────────────────────────────────────────────────
+
+[api]
+root = "apps/api/"
+
+[api.build]
+builder = "DOCKERFILE"
+dockerfilePath = "apps/api/Dockerfile"
+
+[api.deploy]
+region = "us-east4-eqdc4a"
+sleepApplication = false
+drainingSeconds = 15
+healthcheckPath = "/health"
+preDeployCommand = ["bun run --filter=@t/db migrate"]
+
+[api.watch]
+patterns = ["apps/api/**", "packages/db/**", "packages/config/**"]
+
+[api.env]
+# REDIS_URL: constructed from the Redis service's private domain and password.
+REDIS_URL = "redis://default:${{Redis.REDIS_PASSWORD}}@${{Redis.RAILWAY_PRIVATE_DOMAIN}}:6379"
+DATABASE_URL = "postgresql://${{Postgres.POSTGRES_USER}}:${{Postgres.POSTGRES_PASSWORD}}@${{Postgres.RAILWAY_PRIVATE_DOMAIN}}:5432/${{Postgres.POSTGRES_DB}}"
+ENVIRONMENT = "${{RAILWAY_ENVIRONMENT_NAME}}"
+RELEASE_SHA = "${{RAILWAY_GIT_COMMIT_SHA}}"
+CORS_ORIGINS = "${{shared.CORS_ORIGINS}}"
+
+# ─── web ────────────────────────────────────────────────────────────────────
+
+[web]
+root = "apps/web/"
+
+[web.build]
+builder = "DOCKERFILE"
+dockerfilePath = "apps/web/Dockerfile"
+
+[web.deploy]
+region = "us-east4-eqdc4a"
+sleepApplication = true
+drainingSeconds = 15
+healthcheckPath = "/api/health"
+
+[web.watch]
+patterns = ["apps/web/**", "packages/**"]
+
+[web.env]
+ENVIRONMENT = "${{RAILWAY_ENVIRONMENT_NAME}}"
+RELEASE_SHA = "${{RAILWAY_GIT_COMMIT_SHA}}"
+CORS_ORIGINS = "${{shared.CORS_ORIGINS}}"
+NEXT_PUBLIC_API_URL = "${{shared.NEXT_PUBLIC_API_URL}}"
+
+# ─── website ────────────────────────────────────────────────────────────────
+
+[website]
+root = "apps/website/"
+
+[website.build]
+builder = "DOCKERFILE"
+dockerfilePath = "apps/website/Dockerfile"
+
+[website.deploy]
+region = "us-east4-eqdc4a"
+sleepApplication = true
+drainingSeconds = 15
+healthcheckPath = "/api/health"
+
+[website.watch]
+patterns = ["apps/website/**", "packages/**"]
+
+[website.env]
+ENVIRONMENT = "${{RAILWAY_ENVIRONMENT_NAME}}"
+RELEASE_SHA = "${{RAILWAY_GIT_COMMIT_SHA}}"
+NEXT_PUBLIC_API_URL = "${{shared.NEXT_PUBLIC_API_URL}}"
+SITE_URL = "${{shared.SITE_URL}}"
+
+# ─── redis (managed image — do not modify) ──────────────────────────────────
+
+[redis]
+image = "redis:7-alpine"
+port = 6379
+volumeMountPath = "/data"
+
+[redis.env]
+ALLOW_EMPTY_PASSWORD = "no"
+
+# ─── postgres (managed image — do not modify) ───────────────────────────────
+
+[postgres]
+image = "pgvector/pgvector:pg16"
+port = 5432
+volumeMountPath = "/var/lib/postgresql/data"
+
+[postgres.env]
+POSTGRES_USER = "postgres"
+POSTGRES_DB = "postgres"

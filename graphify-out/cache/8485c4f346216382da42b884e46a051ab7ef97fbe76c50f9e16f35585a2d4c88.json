@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_delivery_utils_builderrormetadata_ts",
+      "label": "buildErrorMetadata.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "builderrormetadata_builderrormetadata",
+      "label": "buildErrorMetadata()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L15"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_delivery_utils_builderrormetadata_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_builderrormetadata_ts",
+      "target": "hono",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_builderrormetadata_ts",
+      "target": "packages_errors_delivery_utils_geterrorcategory_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_builderrormetadata_ts",
+      "target": "builderrormetadata_builderrormetadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "builderrormetadata_builderrormetadata",
+      "callee": "getErrorCategory",
+      "source_file": "packages\\errors\\delivery\\utils\\buildErrorMetadata.ts",
+      "source_location": "L22"
+    }
+  ]
+}

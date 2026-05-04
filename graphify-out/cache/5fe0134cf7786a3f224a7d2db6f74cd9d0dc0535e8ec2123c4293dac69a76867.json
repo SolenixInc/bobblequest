@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_db_src_entities_schemas_users_ts",
+      "label": "users.ts",
+      "file_type": "code",
+      "source_file": "packages\\db\\src\\entities\\schemas\\users.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_db_src_entities_schemas_users_ts",
+      "target": "pg_core",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\src\\entities\\schemas\\users.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_dependency_injection_src_entities_dependencykeys_ts",
+      "label": "dependencyKeys.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\dependency-injection\\src\\entities\\dependencyKeys.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

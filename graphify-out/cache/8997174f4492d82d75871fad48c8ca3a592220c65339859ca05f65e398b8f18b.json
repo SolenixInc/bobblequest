@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "prd_desktop_status",
+      "label": "apps/desktop bootstrap status",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_desktop_auth_stale",
+      "label": "Desktop auth stack stale (Supabase vs Clerk)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_desktop_no_t_packages",
+      "label": "Desktop zero @t/* integration",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_desktop_useNavigate_broken",
+      "label": "useNavigate.ts react-router-dom missing",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_desktop_matrix_contract",
+      "label": "Desktop maintainer contract (update matrix.md)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_desktop_status",
+      "target": "prd_desktop_matrix_contract",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_desktop_status",
+      "target": "prd_desktop_auth_stale",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_desktop_status",
+      "target": "prd_desktop_no_t_packages",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_desktop_status",
+      "target": "prd_desktop_useNavigate_broken",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_desktop_auth_stale",
+      "target": "prd_mobile_auth_supabase_wrong",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "prd_desktop_auth_stale",
+      "target": "prd_web_auth_migration_incomplete",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "prd_desktop_no_t_packages",
+      "target": "prd_pkg_analytics",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "docs/prd-status/apps/desktop.md",
+      "source_location": null,
+      "weight": 0.7
+    }
+  ],
+  "hyperedges": []
+}

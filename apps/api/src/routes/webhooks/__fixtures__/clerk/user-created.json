@@ -1,0 +1,19 @@
+{
+  "type": "user.created",
+  "data": {
+    "id": "user_2abc1DEFghiJKL3mnopQR4stu",
+    "first_name": "Alice",
+    "last_name": "Nguyen",
+    "image_url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nX2FiYzEyMyJ9",
+    "primary_email_address_id": "idn_2abc1AliceEmail00001",
+    "email_addresses": [
+      {
+        "id": "idn_2abc1AliceEmail00001",
+        "email_address": "alice.nguyen@example.com"
+      }
+    ],
+    "public_metadata": {},
+    "created_at": 1746057600000,
+    "updated_at": 1746057600000
+  }
+}

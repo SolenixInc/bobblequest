@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "id": "handoff_session",
+      "label": "Session Handoff template-repo",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Jager Cooper",
+      "contributor": null
+    },
+    {
+      "id": "handoff_phase_status",
+      "label": "Phase 1-2 Landed Status",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "handoff_tech_stack",
+      "label": "Decided Tech Stack Table",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "handoff_5_apps",
+      "label": "Five Apps (api/web/website/mobile/desktop)",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "handoff_no_shared_ui",
+      "label": "Decision: No Shared UI Package",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "handoff_platform_sdk_split",
+      "label": "Platform SDK Split (ai/billing/notifications external)",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "handoff_plan_execution_order",
+      "label": "Plan Execution Order (5 phases)",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "handoff_design_decisions",
+      "label": "Design Decisions Locked Table",
+      "file_type": "document",
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "handoff_session",
+      "target": "handoff_phase_status",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "handoff_tech_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "handoff_5_apps",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "handoff_no_shared_ui",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "handoff_platform_sdk_split",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "handoff_plan_execution_order",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "handoff_design_decisions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "conventions_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_no_shared_ui",
+      "target": "handoff_design_decisions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "handoff_session",
+      "target": "agents_template_rulebook",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

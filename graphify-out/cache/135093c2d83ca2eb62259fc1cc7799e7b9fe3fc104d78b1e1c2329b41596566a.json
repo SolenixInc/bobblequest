@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_auth_src_entities_schemas_webhookeventschema_ts",
+      "label": "WebhookEventSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\entities\\schemas\\WebhookEventSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_auth_src_entities_schemas_webhookeventschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\entities\\schemas\\WebhookEventSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

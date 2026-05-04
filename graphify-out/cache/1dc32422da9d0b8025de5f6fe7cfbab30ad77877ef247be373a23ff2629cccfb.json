@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "ci_check_suite",
+      "label": "CI check suite target & gaps",
+      "file_type": "document",
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ci_check_tiers",
+      "label": "Check tiers (fast / correctness / full-stack / security)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ci_silent_test_noop",
+      "label": "Silent test job no-op (missing scripts)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ci_selective_execution",
+      "label": "Selective execution via turbo --filter",
+      "file_type": "document",
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "ci_check_suite",
+      "target": "ci_check_tiers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ci_check_suite",
+      "target": "ci_silent_test_noop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ci_check_suite",
+      "target": "ci_selective_execution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ci_check_suite",
+      "target": "infra_status",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ci_check_suite",
+      "target": "architecture_intent_snapshot",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ci_check_suite",
+      "target": "matrix_status_matrix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/ci.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,20 @@
+# .gitleaks.toml — allowlist for known false-positive patterns in test fixtures,
+# documentation, and example files.
+#
+# All entries here are non-secret placeholder values used in unit tests, docs,
+# and examples. Real secrets must NEVER appear in this file or in source.
+
+title = "TS-Template Stack gitleaks config"
+
+[[allowlists]]
+description = "Fake Clerk publishable keys used in test fixtures"
+regexes = ['''pk_test_abc123''']
+
+[[allowlists]]
+description = "Fake PostHog key used in logging transport example"
+regexes = ['''phc_1234567890abcdef''']
+
+[[allowlists]]
+description = "Placeholder tokens in documentation plan files"
+paths = ['''plans/''', '''docs/''']
+regexes = ['''YOUR_TOKEN''']

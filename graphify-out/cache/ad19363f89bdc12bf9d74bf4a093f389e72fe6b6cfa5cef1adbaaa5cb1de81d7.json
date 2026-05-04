@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "packages_auth_src_entities_types_autherror_ts",
+      "label": "AuthError.ts",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\entities\\types\\AuthError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "autherror_autherror",
+      "label": "AuthError",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\entities\\types\\AuthError.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "autherror_autherror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\entities\\types\\AuthError.ts",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_auth_src_entities_types_autherror_ts",
+      "target": "autherror_autherror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\entities\\types\\AuthError.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "autherror_autherror",
+      "target": "autherror_autherror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\entities\\types\\AuthError.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "autherror_autherror_constructor",
+      "callee": "super",
+      "source_file": "packages\\auth\\src\\entities\\types\\AuthError.ts",
+      "source_location": "L19"
+    }
+  ]
+}

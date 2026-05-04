@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_ports_configrepository_ts",
+      "label": "ConfigRepository.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\ports\\ConfigRepository.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_entities_ports_configrepository_ts",
+      "target": "packages_config_entities_schemas_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\ports\\ConfigRepository.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

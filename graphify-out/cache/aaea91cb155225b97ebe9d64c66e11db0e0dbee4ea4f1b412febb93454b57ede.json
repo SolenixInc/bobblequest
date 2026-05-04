@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_toapperrorresponse_ts",
+      "label": "toAppErrorResponse.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "toapperrorresponse_toapperrorresponse",
+      "label": "toAppErrorResponse()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_toapperrorresponse_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_toapperrorresponse_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_ports_apperror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_toapperrorresponse_ts",
+      "target": "toapperrorresponse_toapperrorresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

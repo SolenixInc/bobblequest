@@ -1,0 +1,21 @@
+# Bun 1.3.x monorepo config — Bun + Turborepo on Windows
+# Schema: https://bun.sh/docs/runtime/bunfig
+
+[install]
+# Restore pre-1.3 default. Isolated linker (1.3.0+ default) breaks
+# Next.js / Electron / Expo workspaces that expect hoisted node_modules.
+linker = "hoisted"
+
+# Text JSONC lockfile (1.2+ default — explicit for clarity).
+saveTextLockfile = true
+
+# Symlink workspace:* deps into node_modules (default true; explicit).
+linkWorkspacePackages = true
+
+# Throttle parallel postinstall on Windows to dodge EPERM/EBUSY races
+# from antivirus + OneDrive holding file locks.
+concurrentScripts = 4
+
+[run]
+# Use Bun's built-in shell on Windows (avoids cmd.exe quoting issues).
+shell = "bun"

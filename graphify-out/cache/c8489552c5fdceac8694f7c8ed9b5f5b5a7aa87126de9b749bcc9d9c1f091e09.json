@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "label": "registerAuthDI.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerauthdi_registerauthdi",
+      "label": "registerAuthDI()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "registerauthdi_pickprovider",
+      "label": "pickProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L61"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_entities_ports_authprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_entities_types_usersynccallback_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "registerauthdi_registerauthdi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "target": "registerauthdi_pickprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "registerauthdi_registerauthdi",
+      "target": "registerauthdi_pickprovider",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registerauthdi_registerauthdi",
+      "callee": "register",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "registerauthdi_registerauthdi",
+      "callee": "singleton",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "registerauthdi_registerauthdi",
+      "callee": "asClass",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "registerauthdi_pickprovider",
+      "callee": "createGlobalLogger",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "registerauthdi_pickprovider",
+      "callee": "warning",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\src\\dependency-injection\\registerAuthDI.ts",
+      "source_location": "L80"
+    }
+  ]
+}

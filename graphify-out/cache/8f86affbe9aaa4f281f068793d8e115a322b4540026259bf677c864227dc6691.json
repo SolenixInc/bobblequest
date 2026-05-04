@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_version_ts",
+      "label": "version.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\version.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

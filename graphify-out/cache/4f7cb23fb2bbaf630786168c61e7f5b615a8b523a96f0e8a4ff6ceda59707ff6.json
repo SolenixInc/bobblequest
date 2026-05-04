@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_infrastructure_5xx_gatewaytimeouterror_ts",
+      "label": "GatewayTimeoutError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gatewaytimeouterror_gatewaytimeouterror",
+      "label": "GatewayTimeoutError",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "gatewaytimeouterror_gatewaytimeouterror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "gatewaytimeouterror_gatewaytimeouterror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "gatewaytimeouterror_gatewaytimeouterror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "gatewaytimeouterror_gatewaytimeouterror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L63"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_infrastructure_5xx_gatewaytimeouterror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_gatewaytimeouterror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_gatewaytimeouterror_ts",
+      "target": "gatewaytimeouterror_gatewaytimeouterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "gatewaytimeouterror_gatewaytimeouterror",
+      "target": "gatewaytimeouterror_gatewaytimeouterror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "gatewaytimeouterror_gatewaytimeouterror",
+      "target": "gatewaytimeouterror_gatewaytimeouterror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "gatewaytimeouterror_gatewaytimeouterror",
+      "target": "gatewaytimeouterror_gatewaytimeouterror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "gatewaytimeouterror_gatewaytimeouterror",
+      "target": "gatewaytimeouterror_gatewaytimeouterror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "gatewaytimeouterror_gatewaytimeouterror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\GatewayTimeoutError.ts",
+      "source_location": "L68"
+    }
+  ]
+}

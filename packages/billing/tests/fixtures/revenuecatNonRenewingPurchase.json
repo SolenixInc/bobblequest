@@ -1,0 +1,10 @@
+{
+  "api_version": "1.0",
+  "event": {
+    "id": "evt_test_rc_non_renewing_1",
+    "type": "NON_RENEWING_PURCHASE",
+    "app_user_id": "user_123",
+    "product_id": "nutraforge_lifetime_access",
+    "event_timestamp_ms": 1800000000000
+  }
+}

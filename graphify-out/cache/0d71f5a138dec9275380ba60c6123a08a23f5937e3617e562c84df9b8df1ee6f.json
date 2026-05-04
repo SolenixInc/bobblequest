@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "readme_billing",
+      "label": "@t/billing README",
+      "file_type": "document",
+      "source_file": "packages/billing/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_billing_revenuecat_primary",
+      "label": "RevenueCat primary, Stripe rail-only inside RC",
+      "file_type": "document",
+      "source_file": "packages/billing/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_billing",
+      "target": "readme_billing_revenuecat_primary",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/billing/README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "revenuecat_primary_billing_pattern",
+      "label": "RevenueCat-primary billing across web/mobile/desktop",
+      "nodes": [
+        "readme_billing_revenuecat_primary",
+        "prd_pkg_billing_revenuecat_primary",
+        "prd_mobile_revenuecat_missing"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "packages/billing/README.md"
+    }
+  ]
+}

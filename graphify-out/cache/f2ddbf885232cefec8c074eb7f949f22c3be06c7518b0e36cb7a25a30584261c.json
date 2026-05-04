@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_entities_schemas_apperroroptions_ts",
+      "label": "AppErrorOptions.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\entities\\schemas\\AppErrorOptions.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_entities_schemas_apperroroptions_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\entities\\schemas\\AppErrorOptions.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

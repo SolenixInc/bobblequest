@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_determinestatuscode_ts",
+      "label": "determineStatusCode.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "determinestatuscode_determinestatuscode",
+      "label": "determineStatusCode()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_determinestatuscode_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_determinestatuscode_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_ports_apperror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_determinestatuscode_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_hasstatuscode_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_determinestatuscode_ts",
+      "target": "determinestatuscode_determinestatuscode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "determinestatuscode_determinestatuscode",
+      "callee": "hasStatusCode",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\determineStatusCode.ts",
+      "source_location": "L14"
+    }
+  ]
+}

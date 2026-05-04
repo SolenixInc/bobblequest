@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_types_configtypes_ts",
+      "label": "ConfigTypes.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\types\\ConfigTypes.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

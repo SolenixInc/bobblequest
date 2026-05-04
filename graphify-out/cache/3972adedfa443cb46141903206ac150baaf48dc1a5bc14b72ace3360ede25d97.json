@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "label": "registerCacheDI.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registercachedi_registercachedi",
+      "label": "registerCacheDI()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L47"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_entities_ports_cacheclient_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_cache_src_dependency_injection_registercachedi_ts",
+      "target": "registercachedi_registercachedi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registercachedi_registercachedi",
+      "callee": "register",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "registercachedi_registercachedi",
+      "callee": "singleton",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "registercachedi_registercachedi",
+      "callee": "asFunction",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\cache\\src\\dependency-injection\\registerCacheDI.ts",
+      "source_location": "L66"
+    }
+  ]
+}

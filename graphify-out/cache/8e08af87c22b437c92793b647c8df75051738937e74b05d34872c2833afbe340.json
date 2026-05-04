@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_di",
+      "label": "@t/dependency-injection bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/dependency-injection.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_di_tokens_missing",
+      "label": "DI tokens missing (DB/AUTH/CACHE/BILLING/ERRORS)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/dependency-injection.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_di_no_platform_doc",
+      "label": "DI architecture doc missing",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/dependency-injection.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_di",
+      "target": "prd_pkg_di_tokens_missing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/dependency-injection.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_di",
+      "target": "prd_pkg_di_no_platform_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/dependency-injection.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "di_token_hoist_pending",
+      "label": "DI token hoist pending across packages",
+      "nodes": [
+        "prd_pkg_di_tokens_missing",
+        "prd_pkg_cache_di_key_local",
+        "prd_pkg_auth",
+        "prd_pkg_billing"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/dependency-injection.md"
+    }
+  ]
+}

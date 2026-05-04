@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_entities_schemas_eventschema_ts",
+      "label": "EventSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\entities\\schemas\\EventSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_entities_schemas_eventschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\entities\\schemas\\EventSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,806 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_winstonlogger_ts",
+      "label": "winstonLogger.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "winstonlogger_colorlevel",
+      "label": "colorLevel()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "winstonlogger_winstonlogger",
+      "label": "WinstonLogger",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_requestid",
+      "label": ".requestId()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L75"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_userid",
+      "label": ".userId()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L79"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L83"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_buildconfig",
+      "label": ".buildConfig()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L112"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_createtransports",
+      "label": ".createTransports()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L124"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_prettyprint",
+      "label": ".prettyPrint()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L159"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_createlogprefix",
+      "label": ".createLogPrefix()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L182"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_normalize",
+      "label": ".normalize()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L197"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_logmessage",
+      "label": ".logMessage()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L208"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_debug",
+      "label": ".debug()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L227"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_info",
+      "label": ".info()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L232"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_warn",
+      "label": ".warn()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L237"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_error",
+      "label": ".error()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L242"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_fatal",
+      "label": ".fatal()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L251"
+    },
+    {
+      "id": "winstonlogger_winstonlogger_child",
+      "label": ".child()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L256"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "winston",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_entities_enums_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_entities_ports_logger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_entities_types_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_version_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_infrastructure_errorserializer_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_infrastructure_quietmode_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_infrastructure_redactors_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "winstonlogger_colorlevel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_winstonlogger_ts",
+      "target": "winstonlogger_winstonlogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_requestid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_userid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_buildconfig",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_createtransports",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_prettyprint",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_createlogprefix",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_normalize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_logmessage",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_debug",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_info",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L232",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_warn",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_error",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_fatal",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L251",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger",
+      "target": "winstonlogger_winstonlogger_child",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_constructor",
+      "target": "winstonlogger_winstonlogger_buildconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_constructor",
+      "target": "winstonlogger_winstonlogger_createtransports",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_prettyprint",
+      "target": "winstonlogger_colorlevel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_prettyprint",
+      "target": "winstonlogger_winstonlogger_createlogprefix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_debug",
+      "target": "winstonlogger_winstonlogger_normalize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L228",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_debug",
+      "target": "winstonlogger_winstonlogger_logmessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_info",
+      "target": "winstonlogger_winstonlogger_normalize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L233",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_info",
+      "target": "winstonlogger_winstonlogger_logmessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_warn",
+      "target": "winstonlogger_winstonlogger_normalize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_warn",
+      "target": "winstonlogger_winstonlogger_logmessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L239",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_error",
+      "target": "winstonlogger_winstonlogger_normalize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_error",
+      "target": "winstonlogger_winstonlogger_logmessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L244",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_fatal",
+      "target": "winstonlogger_winstonlogger_normalize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "winstonlogger_winstonlogger_fatal",
+      "target": "winstonlogger_winstonlogger_logmessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L253",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "winstonlogger_colorlevel",
+      "callee": "toUpperCase",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "super",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "isGlobalQuietMode",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "relative",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "cwd",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "redactFormat",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "buildRedactConfig",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "timestamp",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "errors",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L97"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "createLogger",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "combine",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "errorSerializerFormat",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_constructor",
+      "callee": "json",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "getOrCreateOTLPTransport",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "combine",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L137"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "timestamp",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "printf",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L144"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "combine",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L146"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "timestamp",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L147"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "errors",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "errorSerializerFormat",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createtransports",
+      "callee": "json",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "padStart",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L163"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L163"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "getHours",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L163"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "padStart",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L164"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L164"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "getMinutes",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L164"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "padStart",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L165"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L165"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "getSeconds",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L165"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "padStart",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L166"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L166"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "getMilliseconds",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L166"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "keys",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L175"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "stringify",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L177"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_prettyprint",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L179"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createlogprefix",
+      "callee": "relative",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L184"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createlogprefix",
+      "callee": "cwd",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L184"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createlogprefix",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L187"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createlogprefix",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L189"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createlogprefix",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L192"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_createlogprefix",
+      "callee": "join",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L194"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_logmessage",
+      "callee": "relative",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L210"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_logmessage",
+      "callee": "cwd",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L210"
+    },
+    {
+      "caller_nid": "winstonlogger_winstonlogger_logmessage",
+      "callee": "log",
+      "source_file": "packages\\logging\\infrastructure\\winstonLogger.ts",
+      "source_location": "L224"
+    }
+  ]
+}

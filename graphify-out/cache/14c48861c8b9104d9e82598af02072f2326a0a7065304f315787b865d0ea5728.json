@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_tests_schemas_webhookeventschema_test_ts",
+      "label": "WebhookEventSchema.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\schemas\\WebhookEventSchema.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_tests_schemas_webhookeventschema_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\schemas\\WebhookEventSchema.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_schemas_webhookeventschema_test_ts",
+      "target": "packages_billing_src_entities_schemas_webhookeventschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\schemas\\WebhookEventSchema.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_schemas_webhookeventschema_test_ts",
+      "target": "packages_billing_tests_fixtures_revenuecatbillingissue_json",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\schemas\\WebhookEventSchema.test.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_schemas_webhookeventschema_test_ts",
+      "target": "packages_billing_tests_fixtures_revenuecatinitialpurchase_json",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\schemas\\WebhookEventSchema.test.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

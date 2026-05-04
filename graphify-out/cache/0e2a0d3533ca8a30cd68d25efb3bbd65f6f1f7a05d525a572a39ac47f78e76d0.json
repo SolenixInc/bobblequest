@@ -1,0 +1,335 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "label": "RequestAnalyticsTrackerImpl.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "label": "RequestAnalyticsTrackerImpl",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "label": ".stamp()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capture",
+      "label": ".capture()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_captureexception",
+      "label": ".captureException()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capturerevenue",
+      "label": ".captureRevenue()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L62"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capturellm",
+      "label": ".captureLlm()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_identify",
+      "label": ".identify()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_alias",
+      "label": ".alias()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L75"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_group",
+      "label": ".group()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L79"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_sessionid",
+      "label": ".sessionId()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_isfeatureenabled",
+      "label": ".isFeatureEnabled()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L91"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_getallflags",
+      "label": ".getAllFlags()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L95"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_shutdown",
+      "label": ".shutdown()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L99"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_ports_analyticstracker_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_ports_requestanalyticstracker_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_llmevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_revenueevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capture",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_captureexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capturerevenue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capturellm",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_identify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_alias",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_group",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_sessionid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_isfeatureenabled",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_getallflags",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_shutdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capture",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_captureexception",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capturerevenue",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_capturellm",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_identify",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_group",
+      "target": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_stamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "requestanalyticstrackerimpl_requestanalyticstrackerimpl_constructor",
+      "callee": "super",
+      "source_file": "packages\\analytics\\src\\infrastructure\\RequestAnalyticsTrackerImpl.ts",
+      "source_location": "L27"
+    }
+  ]
+}

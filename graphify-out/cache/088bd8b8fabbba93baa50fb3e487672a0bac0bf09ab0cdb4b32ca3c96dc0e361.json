@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_dependency_injection_registerconfigrepodi_ts",
+      "label": "registerConfigRepoDI.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerconfigrepodi_registerconfigrepo",
+      "label": "registerConfigRepo()",
+      "file_type": "code",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_dependency_injection_registerconfigrepodi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_dependency_injection_registerconfigrepodi_ts",
+      "target": "packages_config_infrastructure_configrepositoryimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_dependency_injection_registerconfigrepodi_ts",
+      "target": "registerconfigrepodi_registerconfigrepo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registerconfigrepodi_registerconfigrepo",
+      "callee": "register",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "registerconfigrepodi_registerconfigrepo",
+      "callee": "singleton",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "registerconfigrepodi_registerconfigrepo",
+      "callee": "asClass",
+      "source_file": "packages\\config\\dependency-injection\\registerConfigRepoDI.ts",
+      "source_location": "L11"
+    }
+  ]
+}

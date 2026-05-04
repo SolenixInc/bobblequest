@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "apps_web_src_lib_supabase_server_ts",
+      "label": "server.ts",
+      "file_type": "code",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_createsupabaseserver",
+      "label": "createSupabaseServer()",
+      "file_type": "code",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_web_src_lib_supabase_server_ts",
+      "target": "ssr",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_supabase_server_ts",
+      "target": "ssr",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_supabase_server_ts",
+      "target": "headers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_supabase_server_ts",
+      "target": "server_createsupabaseserver",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "server_createsupabaseserver",
+      "callee": "cookies",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "server_createsupabaseserver",
+      "callee": "createServerClient",
+      "source_file": "apps\\web\\src\\lib\\supabase\\server.ts",
+      "source_location": "L14"
+    }
+  ]
+}

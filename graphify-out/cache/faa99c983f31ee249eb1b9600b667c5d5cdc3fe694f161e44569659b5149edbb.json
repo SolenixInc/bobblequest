@@ -1,0 +1,249 @@
+{
+  "nodes": [
+    {
+      "id": "logging_logging_package",
+      "label": "@t/logging package",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_logger_port",
+      "label": "Logger port",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_winston_logger",
+      "label": "WinstonLogger base impl",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_global_logger",
+      "label": "GlobalLogger",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_request_logger",
+      "label": "RequestLogger",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_redactors",
+      "label": "PII redactors",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_otlp_transport",
+      "label": "PostHog OTLP transport",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_register_logger_di",
+      "label": "registerLoggerDI",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_register_logger_factory_di",
+      "label": "registerLoggerFactoryDI (legacy)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_logging_config_schema",
+      "label": "LoggingConfigSchema (@t/config)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_gcp_removed_rationale",
+      "label": "Rationale: GCP Cloud Logging removed (Railway log drain)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logging_pino_rejected_rationale",
+      "label": "Rationale: pino swap rejected; winston stays",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "logging_logging_package",
+      "target": "logging_logger_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_winston_logger",
+      "target": "logging_logger_port",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_global_logger",
+      "target": "logging_winston_logger",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_request_logger",
+      "target": "logging_winston_logger",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_logging_package",
+      "target": "logging_redactors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_logging_package",
+      "target": "logging_otlp_transport",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_logging_package",
+      "target": "logging_register_logger_di",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_logging_package",
+      "target": "logging_register_logger_factory_di",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_logging_package",
+      "target": "logging_logging_config_schema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_gcp_removed_rationale",
+      "target": "logging_otlp_transport",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logging_pino_rejected_rationale",
+      "target": "logging_winston_logger",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/logging.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

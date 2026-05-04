@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "phase_05_implementations",
+      "label": "Phase 05 - Implementations",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "phase_05_noop_tracker",
+      "label": "NoOpAnalyticsTracker",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "phase_05_request_tracker_impl",
+      "label": "RequestAnalyticsTrackerImpl",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "phase_05_implementations",
+      "target": "phase_03_port_definitions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_05_implementations",
+      "target": "phase_04_config_schema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_05_implementations",
+      "target": "analytics_posthog_impl",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_05_implementations",
+      "target": "phase_05_noop_tracker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_05_implementations",
+      "target": "phase_05_request_tracker_impl",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-05-implementations.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

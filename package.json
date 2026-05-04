@@ -1,0 +1,74 @@
+{
+  "name": "template-repo",
+  "private": true,
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "packageManager": "bun@1.3.11",
+  "engines": {
+    "bun": ">=1.3.11",
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "scripts/stack"
+  ],
+  "scripts": {
+    "prepare": "lefthook install",
+    "dev": "bun run scripts/stack/launch.ts",
+    "dev:packages": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "check": "turbo run check",
+    "lint": "turbo run check",
+    "typecheck": "turbo run typecheck",
+    "format": "turbo run format",
+    "format:check": "biome ci .",
+    "clean": "turbo run clean && rimraf node_modules",
+    "doctor": "bun run scripts/doctor.ts",
+    "stack:up": "docker compose up -d",
+    "stack:down": "bun run scripts/stack/teardown-pids.ts",
+    "stack:clean": "bun run stack:down && bun run scripts/stack/run-cleanup.ts volumes",
+    "stack:nuke": "bun run stack:clean && bun run scripts/stack/run-cleanup.ts nuke --force",
+    "stack:logs": "docker compose logs -f",
+    "stack:dev": "docker compose watch",
+    "stack:rebuild": "docker compose build --no-cache && docker compose up -d",
+    "stack:full": "bun run scripts/stack/launch.ts",
+    "stack:full:nodocker": "bun run scripts/stack/launch.ts --no-docker",
+    "stack:full:apionly": "bun run scripts/stack/launch.ts --no-mobile --no-desktop",
+    "up": "bun run stack:full"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "esbuild",
+    "electron",
+    "lefthook"
+  ],
+  "overrides": {
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.10",
+    "posthog-js": "1.372.3",
+    "@tootallnate/once": ">=3.0.1",
+    "esbuild": ">=0.25.0",
+    "postcss": ">=8.5.10",
+    "tar": ">=7.5.7",
+    "uuid": ">=14.0.0",
+    "vite": ">=6.4.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
+    "@size-limit/file": "^12.1.0",
+    "@size-limit/preset-app": "^12.1.0",
+    "lefthook": "^2.1.6",
+    "rimraf": "^6.1.3",
+    "size-limit": "^12.1.0",
+    "turbo": "^2.9.6",
+    "typescript": "^6.0.3"
+  },
+  "patchedDependencies": {
+    "@expo/metro-runtime@4.0.1": "patches/@expo%2Fmetro-runtime@4.0.1.patch"
+  }
+}

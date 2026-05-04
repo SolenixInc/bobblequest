@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_db",
+      "label": "@t/db bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_db_drizzle_pgvector",
+      "label": "Drizzle ORM + pgvector on Railway Postgres",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_db_clerk_user_col",
+      "label": "users.clerk_user_id column requirement",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_db",
+      "target": "prd_pkg_db_drizzle_pgvector",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_db",
+      "target": "prd_pkg_db_clerk_user_col",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_db",
+      "target": "readme_db",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_db_drizzle_pgvector",
+      "target": "readme_db_migrations_pgvector_first",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/db.md",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_applications_toapperrorresponse_ts",
+      "label": "toAppErrorResponse.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "toapperrorresponse_toapperrorresponse",
+      "label": "toAppErrorResponse()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_applications_toapperrorresponse_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_applications_toapperrorresponse_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_applications_toapperrorresponse_ts",
+      "target": "toapperrorresponse_toapperrorresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toAppErrorResponse.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_entities_ports_logger_ts",
+      "label": "Logger.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\entities\\ports\\Logger.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "logger_warning",
+      "label": "warning()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\entities\\ports\\Logger.ts",
+      "source_location": "L36"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_entities_ports_logger_ts",
+      "target": "packages_logging_entities_types_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\entities\\ports\\Logger.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_entities_ports_logger_ts",
+      "target": "logger_warning",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\entities\\ports\\Logger.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "logger_warning",
+      "callee": "warn",
+      "source_file": "packages\\logging\\entities\\ports\\Logger.ts",
+      "source_location": "L37"
+    }
+  ]
+}

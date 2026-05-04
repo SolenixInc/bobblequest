@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_infrastructure_5xx_serviceunavailableerror_ts",
+      "label": "ServiceUnavailableError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "serviceunavailableerror_serviceunavailableerror",
+      "label": "ServiceUnavailableError",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "serviceunavailableerror_serviceunavailableerror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "serviceunavailableerror_serviceunavailableerror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "serviceunavailableerror_serviceunavailableerror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "serviceunavailableerror_serviceunavailableerror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L63"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_infrastructure_5xx_serviceunavailableerror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_serviceunavailableerror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_serviceunavailableerror_ts",
+      "target": "serviceunavailableerror_serviceunavailableerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "serviceunavailableerror_serviceunavailableerror",
+      "target": "serviceunavailableerror_serviceunavailableerror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "serviceunavailableerror_serviceunavailableerror",
+      "target": "serviceunavailableerror_serviceunavailableerror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "serviceunavailableerror_serviceunavailableerror",
+      "target": "serviceunavailableerror_serviceunavailableerror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "serviceunavailableerror_serviceunavailableerror",
+      "target": "serviceunavailableerror_serviceunavailableerror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "serviceunavailableerror_serviceunavailableerror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\ServiceUnavailableError.ts",
+      "source_location": "L68"
+    }
+  ]
+}

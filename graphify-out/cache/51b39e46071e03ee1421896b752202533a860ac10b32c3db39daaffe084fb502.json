@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "label": "transportFactory.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "transportfactory_envint",
+      "label": "envInt()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "transportfactory_buildconfig",
+      "label": "buildConfig()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "transportfactory_getorcreateotlptransport",
+      "label": "getOrCreateOTLPTransport()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "transportfactory_resetotlptransportfortests",
+      "label": "resetOTLPTransportForTests()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L51"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "winston",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "packages_logging_entities_types_otlpconfig_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "transportfactory_envint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "transportfactory_buildconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "transportfactory_getorcreateotlptransport",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_transportfactory_ts",
+      "target": "transportfactory_resetotlptransportfortests",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "transportfactory_buildconfig",
+      "target": "transportfactory_envint",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "transportfactory_getorcreateotlptransport",
+      "target": "transportfactory_buildconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "transportfactory_envint",
+      "callee": "parseInt",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "transportfactory_envint",
+      "callee": "isFinite",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "transportfactory_buildconfig",
+      "callee": "replace",
+      "source_file": "packages\\logging\\infrastructure\\transports\\transportFactory.ts",
+      "source_location": "L26"
+    }
+  ]
+}

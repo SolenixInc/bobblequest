@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_onerror",
+      "label": "onError()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L36"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "trpc_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "hono",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_trpc_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_index_ts",
+      "target": "index_onerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_onerror",
+      "callee": "error",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\index.ts",
+      "source_location": "L37"
+    }
+  ]
+}

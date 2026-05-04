@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_src_entities_schemas_customerschema_ts",
+      "label": "CustomerSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\entities\\schemas\\CustomerSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_src_entities_schemas_customerschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\schemas\\CustomerSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

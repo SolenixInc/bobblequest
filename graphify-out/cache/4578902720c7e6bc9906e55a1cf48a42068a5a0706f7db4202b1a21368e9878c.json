@@ -1,0 +1,666 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "label": "InMemoryCacheImpl.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "inmemorycacheimpl_cachelocktimeouterror",
+      "label": "CacheLockTimeoutError",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "inmemorycacheimpl_cachelocktimeouterror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl",
+      "label": "InMemoryCacheImpl",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "label": ".get()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "label": ".set()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_del",
+      "label": ".del()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "label": ".incr()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "label": ".withLock()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L75"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "label": ".publish()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L129"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_subscribe",
+      "label": ".subscribe()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L150"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L173"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "label": ".assertOpen()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L184"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "label": ".readFresh()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L190"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "label": ".writeEntry()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L201"
+    },
+    {
+      "id": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "label": ".clearTimer()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L227"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "target": "packages_cache_src_entities_ports_cacheclient_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "target": "inmemorycacheimpl_cachelocktimeouterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_cachelocktimeouterror",
+      "target": "inmemorycacheimpl_cachelocktimeouterror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "target": "inmemorycacheimpl_inmemorycacheimpl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_del",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_subscribe",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L190",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_del",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_del",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_subscribe",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_assertopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_subscribe",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_subscribe",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L191",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "target": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L228",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "inmemorycacheimpl_cachelocktimeouterror_constructor",
+      "callee": "super",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_get",
+      "callee": "parse",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_set",
+      "callee": "stringify",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_del",
+      "callee": "delete",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "callee": "parseInt",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "callee": "isNaN",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_incr",
+      "callee": "String",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "resolve",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "then",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "race",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "then",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "clearTimeout",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L104"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "release",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "delete",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "fn",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L116"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "release",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_withlock",
+      "callee": "queueMicrotask",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L121"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "callee": "stringify",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L133"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "callee": "parse",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_publish",
+      "callee": "queueMicrotask",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_subscribe",
+      "callee": "add",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L160"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "callee": "values",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L175"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "callee": "clearTimeout",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L176"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "callee": "clear",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "callee": "clear",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L179"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "callee": "clear",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L180"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_close",
+      "callee": "clear",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L181"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "callee": "now",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L193"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_readfresh",
+      "callee": "delete",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L195"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "callee": "now",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L208"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "callee": "setTimeout",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L210"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_writeentry",
+      "callee": "unref",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L219"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "callee": "clearTimeout",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L230"
+    },
+    {
+      "caller_nid": "inmemorycacheimpl_inmemorycacheimpl_cleartimer",
+      "callee": "delete",
+      "source_file": "packages\\cache\\src\\infrastructure\\InMemoryCacheImpl.ts",
+      "source_location": "L231"
+    }
+  ]
+}

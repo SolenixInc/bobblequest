@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_tests_schemas_subscriptionschema_test_ts",
+      "label": "SubscriptionSchema.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\schemas\\SubscriptionSchema.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_tests_schemas_subscriptionschema_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\schemas\\SubscriptionSchema.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_schemas_subscriptionschema_test_ts",
+      "target": "packages_billing_src_entities_schemas_subscriptionschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\schemas\\SubscriptionSchema.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

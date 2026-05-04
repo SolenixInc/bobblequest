@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "label": "registerAuthDI.test.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerauthdi_test_fakeconfig",
+      "label": "fakeConfig()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_dependency_injection_registerauthdi_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_entities_ports_authprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_dependency_injection_registerauthdi_test_ts",
+      "target": "registerauthdi_test_fakeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\dependency-injection\\registerAuthDI.test.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

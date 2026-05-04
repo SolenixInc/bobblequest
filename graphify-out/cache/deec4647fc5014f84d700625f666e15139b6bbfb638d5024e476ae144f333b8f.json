@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_entities_ports_apperror_ts",
+      "label": "AppError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\entities\\ports\\AppError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "apperror_constructor",
+      "label": "constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\entities\\ports\\AppError.ts",
+      "source_location": "L152"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_entities_ports_apperror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\entities\\ports\\AppError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_entities_ports_apperror_ts",
+      "target": "apperror_constructor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\entities\\ports\\AppError.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "apperror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\entities\\ports\\AppError.ts",
+      "source_location": "L161"
+    }
+  ]
+}

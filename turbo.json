@@ -1,0 +1,71 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "globalPassThroughEnv": ["NODE_ENV", "CI", "BUN_VERSION"],
+  "globalDependencies": [
+    "**/.env.*local",
+    "tsconfig.json",
+    "tsconfig.*.json",
+    "biome.json",
+    ".env.example",
+    "bunfig.toml",
+    "bun.lock",
+    "package.json",
+    ".github/workflows/**",
+    "packages/config/tsconfig/**",
+    "lefthook.yml",
+    "commitlint.config.mjs",
+    "release-please-config.json"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        "build/**",
+        ".expo/**",
+        "out/**",
+        "release/**"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "check": {
+      "dependsOn": ["^check"]
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "inputs": ["src/**/*.ts", "src/**/*.tsx", "tsconfig.json", "tsconfig.*.json"]
+    },
+    "format": {},
+    "test": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "tests/**/*.ts",
+        "__tests__/**/*.ts",
+        "vitest.config.ts"
+      ],
+      "outputs": []
+    },
+    "test:coverage": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "tests/**/*.ts",
+        "__tests__/**/*.ts",
+        "vitest.config.ts"
+      ],
+      "outputs": ["coverage/**"]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

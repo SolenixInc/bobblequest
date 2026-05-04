@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "label": "registerBillingDI.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerbillingdi_registerbillingdi",
+      "label": "registerBillingDI()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L49"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_infrastructure_compositebillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_infrastructure_revenuecatbillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_infrastructure_stripebillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_billing_src_dependency_injection_registerbillingdi_ts",
+      "target": "registerbillingdi_registerbillingdi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registerbillingdi_registerbillingdi",
+      "callee": "register",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "registerbillingdi_registerbillingdi",
+      "callee": "singleton",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "registerbillingdi_registerbillingdi",
+      "callee": "asFunction",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\billing\\src\\dependency-injection\\registerBillingDI.ts",
+      "source_location": "L56"
+    }
+  ]
+}

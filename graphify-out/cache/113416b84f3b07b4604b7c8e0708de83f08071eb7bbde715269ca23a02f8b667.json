@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_tests_infrastructure_revenuecatbillingimpl_test_ts",
+      "label": "RevenueCatBillingImpl.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\infrastructure\\RevenueCatBillingImpl.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "revenuecatbillingimpl_test_makefetchmock",
+      "label": "makeFetchMock()",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\infrastructure\\RevenueCatBillingImpl.test.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_tests_infrastructure_revenuecatbillingimpl_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\RevenueCatBillingImpl.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_revenuecatbillingimpl_test_ts",
+      "target": "packages_billing_src_infrastructure_revenuecatbillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\RevenueCatBillingImpl.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_revenuecatbillingimpl_test_ts",
+      "target": "revenuecatbillingimpl_test_makefetchmock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\RevenueCatBillingImpl.test.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "revenuecatbillingimpl_test_makefetchmock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\RevenueCatBillingImpl.test.ts",
+      "source_location": "L15"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "apps_website_src_app_blog_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "apps\\website\\src\\app\\blog\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "page_blogindexpage",
+      "label": "BlogIndexPage()",
+      "file_type": "code",
+      "source_file": "apps\\website\\src\\app\\blog\\page.tsx",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_website_src_app_blog_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\website\\src\\app\\blog\\page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_website_src_app_blog_page_tsx",
+      "target": "page_blogindexpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\website\\src\\app\\blog\\page.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "page_blogindexpage",
+      "callee": "map",
+      "source_file": "apps\\website\\src\\app\\blog\\page.tsx",
+      "source_location": "L20"
+    }
+  ]
+}

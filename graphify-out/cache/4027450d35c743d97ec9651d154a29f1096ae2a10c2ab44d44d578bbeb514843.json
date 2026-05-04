@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_cache",
+      "label": "@t/cache bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_cache_di_key_local",
+      "label": "CACHE_DEPENDENCY_KEY local literal pending hoist",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_cache_redlock_caveat",
+      "label": "withLock single-node Redlock caveat",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_cache",
+      "target": "prd_pkg_cache_di_key_local",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_cache",
+      "target": "prd_pkg_cache_redlock_caveat",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_cache",
+      "target": "readme_cache",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_cache_di_key_local",
+      "target": "prd_pkg_di_tokens_missing",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/cache.md",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": []
+}

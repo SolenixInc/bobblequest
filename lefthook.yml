@@ -1,0 +1,35 @@
+# Local pre-commit gate. Runs format + lint on staged files (Biome's {staged_files}
+# placeholder), and runs typecheck + test scoped to affected packages via
+# turbo's --filter=...[HEAD] (staged+unstaged working-tree delta vs HEAD, plus
+# every dependent package). Heavy CI-only checks (full build, integration,
+# size-limit, OS matrix, gitleaks-full, SBOM) live in .github/workflows/ci.yml.
+#
+# rtk is on PATH but plain bunx is used here for portability across team members.
+# To opt into rtk tracking per-command, swap: bunx X  ->  rtk proxy bunx X
+
+pre-commit:
+  parallel: true
+  commands:
+    format-check:
+      glob: "*.{ts,tsx,mts,cts,js,jsx,mjs,cjs,json,md,yml,yaml}"
+      run: bunx biome format --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+
+    lint:
+      glob: "*.{ts,tsx,mts,cts,js,jsx,mjs,cjs}"
+      run: bunx biome check --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+
+    typecheck:
+      glob: "*.{ts,tsx,mts,cts}"
+      run: bunx turbo run typecheck --filter=...[HEAD] --output-logs=errors-only
+
+    test:
+      glob: "*.{ts,tsx,mts,cts}"
+      run: bunx turbo run test --filter=...[HEAD] --output-logs=errors-only
+
+    secret-scan:
+      run: 'command -v gitleaks >/dev/null 2>&1 && gitleaks git --pre-commit --redact --verbose || echo "  gitleaks not installed locally; secret scan skipped (CI runs full scan)"'
+
+commit-msg:
+  commands:
+    commitlint:
+      run: bunx commitlint --edit {1}

@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_db_src_entities_types_user_ts",
+      "label": "User.ts",
+      "file_type": "code",
+      "source_file": "packages\\db\\src\\entities\\types\\User.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "readme_db_migrations",
+      "label": "@t/db migrations README",
+      "file_type": "document",
+      "source_file": "packages/db/migrations/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_db_migrations_pgvector_first",
+      "label": "0000_enable_pgvector.sql must run first",
+      "file_type": "document",
+      "source_file": "packages/db/migrations/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_db_migrations",
+      "target": "readme_db_migrations_pgvector_first",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/db/migrations/README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

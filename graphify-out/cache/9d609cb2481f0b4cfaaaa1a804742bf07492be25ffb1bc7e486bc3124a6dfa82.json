@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_src_entities_ports_billingrepository_ts",
+      "label": "BillingRepository.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\entities\\ports\\BillingRepository.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_src_entities_ports_billingrepository_ts",
+      "target": "stripe",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\ports\\BillingRepository.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_src_entities_ports_billingrepository_ts",
+      "target": "packages_billing_src_entities_schemas_entitlementschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\ports\\BillingRepository.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_src_entities_ports_billingrepository_ts",
+      "target": "packages_billing_src_entities_schemas_subscriptionschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\ports\\BillingRepository.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_src_entities_ports_billingrepository_ts",
+      "target": "packages_billing_src_entities_schemas_webhookeventschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\ports\\BillingRepository.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_src_entities_ports_billingrepository_ts",
+      "target": "packages_billing_src_entities_types_billingsource_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\ports\\BillingRepository.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

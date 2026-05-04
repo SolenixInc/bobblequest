@@ -1,0 +1,12 @@
+{
+  "name": "react-frontend-skills",
+  "default": "frontend-design",
+  "members": [
+    "frontend-design",
+    "next-best-practices",
+    "nextjs-app-router-patterns",
+    "vercel-react-best-practices",
+    "react-state-management",
+    "shadcn"
+  ]
+}

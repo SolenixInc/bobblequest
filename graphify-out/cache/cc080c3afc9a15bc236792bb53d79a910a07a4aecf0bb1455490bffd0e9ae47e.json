@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "label": "convertZodErrorToValidationError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "label": "convertZodErrorToValidationError()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "packages_errors_delivery_utils_extractvalidationerrors_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "callee": "extractValidationErrors",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "callee": "join",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "callee": "map",
+      "source_file": "packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L16"
+    }
+  ]
+}

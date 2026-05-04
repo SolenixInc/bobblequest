@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_desktop_src_renderer_components_login_tsx",
+      "label": "Login.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_login",
+      "label": "Login()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_desktop_src_renderer_components_login_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_desktop_src_renderer_components_login_tsx",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_desktop_src_renderer_lib_clerk",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_desktop_src_renderer_components_login_tsx",
+      "target": "login_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "login_login",
+      "callee": "useSignIn",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L20"
+    }
+  ]
+}

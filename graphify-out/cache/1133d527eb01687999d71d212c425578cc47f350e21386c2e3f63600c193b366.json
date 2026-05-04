@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "api_apps_api_status",
+      "label": "apps/api bootstrap wiring status",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_composition_root",
+      "label": "Composition root gap (DI container in src/index.ts)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_supabase_legacy_context",
+      "label": "Legacy Supabase context to replace with Clerk",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_webhooks_routes",
+      "label": "Webhooks: /webhooks/clerk + /webhooks/revenuecat",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "api_apps_api_status",
+      "target": "api_composition_root",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_apps_api_status",
+      "target": "api_supabase_legacy_context",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_apps_api_status",
+      "target": "api_webhooks_routes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_supabase_legacy_context",
+      "target": "database_supabase_legacy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_composition_root",
+      "target": "phase_06_di_registrar",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "docs/prd-status/apps/api.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

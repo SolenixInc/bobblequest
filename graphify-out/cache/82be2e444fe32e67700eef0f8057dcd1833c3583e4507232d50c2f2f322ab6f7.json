@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_delivery_types_errorwithstatuscode_ts",
+      "label": "ErrorWithStatusCode.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\types\\ErrorWithStatusCode.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

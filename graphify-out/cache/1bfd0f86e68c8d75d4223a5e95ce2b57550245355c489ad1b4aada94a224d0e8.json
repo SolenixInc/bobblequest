@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "gaps_bootstrap",
+      "label": "Bootstrap gaps & blockers",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gaps_p0_auth_decision",
+      "label": "P0 auth provider decision (Clerk vs cookie+JWT)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gaps_p0_db_strategy",
+      "label": "P0 DB strategy (Supabase -> Railway Postgres)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gaps_p0_package_scope",
+      "label": "P0 package-scope naming (@template/* vs @t/*)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gaps_p1_errors_pkg",
+      "label": "P1 @t/errors not installable",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gaps_p1_di_tokens",
+      "label": "P1 DI tokens registry incomplete",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gaps_blocks_graph",
+      "label": "Blocks graph (P0->P1->P2->P3)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "gaps_bootstrap",
+      "target": "gaps_p0_auth_decision",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "gaps_p0_db_strategy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "gaps_p0_package_scope",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "gaps_p1_errors_pkg",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "gaps_p1_di_tokens",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "gaps_blocks_graph",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "ci_check_suite",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "api_apps_api_status",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_p0_db_strategy",
+      "target": "database_db_package",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_p1_di_tokens",
+      "target": "phase_06_dependency_keys",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gaps_bootstrap",
+      "target": "logging_pino_rejected_rationale",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "docs/prd-status/gaps.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

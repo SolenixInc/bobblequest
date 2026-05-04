@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "infra_status",
+      "label": "Monorepo infra & tooling status",
+      "file_type": "document",
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "infra_turbo_build_graph",
+      "label": "Turborepo build graph + tasks",
+      "file_type": "document",
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "infra_no_remote_cache",
+      "label": "Gap: no remote turbo cache",
+      "file_type": "document",
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "infra_alias_inconsistency",
+      "label": "Gap: @t/* alias inconsistency",
+      "file_type": "document",
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "infra_status",
+      "target": "infra_turbo_build_graph",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "infra_status",
+      "target": "infra_no_remote_cache",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "infra_status",
+      "target": "infra_alias_inconsistency",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "infra_status",
+      "target": "matrix_status_matrix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/infra.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

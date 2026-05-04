@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "readme_cache",
+      "label": "@t/cache README",
+      "file_type": "document",
+      "source_file": "packages/cache/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_cache_port_surface",
+      "label": "CacheClient port (get/set/del/incr/withLock/pubsub)",
+      "file_type": "document",
+      "source_file": "packages/cache/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_cache",
+      "target": "readme_cache_port_surface",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/cache/README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

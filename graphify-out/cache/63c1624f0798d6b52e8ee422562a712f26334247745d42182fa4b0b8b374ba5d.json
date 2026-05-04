@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "phase_06_di_registrar",
+      "label": "Phase 06 - DI Registrar",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "phase_06_dependency_injection_pkg",
+      "label": "@t/dependency-injection (created in Phase 06)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "phase_06_dependency_keys",
+      "label": "dependencyKeys.global.ANALYTICS",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "phase_06_di_registrar",
+      "target": "phase_05_implementations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_06_di_registrar",
+      "target": "analytics_register_di",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_06_di_registrar",
+      "target": "phase_06_dependency_injection_pkg",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "phase_06_di_registrar",
+      "target": "phase_06_dependency_keys",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-06-di-registrar.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

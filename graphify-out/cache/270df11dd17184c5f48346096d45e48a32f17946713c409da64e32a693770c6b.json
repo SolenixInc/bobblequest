@@ -1,0 +1,238 @@
+{
+  "nodes": [
+    {
+      "id": "conventions_doc",
+      "label": "Coding Conventions Reference",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_clean_arch",
+      "label": "Clean Architecture",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_srp",
+      "label": "Single Responsibility Principle",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_type_safety",
+      "label": "Type Safety (Zero any, Zod boundaries)",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_error_handling",
+      "label": "Error Handling (AppError base class)",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_naming",
+      "label": "Naming Conventions Table",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_imports",
+      "label": "Import Rules and Layer Dependency Direction",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_di_config",
+      "label": "Dependency Injection and Configuration",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_testing",
+      "label": "Testing (Bun test, SUCCESS/ERROR/EDGE)",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_supabase_patterns",
+      "label": "Supabase Patterns",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conventions_frontend_patterns",
+      "label": "Frontend Patterns (Next.js, Zustand, NativeWind)",
+      "file_type": "document",
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "conventions_doc",
+      "target": "conventions_clean_arch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_srp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_type_safety",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_error_handling",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_naming",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_imports",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_di_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_testing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_supabase_patterns",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_doc",
+      "target": "conventions_frontend_patterns",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "conventions_clean_arch",
+      "target": "architecture_module_shape",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "CONVENTIONS.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

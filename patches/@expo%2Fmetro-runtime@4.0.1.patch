@@ -1,0 +1,26 @@
+diff --git a/src/messageSocket.native.ts b/src/messageSocket.native.ts
+index 1d7c93325d1af908040d6f5b7ccf7e990b040c3c..c5976562ee4f0a217f6cd135825b6e92917e9117 100644
+--- a/src/messageSocket.native.ts
++++ b/src/messageSocket.native.ts
+@@ -1,7 +1,9 @@
+ /* eslint-env browser */
+ 
+ function createWebSocketConnection(path: string = '/message') {
+-  const getDevServer = require('react-native/Libraries/Core/Devtools/getDevServer');
++  const getDevServerMod = require('react-native/Libraries/Core/Devtools/getDevServer');
++  // Metro interop: `export default` modules may arrive as { default: fn } via CJS require.
++  const getDevServer = getDevServerMod.default ?? getDevServerMod;
+   const devServer = getDevServer();
+   if (!devServer.bundleLoadedFromServer) {
+     throw new Error('Cannot create devtools websocket connections in embedded environments.');
+@@ -9,7 +11,9 @@ function createWebSocketConnection(path: string = '/message') {
+ 
+   const devServerUrl = new URL(devServer.url);
+   const serverScheme = devServerUrl.protocol === 'https:' ? 'wss' : 'ws';
+-  const WebSocket = require('react-native/Libraries/WebSocket/WebSocket');
++  const WebSocketMod = require('react-native/Libraries/WebSocket/WebSocket');
++  // Metro interop: `export default` class may arrive as { default: class } via CJS require.
++  const WebSocket = WebSocketMod.default ?? WebSocketMod;
+   return new WebSocket(`${serverScheme}://${devServerUrl.host}${path}`);
+ }
+ 

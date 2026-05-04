@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "prd_mobile_status",
+      "label": "apps/mobile bootstrap status",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_mobile_auth_supabase_wrong",
+      "label": "Mobile auth stack still Supabase, not Clerk",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_mobile_nativewind_pin",
+      "label": "Mobile Tailwind v3 pinned until NativeWind v5",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_mobile_revenuecat_missing",
+      "label": "Mobile RevenueCat RN SDK missing",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_mobile_status",
+      "target": "prd_mobile_auth_supabase_wrong",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_mobile_status",
+      "target": "prd_mobile_nativewind_pin",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_mobile_status",
+      "target": "prd_mobile_revenuecat_missing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_mobile_auth_supabase_wrong",
+      "target": "prd_web_auth_migration_incomplete",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/prd-status/apps/mobile.md",
+      "source_location": null,
+      "weight": 0.9
+    }
+  ],
+  "hyperedges": []
+}

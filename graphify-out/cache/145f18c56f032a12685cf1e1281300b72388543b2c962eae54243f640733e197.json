@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_requestlogger_ts",
+      "label": "requestLogger.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\requestLogger.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "requestlogger_requestlogger",
+      "label": "RequestLogger",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\requestLogger.ts",
+      "source_location": "L8"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_requestlogger_ts",
+      "target": "packages_logging_infrastructure_winstonlogger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\requestLogger.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_requestlogger_ts",
+      "target": "requestlogger_requestlogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\requestLogger.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

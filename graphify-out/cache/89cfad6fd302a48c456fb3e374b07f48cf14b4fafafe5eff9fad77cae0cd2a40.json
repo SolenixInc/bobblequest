@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_delivery_utils_hasstatuscode_ts",
+      "label": "hasStatusCode.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\hasStatusCode.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "hasstatuscode_hasstatuscode",
+      "label": "hasStatusCode()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\hasStatusCode.ts",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_delivery_utils_hasstatuscode_ts",
+      "target": "packages_errors_delivery_types_errorwithstatuscode_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\hasStatusCode.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_hasstatuscode_ts",
+      "target": "hasstatuscode_hasstatuscode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\hasStatusCode.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

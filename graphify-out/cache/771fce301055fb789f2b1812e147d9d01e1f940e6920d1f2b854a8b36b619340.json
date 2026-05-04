@@ -1,0 +1,416 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "label": "otlpTransport.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport",
+      "label": "OTLPWinstonTransport",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L112"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L145"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_shouldattemptexport",
+      "label": ".shouldAttemptExport()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L214"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_recordsuccess",
+      "label": ".recordSuccess()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L245"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_recordfailure",
+      "label": ".recordFailure()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L259"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_log",
+      "label": ".log()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L311"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_shutdown",
+      "label": ".shutdown()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L385"
+    },
+    {
+      "id": "otlptransport_otlpwinstontransport_getstatus",
+      "label": ".getStatus()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L418"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "winston",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "winston_transport",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "sdk_logs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "exporter_logs_otlp_http",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "resources",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "semantic_conventions",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "incubating",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "api_logs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "packages_logging_entities_types_otlpconfig_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "packages_logging_version_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_transports_otlptransport_ts",
+      "target": "otlptransport_otlpwinstontransport",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_shouldattemptexport",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_recordsuccess",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L245",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_recordfailure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L259",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_log",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L311",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_shutdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L385",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport",
+      "target": "otlptransport_otlpwinstontransport_getstatus",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L418",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport_log",
+      "target": "otlptransport_otlpwinstontransport_shouldattemptexport",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L322",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport_log",
+      "target": "otlptransport_otlpwinstontransport_recordsuccess",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L355",
+      "weight": 1.0
+    },
+    {
+      "source": "otlptransport_otlpwinstontransport_log",
+      "target": "otlptransport_otlpwinstontransport_recordfailure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L359",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "super",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L146"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "setMaxListeners",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "merge",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "defaultResource",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "resourceFromAttributes",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "min",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L181"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "setGlobalLoggerProvider",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L191"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_constructor",
+      "callee": "getLogger",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L194"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_shouldattemptexport",
+      "callee": "now",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L215"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_shouldattemptexport",
+      "callee": "debug",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L225"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_recordsuccess",
+      "callee": "info",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L247"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_recordfailure",
+      "callee": "now",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L261"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_recordfailure",
+      "callee": "error",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L265"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_recordfailure",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L275"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_recordfailure",
+      "callee": "error",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L281"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_recordfailure",
+      "callee": "String",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L290"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_log",
+      "callee": "callback",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L317"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_log",
+      "callee": "callback",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L324"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_log",
+      "callee": "emit",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L341"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_log",
+      "callee": "callback",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L364"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_shutdown",
+      "callee": "race",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L395"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_shutdown",
+      "callee": "finally",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L396"
+    },
+    {
+      "caller_nid": "otlptransport_otlpwinstontransport_shutdown",
+      "callee": "clearTimeout",
+      "source_file": "packages\\logging\\infrastructure\\transports\\otlpTransport.ts",
+      "source_location": "L404"
+    }
+  ]
+}

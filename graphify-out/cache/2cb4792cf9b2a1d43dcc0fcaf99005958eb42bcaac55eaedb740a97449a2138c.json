@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "apps_desktop_src_renderer_hooks_usenavigate_ts",
+      "label": "useNavigate.ts",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\renderer\\hooks\\useNavigate.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "usenavigate_usenavigate",
+      "label": "useNavigate()",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\renderer\\hooks\\useNavigate.ts",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_desktop_src_renderer_hooks_usenavigate_ts",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\hooks\\useNavigate.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_renderer_hooks_usenavigate_ts",
+      "target": "usenavigate_usenavigate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\hooks\\useNavigate.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "usenavigate_usenavigate",
+      "callee": "useReactNavigate",
+      "source_file": "apps\\desktop\\src\\renderer\\hooks\\useNavigate.ts",
+      "source_location": "L4"
+    }
+  ]
+}

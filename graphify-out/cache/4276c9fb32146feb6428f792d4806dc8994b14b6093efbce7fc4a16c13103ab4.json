@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "label": "composition.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "composition_buildcontainer",
+      "label": "buildContainer()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "cache",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "db",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "auth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "analytics",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "billing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_composition_ts",
+      "target": "composition_buildcontainer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "createContainer",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerConfigRepo",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "resolve",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerLoggerFactoryDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerLoggerDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "resolve",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerCacheDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerDbDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerAuthDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerAnalyticsDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "registerBillingDI",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "composition_buildcontainer",
+      "callee": "warning",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\composition.ts",
+      "source_location": "L57"
+    }
+  ]
+}

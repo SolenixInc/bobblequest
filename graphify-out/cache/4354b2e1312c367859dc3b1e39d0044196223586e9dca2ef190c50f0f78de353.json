@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_tests_cachekeyschema_test_ts",
+      "label": "CacheKeySchema.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\CacheKeySchema.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_cache_tests_cachekeyschema_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\CacheKeySchema.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_cachekeyschema_test_ts",
+      "target": "packages_cache_src_entities_schemas_cachekeyschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\CacheKeySchema.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

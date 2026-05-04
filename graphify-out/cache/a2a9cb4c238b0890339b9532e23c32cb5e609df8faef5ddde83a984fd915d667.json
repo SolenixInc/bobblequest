@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_entities_types_service_ts",
+      "label": "Service.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\entities\\types\\Service.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

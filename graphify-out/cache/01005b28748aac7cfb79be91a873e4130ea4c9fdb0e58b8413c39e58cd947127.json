@@ -1,0 +1,497 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "label": "RedisCacheImpl.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl",
+      "label": "RedisCacheImpl",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_get",
+      "label": ".get()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_set",
+      "label": ".set()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_del",
+      "label": ".del()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L60"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_incr",
+      "label": ".incr()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_withlock",
+      "label": ".withLock()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L70"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_publish",
+      "label": ".publish()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L108"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_subscribe",
+      "label": ".subscribe()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L112"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_close",
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L146"
+    },
+    {
+      "id": "rediscacheimpl_rediscacheimpl_ensuresubscriber",
+      "label": ".ensureSubscriber()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L157"
+    },
+    {
+      "id": "rediscacheimpl_createredisclient",
+      "label": "createRedisClient()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L185"
+    },
+    {
+      "id": "rediscacheimpl_sleep",
+      "label": "sleep()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L200"
+    },
+    {
+      "id": "rediscacheimpl_safequit",
+      "label": "safeQuit()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L210"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "node_crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "ioredis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "packages_cache_src_entities_ports_cacheclient_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "rediscacheimpl_rediscacheimpl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_get",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_set",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_del",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_incr",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_withlock",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_publish",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_subscribe",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_close",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl",
+      "target": "rediscacheimpl_rediscacheimpl_ensuresubscriber",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "rediscacheimpl_createredisclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "rediscacheimpl_sleep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L200",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_infrastructure_rediscacheimpl_ts",
+      "target": "rediscacheimpl_safequit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_constructor",
+      "target": "rediscacheimpl_createredisclient",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_withlock",
+      "target": "rediscacheimpl_rediscacheimpl_set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_withlock",
+      "target": "rediscacheimpl_sleep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_subscribe",
+      "target": "rediscacheimpl_rediscacheimpl_ensuresubscriber",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_subscribe",
+      "target": "rediscacheimpl_rediscacheimpl_get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_subscribe",
+      "target": "rediscacheimpl_rediscacheimpl_set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "rediscacheimpl_rediscacheimpl_close",
+      "target": "rediscacheimpl_safequit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L148",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_constructor",
+      "callee": "super",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_get",
+      "callee": "parse",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_set",
+      "callee": "stringify",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_incr",
+      "callee": "String",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_incr",
+      "callee": "eval",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_incr",
+      "callee": "Number",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "randomUUID",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "now",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "now",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "min",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "max",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "now",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "fn",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_withlock",
+      "callee": "eval",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_publish",
+      "callee": "stringify",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_subscribe",
+      "callee": "add",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_close",
+      "callee": "push",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_close",
+      "callee": "push",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_close",
+      "callee": "clear",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L153"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_close",
+      "callee": "all",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_ensuresubscriber",
+      "callee": "duplicate",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "rediscacheimpl_rediscacheimpl_ensuresubscriber",
+      "callee": "on",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L162"
+    },
+    {
+      "caller_nid": "rediscacheimpl_sleep",
+      "callee": "resolve",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L201"
+    },
+    {
+      "caller_nid": "rediscacheimpl_safequit",
+      "callee": "quit",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L212"
+    },
+    {
+      "caller_nid": "rediscacheimpl_safequit",
+      "callee": "disconnect",
+      "source_file": "packages\\cache\\src\\infrastructure\\RedisCacheImpl.ts",
+      "source_location": "L215"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_src_infrastructure_errors_ts",
+      "label": "errors.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "errors_billingwebhooksignatureerror",
+      "label": "BillingWebhookSignatureError",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "errors_billingwebhooksignatureerror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "errors_billingprovidererror",
+      "label": "BillingProviderError",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "errors_billingprovidererror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L36"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_src_infrastructure_errors_ts",
+      "target": "packages_billing_src_entities_types_billingsource_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_src_infrastructure_errors_ts",
+      "target": "errors_billingwebhooksignatureerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_billingwebhooksignatureerror",
+      "target": "errors_billingwebhooksignatureerror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_src_infrastructure_errors_ts",
+      "target": "errors_billingprovidererror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_billingprovidererror",
+      "target": "errors_billingprovidererror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "errors_billingwebhooksignatureerror_constructor",
+      "callee": "super",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "errors_billingwebhooksignatureerror_constructor",
+      "callee": "setPrototypeOf",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "errors_billingprovidererror_constructor",
+      "callee": "super",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "errors_billingprovidererror_constructor",
+      "callee": "setPrototypeOf",
+      "source_file": "packages\\billing\\src\\infrastructure\\errors.ts",
+      "source_location": "L45"
+    }
+  ]
+}

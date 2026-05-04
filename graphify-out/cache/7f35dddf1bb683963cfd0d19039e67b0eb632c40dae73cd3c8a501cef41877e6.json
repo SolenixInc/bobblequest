@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "label": "errorHandler.test.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "errorhandler_test_buildapp",
+      "label": "buildApp()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "errorhandler_test_hit",
+      "label": "hit()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L33"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "hono",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_errorhandler_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_notfounderror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_unauthorizederror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_validationerror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_internalservererror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "errorhandler_test_buildapp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_delivery_errorhandler_test_ts",
+      "target": "errorhandler_test_hit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "errorhandler_test_buildapp",
+      "callee": "onError",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "errorhandler_test_buildapp",
+      "callee": "get",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "errorhandler_test_hit",
+      "callee": "request",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\delivery\\errorHandler.test.ts",
+      "source_location": "L34"
+    }
+  ]
+}

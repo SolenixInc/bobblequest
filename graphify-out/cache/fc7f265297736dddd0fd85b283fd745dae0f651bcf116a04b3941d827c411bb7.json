@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_entities_types_reservedsuperprops_ts",
+      "label": "ReservedSuperProps.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\entities\\types\\ReservedSuperProps.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "reservedsuperprops_isreservedkey",
+      "label": "isReservedKey()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\entities\\types\\ReservedSuperProps.ts",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_entities_types_reservedsuperprops_ts",
+      "target": "reservedsuperprops_isreservedkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\entities\\types\\ReservedSuperProps.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "reservedsuperprops_isreservedkey",
+      "callee": "includes",
+      "source_file": "packages\\analytics\\src\\entities\\types\\ReservedSuperProps.ts",
+      "source_location": "L13"
+    }
+  ]
+}

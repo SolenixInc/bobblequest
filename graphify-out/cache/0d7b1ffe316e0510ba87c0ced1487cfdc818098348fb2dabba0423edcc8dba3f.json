@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_schemas_redisconfigschema_ts",
+      "label": "RedisConfigSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "redisconfigschema_resolveredisconfig",
+      "label": "resolveRedisConfig()",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L93"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_entities_schemas_redisconfigschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_redisconfigschema_ts",
+      "target": "redisconfigschema_resolveredisconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "redisconfigschema_resolveredisconfig",
+      "callee": "toLowerCase",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "redisconfigschema_resolveredisconfig",
+      "callee": "trim",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "redisconfigschema_resolveredisconfig",
+      "callee": "parseInt",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "redisconfigschema_resolveredisconfig",
+      "callee": "parseInt",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L103"
+    },
+    {
+      "caller_nid": "redisconfigschema_resolveredisconfig",
+      "callee": "parse",
+      "source_file": "packages\\config\\entities\\schemas\\RedisConfigSchema.ts",
+      "source_location": "L106"
+    }
+  ]
+}

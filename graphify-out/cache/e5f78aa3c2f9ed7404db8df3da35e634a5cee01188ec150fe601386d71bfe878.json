@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "apps_mobile_src_lib_providers_tsx",
+      "label": "providers.tsx",
+      "file_type": "code",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "providers_providers",
+      "label": "Providers()",
+      "file_type": "code",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_mobile_src_lib_providers_tsx",
+      "target": "react_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_src_lib_providers_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_src_lib_providers_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_src_lib_providers_tsx",
+      "target": "apps_mobile_src_lib_supabase",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_src_lib_providers_tsx",
+      "target": "apps_mobile_src_lib_trpc",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_src_lib_providers_tsx",
+      "target": "providers_providers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "providers_providers",
+      "callee": "useState",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "providers_providers",
+      "callee": "useState",
+      "source_file": "apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L9"
+    }
+  ]
+}

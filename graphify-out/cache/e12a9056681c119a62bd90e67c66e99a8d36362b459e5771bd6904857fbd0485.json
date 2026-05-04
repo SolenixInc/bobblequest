@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "id": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "label": "NoopAuthProvider.ts",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "noopauthprovider_noopauthprovider",
+      "label": "NoopAuthProvider",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "noopauthprovider_noopauthprovider_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "noopauthprovider_noopauthprovider_verify",
+      "label": ".verify()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "noopauthprovider_noopauthprovider_currentuser",
+      "label": ".currentUser()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "noopauthprovider_noopauthprovider_syncfromwebhook",
+      "label": ".syncFromWebhook()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L52"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "target": "packages_auth_src_entities_ports_authprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "target": "packages_auth_src_entities_schemas_authuserschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "target": "packages_auth_src_entities_schemas_webhookeventschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "target": "packages_auth_src_entities_types_authprovideroptions_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "target": "packages_auth_src_entities_types_usersynccallback_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_noop_noopauthprovider_ts",
+      "target": "noopauthprovider_noopauthprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "noopauthprovider_noopauthprovider",
+      "target": "noopauthprovider_noopauthprovider_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "noopauthprovider_noopauthprovider",
+      "target": "noopauthprovider_noopauthprovider_verify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "noopauthprovider_noopauthprovider",
+      "target": "noopauthprovider_noopauthprovider_currentuser",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "noopauthprovider_noopauthprovider",
+      "target": "noopauthprovider_noopauthprovider_syncfromwebhook",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "noopauthprovider_noopauthprovider_constructor",
+      "callee": "super",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "noopauthprovider_noopauthprovider_verify",
+      "callee": "reject",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "noopauthprovider_noopauthprovider_verify",
+      "callee": "resolve",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "noopauthprovider_noopauthprovider_currentuser",
+      "callee": "resolve",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "noopauthprovider_noopauthprovider_currentuser",
+      "callee": "resolve",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "noopauthprovider_noopauthprovider_syncfromwebhook",
+      "callee": "userSync",
+      "source_file": "packages\\auth\\src\\infrastructure\\noop\\NoopAuthProvider.ts",
+      "source_location": "L54"
+    }
+  ]
+}

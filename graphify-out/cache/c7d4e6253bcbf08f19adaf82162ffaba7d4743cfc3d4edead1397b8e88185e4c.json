@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "label": "registerAnalyticsDI.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registeranalyticsdi_test_fakeconfig",
+      "label": "fakeConfig()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "packages_analytics_src_dependency_injection_registeranalyticsdi",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "packages_analytics_src_infrastructure_noopanalyticstracker",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_dependency_injection_registeranalyticsdi_test_ts",
+      "target": "registeranalyticsdi_test_fakeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\dependency-injection\\registerAnalyticsDI.test.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

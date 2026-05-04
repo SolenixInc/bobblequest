@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_infrastructure_5xx_internalservererror_ts",
+      "label": "InternalServerError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "internalservererror_internalservererror",
+      "label": "InternalServerError",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "internalservererror_internalservererror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "internalservererror_internalservererror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L43"
+    },
+    {
+      "id": "internalservererror_internalservererror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "internalservererror_internalservererror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L62"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_infrastructure_5xx_internalservererror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_internalservererror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_internalservererror_ts",
+      "target": "internalservererror_internalservererror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "internalservererror_internalservererror",
+      "target": "internalservererror_internalservererror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "internalservererror_internalservererror",
+      "target": "internalservererror_internalservererror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "internalservererror_internalservererror",
+      "target": "internalservererror_internalservererror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "internalservererror_internalservererror",
+      "target": "internalservererror_internalservererror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "internalservererror_internalservererror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\InternalServerError.ts",
+      "source_location": "L67"
+    }
+  ]
+}

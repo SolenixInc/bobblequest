@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "label": "NoOpAnalyticsTracker.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker",
+      "label": "NoOpAnalyticsTracker",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_capture",
+      "label": ".capture()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_captureexception",
+      "label": ".captureException()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_capturerevenue",
+      "label": ".captureRevenue()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_capturellm",
+      "label": ".captureLlm()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_identify",
+      "label": ".identify()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L79"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_alias",
+      "label": ".alias()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L91"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_group",
+      "label": ".group()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L103"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_sessionid",
+      "label": ".sessionId()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L120"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_isfeatureenabled",
+      "label": ".isFeatureEnabled()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L124"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_getallflags",
+      "label": ".getAllFlags()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L128"
+    },
+    {
+      "id": "noopanalyticstracker_noopanalyticstracker_shutdown",
+      "label": ".shutdown()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L134"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "target": "packages_analytics_src_entities_ports_analyticstracker_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "target": "packages_analytics_src_entities_types_analyticstrackeroptions_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "target": "packages_analytics_src_entities_types_llmevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "target": "packages_analytics_src_entities_types_revenueevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "target": "noopanalyticstracker_noopanalyticstracker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_capture",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_captureexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_capturerevenue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_capturellm",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_identify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_alias",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_group",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_sessionid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_isfeatureenabled",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_getallflags",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "noopanalyticstracker_noopanalyticstracker",
+      "target": "noopanalyticstracker_noopanalyticstracker_shutdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L134",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_constructor",
+      "callee": "super",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_capture",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_captureexception",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_capturerevenue",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_capturellm",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_identify",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_alias",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L92"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_group",
+      "callee": "debug",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_isfeatureenabled",
+      "callee": "resolve",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_getallflags",
+      "callee": "resolve",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "noopanalyticstracker_noopanalyticstracker_shutdown",
+      "callee": "resolve",
+      "source_file": "packages\\analytics\\src\\infrastructure\\NoOpAnalyticsTracker.ts",
+      "source_location": "L135"
+    }
+  ]
+}

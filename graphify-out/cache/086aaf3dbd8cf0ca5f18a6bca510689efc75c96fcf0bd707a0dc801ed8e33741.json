@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "label": "registerDbDI.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerdbdi_test_fakeconfig",
+      "label": "fakeConfig()",
+      "file_type": "code",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L40"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "packages_db_src_dependency_injection_registerdbdi_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "packages_db_src_entities_ports_dbclient_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "packages_db_src_entities_ports_embeddingstore_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "packages_db_src_entities_ports_userrepository_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "packages_db_src_infrastructure_drizzle_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "packages_db_src_infrastructure_in_memory_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_db_tests_dependency_injection_registerdbdi_test_ts",
+      "target": "registerdbdi_test_fakeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\tests\\dependency-injection\\registerDbDI.test.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

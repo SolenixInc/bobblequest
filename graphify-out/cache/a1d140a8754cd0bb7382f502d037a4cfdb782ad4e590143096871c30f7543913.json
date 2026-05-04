@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_auth",
+      "label": "@t/auth bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_auth_clerk_target",
+      "label": "Auth target: Clerk (verify+currentUser+syncFromWebhook)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_auth_db_migration_blocker",
+      "label": "users.clerk_user_id migration blocker",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_auth",
+      "target": "prd_pkg_auth_clerk_target",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_auth",
+      "target": "prd_pkg_auth_db_migration_blocker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_auth_db_migration_blocker",
+      "target": "prd_pkg_db_clerk_user_col",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_auth",
+      "target": "readme_auth",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_auth_clerk_target",
+      "target": "prd_desktop_auth_stale",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_auth_clerk_target",
+      "target": "prd_mobile_auth_supabase_wrong",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_auth_clerk_target",
+      "target": "prd_web_auth_migration_incomplete",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/auth.md",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "auth_migration_clerk_across_apps",
+      "label": "Clerk auth migration across all client apps",
+      "nodes": [
+        "prd_desktop_auth_stale",
+        "prd_mobile_auth_supabase_wrong",
+        "prd_web_auth_migration_incomplete",
+        "prd_pkg_auth_clerk_target"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "docs/prd-status/packages/auth.md"
+    }
+  ]
+}

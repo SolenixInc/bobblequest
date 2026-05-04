@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "id": "current_state_diagram",
+      "label": "Monorepo current state diagram",
+      "file_type": "document",
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "current_state_apps_block",
+      "label": "apps/ product surfaces (web/website/mobile/desktop)",
+      "file_type": "document",
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "current_state_api_block",
+      "label": "apps/api Hono+tRPC server",
+      "file_type": "document",
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "current_state_db_block",
+      "label": "packages/db (Supabase)",
+      "file_type": "document",
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "current_state_config_block",
+      "label": "packages/config (shared tooling)",
+      "file_type": "document",
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "current_state_external_sdk",
+      "label": "External @nutraforgetechnologies/* SDK (TODO markers)",
+      "file_type": "document",
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "current_state_diagram",
+      "target": "current_state_apps_block",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_diagram",
+      "target": "current_state_api_block",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_diagram",
+      "target": "current_state_db_block",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_diagram",
+      "target": "current_state_config_block",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_diagram",
+      "target": "current_state_external_sdk",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_apps_block",
+      "target": "current_state_api_block",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_api_block",
+      "target": "current_state_db_block",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_db_block",
+      "target": "database_supabase_legacy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "current_state_db_block",
+      "target": "gaps_p0_db_strategy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/diagrams/current_state.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_insufficientstorageerror_ts",
+      "label": "InsufficientStorageError.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "insufficientstorageerror_insufficientstorageerror",
+      "label": "InsufficientStorageError",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "insufficientstorageerror_insufficientstorageerror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "insufficientstorageerror_insufficientstorageerror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "insufficientstorageerror_insufficientstorageerror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "insufficientstorageerror_insufficientstorageerror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L63"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_insufficientstorageerror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_insufficientstorageerror_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_ports_apperror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_insufficientstorageerror_ts",
+      "target": "insufficientstorageerror_insufficientstorageerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "insufficientstorageerror_insufficientstorageerror",
+      "target": "insufficientstorageerror_insufficientstorageerror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "insufficientstorageerror_insufficientstorageerror",
+      "target": "insufficientstorageerror_insufficientstorageerror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "insufficientstorageerror_insufficientstorageerror",
+      "target": "insufficientstorageerror_insufficientstorageerror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "insufficientstorageerror_insufficientstorageerror",
+      "target": "insufficientstorageerror_insufficientstorageerror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "insufficientstorageerror_insufficientstorageerror_constructor",
+      "callee": "super",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\InsufficientStorageError.ts",
+      "source_location": "L64"
+    }
+  ]
+}

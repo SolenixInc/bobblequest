@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_dependency_injection_src_entities_dependencykeys_ts",
+      "label": "dependencyKeys.ts",
+      "file_type": "code",
+      "source_file": "packages\\dependency-injection\\src\\entities\\dependencyKeys.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

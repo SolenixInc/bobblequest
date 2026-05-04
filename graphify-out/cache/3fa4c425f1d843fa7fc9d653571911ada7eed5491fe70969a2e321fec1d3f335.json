@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_desktop_src_renderer_lib_clerk_ts",
+      "label": "clerk.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\desktop\\src\\renderer\\lib\\clerk.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

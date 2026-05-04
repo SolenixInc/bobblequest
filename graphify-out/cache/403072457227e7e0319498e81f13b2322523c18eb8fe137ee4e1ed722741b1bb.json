@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_delivery_errorhandler_ts",
+      "label": "errorHandler.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "errorhandler_errorhandler",
+      "label": "errorHandler()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L53"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "hono",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "packages_errors_delivery_utils_builderrormetadata_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "packages_errors_delivery_utils_determinestatuscode_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "packages_errors_delivery_utils_logerroratappropriatelevel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_errorhandler_ts",
+      "target": "errorhandler_errorhandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "createGlobalLogger",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "convertZodErrorToValidationError",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "determineStatusCode",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "buildErrorMetadata",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "toAppErrorResponse",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "stringify",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "logErrorAtAppropriateLevel",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "json",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "toUnknownErrorResponse",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "stringify",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L97"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "logErrorAtAppropriateLevel",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "errorhandler_errorhandler",
+      "callee": "json",
+      "source_file": "packages\\errors\\delivery\\errorHandler.ts",
+      "source_location": "L103"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "label": "RequestAnalyticsTrackerImpl.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent",
+      "label": "FakeParent",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_capture",
+      "label": ".capture()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_captureexception",
+      "label": ".captureException()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_capturerevenue",
+      "label": ".captureRevenue()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_capturellm",
+      "label": ".captureLlm()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_identify",
+      "label": ".identify()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_alias",
+      "label": ".alias()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L41"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_group",
+      "label": ".group()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_sessionid",
+      "label": ".sessionId()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_isfeatureenabled",
+      "label": ".isFeatureEnabled()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_getallflags",
+      "label": ".getAllFlags()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_fakeparent_shutdown",
+      "label": ".shutdown()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_maketracker",
+      "label": "makeTracker()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L72"
+    },
+    {
+      "id": "requestanalyticstrackerimpl_test_capturecall",
+      "label": "captureCall()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L90"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "packages_analytics_src_entities_ports_analyticstracker",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "packages_analytics_src_entities_types_llmevent",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "packages_analytics_src_entities_types_revenueevent",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "requestanalyticstrackerimpl_test_fakeparent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_capture",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_captureexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_capturerevenue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_capturellm",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_identify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_alias",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_group",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_sessionid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_isfeatureenabled",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_getallflags",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "requestanalyticstrackerimpl_test_fakeparent",
+      "target": "requestanalyticstrackerimpl_test_fakeparent_shutdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "requestanalyticstrackerimpl_test_maketracker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_tests_infrastructure_requestanalyticstrackerimpl_test_ts",
+      "target": "requestanalyticstrackerimpl_test_capturecall",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_capture",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_captureexception",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_capturerevenue",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_capturellm",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_identify",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_alias",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_group",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_isfeatureenabled",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_getallflags",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_fakeparent_shutdown",
+      "callee": "push",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "requestanalyticstrackerimpl_test_capturecall",
+      "callee": "find",
+      "source_file": "packages\\analytics\\tests\\infrastructure\\RequestAnalyticsTrackerImpl.test.ts",
+      "source_location": "L91"
+    }
+  ]
+}

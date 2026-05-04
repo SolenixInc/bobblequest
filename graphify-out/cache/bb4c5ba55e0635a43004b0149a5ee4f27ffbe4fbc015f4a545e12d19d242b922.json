@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "apps_desktop_src_renderer_components_login_tsx",
+      "label": "Login.tsx",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_login",
+      "label": "Login()",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_desktop_src_renderer_components_login_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_renderer_components_login_tsx",
+      "target": "apps_desktop_src_renderer_lib_supabase",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_renderer_components_login_tsx",
+      "target": "login_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "login_login",
+      "callee": "useState",
+      "source_file": "apps\\desktop\\src\\renderer\\components\\Login.tsx",
+      "source_location": "L18"
+    }
+  ]
+}

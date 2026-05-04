@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "label": "ClerkAuthProvider.test.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "clerkauthprovider_test_makeclerkuser",
+      "label": "makeClerkUser()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "clerkauthprovider_test_makeprovider",
+      "label": "makeProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_entities_types_autherror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_src_entities_schemas_webhookeventschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "target": "clerkauthprovider_test_makeclerkuser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_auth_tests_infrastructure_clerkauthprovider_test_ts",
+      "target": "clerkauthprovider_test_makeprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_test_makeprovider",
+      "target": "clerkauthprovider_test_makeclerkuser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "clerkauthprovider_test_makeprovider",
+      "callee": "fn",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "clerkauthprovider_test_makeprovider",
+      "callee": "fn",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "clerkauthprovider_test_makeprovider",
+      "callee": "fn",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\auth\\tests\\infrastructure\\ClerkAuthProvider.test.ts",
+      "source_location": "L52"
+    }
+  ]
+}

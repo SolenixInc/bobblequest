@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "cache_doc",
+      "label": "@t/cache Module Doc",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cache_port_contract",
+      "label": "CacheClient Port Contract",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cache_lock_helper_caveats",
+      "label": "withLock Caveats (single-node Redlock-style)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cache_keyspace_strategy",
+      "label": "Key Namespacing Strategy <env>:<module>:<id>",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "cache_doc",
+      "target": "cache_port_contract",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cache_doc",
+      "target": "cache_lock_helper_caveats",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cache_doc",
+      "target": "cache_keyspace_strategy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cache_doc",
+      "target": "config_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/cache.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

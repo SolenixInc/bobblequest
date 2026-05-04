@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "apps_desktop_doc",
+      "label": "apps/desktop Architecture",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_desktop_main_renderer",
+      "label": "Main vs Renderer Responsibilities Table",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_desktop_security",
+      "label": "Electron Hardening (contextIsolation, nodeIntegration off)",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_desktop_supabase_retired",
+      "label": "Prior Supabase Plan Superseded (desktop)",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_desktop_doc",
+      "target": "apps_desktop_main_renderer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_doc",
+      "target": "apps_desktop_security",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_doc",
+      "target": "apps_desktop_supabase_retired",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_doc",
+      "target": "architecture_root",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_doc",
+      "target": "auth_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_doc",
+      "target": "billing_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "docs/architecture/apps/desktop.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

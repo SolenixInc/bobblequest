@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_notimplementederror_ts",
+      "label": "NotImplementedError.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "notimplementederror_notimplementederror",
+      "label": "NotImplementedError",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "notimplementederror_notimplementederror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "notimplementederror_notimplementederror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "notimplementederror_notimplementederror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "notimplementederror_notimplementederror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L63"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_notimplementederror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_notimplementederror_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_ports_apperror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_5xx_notimplementederror_ts",
+      "target": "notimplementederror_notimplementederror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "notimplementederror_notimplementederror",
+      "target": "notimplementederror_notimplementederror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "notimplementederror_notimplementederror",
+      "target": "notimplementederror_notimplementederror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "notimplementederror_notimplementederror",
+      "target": "notimplementederror_notimplementederror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "notimplementederror_notimplementederror",
+      "target": "notimplementederror_notimplementederror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "notimplementederror_notimplementederror_constructor",
+      "callee": "super",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\5xx\\NotImplementedError.ts",
+      "source_location": "L64"
+    }
+  ]
+}

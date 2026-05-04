@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_entities_ports_requestanalyticstracker_ts",
+      "label": "RequestAnalyticsTracker.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\entities\\ports\\RequestAnalyticsTracker.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_entities_ports_requestanalyticstracker_ts",
+      "target": "packages_analytics_src_entities_types_llmevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\entities\\ports\\RequestAnalyticsTracker.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_entities_ports_requestanalyticstracker_ts",
+      "target": "packages_analytics_src_entities_types_revenueevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\entities\\ports\\RequestAnalyticsTracker.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

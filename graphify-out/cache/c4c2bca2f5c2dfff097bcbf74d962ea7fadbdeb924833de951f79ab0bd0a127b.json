@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_schemas_authconfigschema_ts",
+      "label": "AuthConfigSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\AuthConfigSchema.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "authconfigschema_resolveauthconfig",
+      "label": "resolveAuthConfig()",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\AuthConfigSchema.ts",
+      "source_location": "L46"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_entities_schemas_authconfigschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\AuthConfigSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_authconfigschema_ts",
+      "target": "authconfigschema_resolveauthconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\AuthConfigSchema.ts",
+      "source_location": "L46",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "authconfigschema_resolveauthconfig",
+      "callee": "parse",
+      "source_file": "packages\\config\\entities\\schemas\\AuthConfigSchema.ts",
+      "source_location": "L49"
+    }
+  ]
+}

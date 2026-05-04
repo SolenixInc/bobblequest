@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "phase_07_tests",
+      "label": "Phase 07 - Tests (Vitest)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/phase-07-tests.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "phase_07_tests",
+      "target": "phase_06_di_registrar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/phase-07-tests.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

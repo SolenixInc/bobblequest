@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_src_entities_schemas_cachekeyschema_ts",
+      "label": "CacheKeySchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\entities\\schemas\\CacheKeySchema.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "cachekeyschema_buildcachekey",
+      "label": "buildCacheKey()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\src\\entities\\schemas\\CacheKeySchema.ts",
+      "source_location": "L42"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_cache_src_entities_schemas_cachekeyschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\entities\\schemas\\CacheKeySchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_src_entities_schemas_cachekeyschema_ts",
+      "target": "cachekeyschema_buildcachekey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\src\\entities\\schemas\\CacheKeySchema.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "cachekeyschema_buildcachekey",
+      "callee": "test",
+      "source_file": "packages\\cache\\src\\entities\\schemas\\CacheKeySchema.ts",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "cachekeyschema_buildcachekey",
+      "callee": "parse",
+      "source_file": "packages\\cache\\src\\entities\\schemas\\CacheKeySchema.ts",
+      "source_location": "L58"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+services:
+  db:
+    image: pgvector/pgvector:0.8.2-pg17
+    labels:
+      com.template-repo.managed: "true"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-template}
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - template-net
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    labels:
+      com.template-repo.managed: "true"
+    ports:
+      - "3000:3000"
+    env_file: .env.docker
+    environment:
+      # Override REDIS_URL so the api container always resolves the redis
+      # service by its Docker-internal hostname, regardless of what .env.docker
+      # contains. The host-mapped port (6380:6379) is for local dev outside
+      # the container and must never be used inside the stack.
+      REDIS_URL: "redis://:${REDIS_PASSWORD:-redispassword}@redis:6379"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/bootstrap"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    networks:
+      - template-net
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: "${NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:-pk_test_placeholder_replace_me}"
+        NEXT_PUBLIC_TRPC_URL: "${NEXT_PUBLIC_TRPC_URL:-http://api:3000/trpc}"
+        NEXT_PUBLIC_POSTHOG_KEY: "${NEXT_PUBLIC_POSTHOG_KEY:-}"
+        NEXT_PUBLIC_POSTHOG_HOST: "${NEXT_PUBLIC_POSTHOG_HOST:-https://us.i.posthog.com}"
+        NEXT_PUBLIC_REVENUECAT_PUBLIC_API_KEY: "${NEXT_PUBLIC_REVENUECAT_PUBLIC_API_KEY:-}"
+        NEXT_PUBLIC_ENVIRONMENT: "${NEXT_PUBLIC_ENVIRONMENT:-development}"
+    labels:
+      com.template-repo.managed: "true"
+    ports:
+      - "3001:3000"
+    env_file: .env.docker
+    depends_on:
+      api:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    networks:
+      - template-net
+
+  website:
+    build:
+      context: .
+      dockerfile: apps/website/Dockerfile
+      args:
+        NEXT_PUBLIC_POSTHOG_KEY: "${NEXT_PUBLIC_POSTHOG_KEY:-}"
+        NEXT_PUBLIC_POSTHOG_HOST: "${NEXT_PUBLIC_POSTHOG_HOST:-https://us.i.posthog.com}"
+    labels:
+      com.template-repo.managed: "true"
+    ports:
+      - "3002:3002"
+    env_file: .env.docker
+    environment:
+      # SITE_URL is server-only — evaluated at request time, not build time.
+      # Setting it here (runtime) keeps the Docker image environment-portable.
+      SITE_URL: "${SITE_URL:-http://localhost:3002}"
+    depends_on:
+      api:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3002/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    networks:
+      - template-net
+
+  redis:
+    image: valkey/valkey:8-alpine
+    labels:
+      com.template-repo.managed: "true"
+    command: ["redis-server", "--requirepass", "${REDIS_PASSWORD:-redispassword}"]
+    ports:
+      - "6380:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"${REDIS_PASSWORD:-redispassword}\" ping | grep PONG"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - template-net
+
+volumes:
+  pgdata:
+  redisdata:
+
+networks:
+  template-net:
+    driver: bridge

@@ -1,0 +1,114 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "label": "clerk.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "clerk_verifyclerkwebhook",
+      "label": "verifyClerkWebhook()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L80"
+    },
+    {
+      "id": "clerk_pickprimaryemail",
+      "label": "pickPrimaryEmail()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L93"
+    },
+    {
+      "id": "clerk_composedisplayname",
+      "label": "composeDisplayName()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L102"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "target": "hono",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "target": "svix",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "target": "clerk_verifyclerkwebhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "target": "clerk_pickprimaryemail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_api_src_routes_webhooks_clerk_ts",
+      "target": "clerk_composedisplayname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "clerk_verifyclerkwebhook",
+      "callee": "verify",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "clerk_pickprimaryemail",
+      "callee": "find",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "clerk_composedisplayname",
+      "callee": "filter",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "clerk_composedisplayname",
+      "callee": "join",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\api\\src\\routes\\webhooks\\clerk.ts",
+      "source_location": "L107"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "apps_web_src_lib_trpc_provider_tsx",
+      "label": "provider.tsx",
+      "file_type": "code",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "provider_trpcprovider",
+      "label": "TrpcProvider()",
+      "file_type": "code",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L8"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_web_src_lib_trpc_provider_tsx",
+      "target": "react_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_trpc_provider_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_trpc_provider_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_trpc_provider_tsx",
+      "target": "apps_web_src_lib_trpc_client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_web_src_lib_trpc_provider_tsx",
+      "target": "provider_trpcprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "provider_trpcprovider",
+      "callee": "useState",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "provider_trpcprovider",
+      "callee": "useState",
+      "source_file": "apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L10"
+    }
+  ]
+}

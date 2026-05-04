@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "apps_api_src_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_onerror",
+      "label": "onError()",
+      "file_type": "code",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L26"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_api_src_index_ts",
+      "target": "trpc_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_api_src_index_ts",
+      "target": "hono",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_api_src_index_ts",
+      "target": "cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_api_src_index_ts",
+      "target": "apps_api_src_routers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_api_src_index_ts",
+      "target": "apps_api_src_trpc_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_api_src_index_ts",
+      "target": "index_onerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_onerror",
+      "callee": "error",
+      "source_file": "apps\\api\\src\\index.ts",
+      "source_location": "L27"
+    }
+  ]
+}

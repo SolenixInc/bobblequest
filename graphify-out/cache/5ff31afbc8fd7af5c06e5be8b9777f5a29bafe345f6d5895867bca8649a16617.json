@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_tounknownerrorresponse_ts",
+      "label": "toUnknownErrorResponse.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tounknownerrorresponse_sanitizeerrormessage",
+      "label": "sanitizeErrorMessage()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "tounknownerrorresponse_tounknownerrorresponse",
+      "label": "toUnknownErrorResponse()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L52"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "tounknownerrorresponse_sanitizeerrormessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "tounknownerrorresponse_tounknownerrorresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "tounknownerrorresponse_tounknownerrorresponse",
+      "target": "tounknownerrorresponse_sanitizeerrormessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "test",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "replace",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "trim",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "substring",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "trim",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "substring",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_tounknownerrorresponse",
+      "callee": "String",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L57"
+    }
+  ]
+}

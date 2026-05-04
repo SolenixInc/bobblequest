@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+.expo/
+out/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.docker
+.env.*.local
+
+# IDE
+.vscode/settings.json
+.idea/
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# Test coverage
+coverage/
+
+# Test artifacts
+playwright-report/
+test-results/
+
+# Agent caches
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+graphify-out/cache/
+
+# Scratch / WIP
+wip/
+
+# Stack runtime state (PID files for host-spawned services)
+.stack/
+
+# Bun install diagnostic logs (do not commit)
+bun-install*.log
+install-debug.log
+*.log
+bunfig.toml.quarantine

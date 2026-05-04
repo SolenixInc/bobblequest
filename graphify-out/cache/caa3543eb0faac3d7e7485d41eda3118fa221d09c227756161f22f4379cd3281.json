@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_goneerror_ts",
+      "label": "GoneError.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "goneerror_goneerror",
+      "label": "GoneError",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "goneerror_goneerror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "goneerror_goneerror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L43"
+    },
+    {
+      "id": "goneerror_goneerror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "goneerror_goneerror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L62"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_goneerror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_goneerror_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_ports_apperror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_goneerror_ts",
+      "target": "goneerror_goneerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "goneerror_goneerror",
+      "target": "goneerror_goneerror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "goneerror_goneerror",
+      "target": "goneerror_goneerror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "goneerror_goneerror",
+      "target": "goneerror_goneerror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "goneerror_goneerror",
+      "target": "goneerror_goneerror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "goneerror_goneerror_constructor",
+      "callee": "super",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\infrastructure\\4xx\\GoneError.ts",
+      "source_location": "L63"
+    }
+  ]
+}

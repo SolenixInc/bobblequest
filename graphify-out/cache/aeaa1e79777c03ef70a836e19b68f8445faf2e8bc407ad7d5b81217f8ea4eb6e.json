@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "apps_desktop_src_main_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_createwindow",
+      "label": "createWindow()",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_desktop_src_main_index_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_main_index_ts",
+      "target": "electron",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_main_index_ts",
+      "target": "electron_store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_main_index_ts",
+      "target": "index_createwindow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_createwindow",
+      "callee": "join",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "index_createwindow",
+      "callee": "setWindowOpenHandler",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "index_createwindow",
+      "callee": "loadURL",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "index_createwindow",
+      "callee": "loadFile",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "index_createwindow",
+      "callee": "join",
+      "source_file": "apps\\desktop\\src\\main\\index.ts",
+      "source_location": "L38"
+    }
+  ]
+}

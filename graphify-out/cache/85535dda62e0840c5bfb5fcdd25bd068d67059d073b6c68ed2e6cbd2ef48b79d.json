@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_entities_apperror_test_ts",
+      "label": "AppError.test.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "apperror_test_testerror",
+      "label": "TestError",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "apperror_test_testerror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "apperror_test_testerror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "apperror_test_testerror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_entities_apperror_test_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_entities_apperror_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_entities_apperror_test_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_entities_ports_apperror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_tests_entities_apperror_test_ts",
+      "target": "apperror_test_testerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "apperror_test_testerror",
+      "target": "apperror_test_testerror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "apperror_test_testerror",
+      "target": "apperror_test_testerror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "apperror_test_testerror",
+      "target": "apperror_test_testerror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\__tests__\\entities\\AppError.test.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

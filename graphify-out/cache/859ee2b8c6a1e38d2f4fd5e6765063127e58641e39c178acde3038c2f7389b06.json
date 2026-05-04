@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "apps_website_mdx_components_tsx",
+      "label": "mdx-components.tsx",
+      "file_type": "code",
+      "source_file": "apps\\website\\mdx-components.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "mdx_components_usemdxcomponents",
+      "label": "useMDXComponents()",
+      "file_type": "code",
+      "source_file": "apps\\website\\mdx-components.tsx",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_website_mdx_components_tsx",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\website\\mdx-components.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_website_mdx_components_tsx",
+      "target": "mdx_components_usemdxcomponents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\website\\mdx-components.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

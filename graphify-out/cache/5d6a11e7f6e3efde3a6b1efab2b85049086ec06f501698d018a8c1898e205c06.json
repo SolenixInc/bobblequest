@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "readme_analytics",
+      "label": "@t/analytics README",
+      "file_type": "document",
+      "source_file": "packages/analytics/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_analytics_port_surface",
+      "label": "AnalyticsTracker 11-method port",
+      "file_type": "document",
+      "source_file": "packages/analytics/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_analytics_reserved_props",
+      "label": "Reserved super-properties ($environment/$service/etc)",
+      "file_type": "document",
+      "source_file": "packages/analytics/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_analytics",
+      "target": "readme_analytics_port_surface",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/analytics/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_analytics",
+      "target": "readme_analytics_reserved_props",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/analytics/README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

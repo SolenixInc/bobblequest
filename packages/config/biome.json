@@ -1,0 +1,92 @@
+{
+  "root": false,
+  "$schema": "https://biomejs.dev/schemas/2.4.13/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!dist",
+      "!dist-electron",
+      "!build",
+      "!.next",
+      "!.expo",
+      "!.turbo",
+      "!next-env.d.ts",
+      "!test-results",
+      "!**/coverage",
+      "!.agents",
+      "!graphify-out",
+      "!cov-out",
+      "!**/cov-out"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "assist": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "asNeeded"
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/tests/**/*.test.ts",
+        "**/tests/**/*.test.tsx",
+        "**/tests/**/*.spec.ts",
+        "**/tests/**/*.spec.tsx",
+        "**/__tests__/**/*.test.ts",
+        "**/__tests__/**/*.test.tsx",
+        "**/__tests__/**/*.spec.ts",
+        "**/__tests__/**/*.spec.tsx"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noNonNullAssertion": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/app/bootstrap/page.tsx", "**/routes/bootstrap.tsx"],
+      "linter": {
+        "rules": {
+          "security": {
+            "noDangerouslySetInnerHtml": "off"
+          }
+        }
+      }
+    }
+  ]
+}

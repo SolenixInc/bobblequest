@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_redactors_ts",
+      "label": "redactors.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "redactors_buildredactconfig",
+      "label": "buildRedactConfig()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "redactors_redactformat",
+      "label": "redactFormat()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L44"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_redactors_ts",
+      "target": "winston",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_redactors_ts",
+      "target": "redactors_buildredactconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_redactors_ts",
+      "target": "redactors_redactformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "redactors_buildredactconfig",
+      "callee": "has",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "redactors_buildredactconfig",
+      "callee": "add",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "redactors_buildredactconfig",
+      "callee": "push",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "redactors_redactformat",
+      "callee": "winston.format((info) => redact(info) as winston.Logform.TransformableInfo)",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "redactors_redactformat",
+      "callee": "format",
+      "source_file": "packages\\logging\\infrastructure\\redactors.ts",
+      "source_location": "L75"
+    }
+  ]
+}

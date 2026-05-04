@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "apps_website_doc",
+      "label": "apps/website Architecture",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/website.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_website_content_model",
+      "label": "Content Model + MDX Pipeline",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/website.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_website_doc",
+      "target": "apps_website_content_model",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/website.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_website_doc",
+      "target": "architecture_long_term_progress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/website.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

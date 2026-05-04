@@ -1,0 +1,9 @@
+# Default
+* @{{GITHUB_OWNER}}
+
+# Per-path overrides
+apps/* @{{APP_TEAM}}
+packages/* @{{PACKAGE_TEAM}}
+docs/* @{{DOCS_OWNER}}
+.github/* @{{INFRA_OWNER}}
+.agents/* @{{AGENT_OWNER}}

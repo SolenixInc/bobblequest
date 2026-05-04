@@ -1,0 +1,7 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.13/schema.json",
+  "vcs": {
+    "root": "."
+  },
+  "extends": ["./packages/config/biome.json"]
+}

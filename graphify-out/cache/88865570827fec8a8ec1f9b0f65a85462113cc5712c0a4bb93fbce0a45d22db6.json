@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_dependency_injection_registerloggerdi_ts",
+      "label": "registerLoggerDI.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registerloggerdi_registerloggerdi",
+      "label": "registerLoggerDI()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L23"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_dependency_injection_registerloggerdi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_dependency_injection_registerloggerdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_entities_types_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_dependency_injection_registerloggerdi_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_infrastructure_globallogger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_logging_dependency_injection_registerloggerdi_ts",
+      "target": "registerloggerdi_registerloggerdi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registerloggerdi_registerloggerdi",
+      "callee": "register",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "registerloggerdi_registerloggerdi",
+      "callee": "asFunction",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\logging\\dependency-injection\\registerLoggerDI.ts",
+      "source_location": "L25"
+    }
+  ]
+}

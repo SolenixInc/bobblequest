@@ -1,0 +1,204 @@
+name: "Unified PR Reporter"
+description: "Aggregates and updates status reporting in a single, persistent PR comment."
+inputs:
+    section:
+        description: "The section to update (e.g., lint, tests, complexity)"
+        required: true
+    status:
+        description: "The status of the section (success, failure, in_progress, queued)"
+        required: true
+    body:
+        description: "The markdown body for the section"
+        required: true
+    runtime:
+        description: "The runtime of the check (e.g., 45s)"
+        required: false
+    marker:
+        description: "A unique marker to identify this report"
+        required: true
+    comment_id:
+        description: "Specific comment ID to update (optional)"
+        required: false
+    github-token:
+        description: "GitHub Token"
+        required: true
+
+runs:
+    using: "composite"
+    steps:
+        - name: Validate inputs
+          shell: bash
+          run: |
+              STATUS="${{ inputs.status }}"
+              VALID_STATUSES="success failure in_progress queued"
+              if ! echo "$VALID_STATUSES" | grep -qw "$STATUS"; then
+                echo "::error::Invalid status '$STATUS'. Must be one of: $VALID_STATUSES"
+                exit 1
+              fi
+              SECTION="${{ inputs.section }}"
+              if [ -z "$SECTION" ]; then
+                echo "::error::Section name must not be empty."
+                exit 1
+              fi
+              MARKER="${{ inputs.marker }}"
+              if [ -z "$MARKER" ]; then
+                echo "::error::Marker must not be empty."
+                exit 1
+              fi
+
+        - name: Update PR Comment
+          uses: actions/github-script@v7
+          env:
+              BODY_CONTENT: ${{ inputs.body }}
+          with:
+              github-token: ${{ inputs.github-token }}
+              script: |
+                  const section = '${{ inputs.section }}';
+                  const status = '${{ inputs.status }}';
+                  const runtime = '${{ inputs.runtime }}';
+                  const body = process.env.BODY_CONTENT || '';
+                  const marker = '${{ inputs.marker }}';
+                  const inputCommentId = '${{ inputs.comment_id }}';
+                  const prNumber = context.payload.pull_request ? context.payload.pull_request.number : null;
+
+                  if (!prNumber) {
+                    core.info('Not a pull request, skipping reporting.');
+                    return;
+                  }
+
+                  const sectionStart = `<!-- section:${section} -->`;
+                  const sectionEnd = `<!-- section-end:${section} -->`;
+
+                  let commentToUpdate;
+
+                  if (inputCommentId && inputCommentId !== '') {
+                    try {
+                      const { data: comment } = await github.rest.issues.getComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        comment_id: parseInt(inputCommentId)
+                      });
+                      commentToUpdate = comment;
+                    } catch (e) {
+                      core.warning(`Failed to fetch comment ${inputCommentId}: ${e.message}`);
+                    }
+                  }
+
+                  if (!commentToUpdate) {
+                    const { data: comments } = await github.rest.issues.listComments({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      issue_number: prNumber
+                    });
+
+                    // First, try to find by the exact run-specific marker provided
+                    commentToUpdate = comments.find(c => c.body && c.body.includes(marker));
+
+                    // Fallback: search by the stable marker if run-specific marker wasn't found.
+                    // This handles the case where a newer CI run replaced the comment (new run marker)
+                    // but the stable marker is still present.
+                    const stableMarker = '<!-- unified-ci-report -->';
+                    if (!commentToUpdate && marker !== stableMarker) {
+                      commentToUpdate = comments.find(c => c.body && c.body.includes(stableMarker));
+                      if (commentToUpdate) {
+                        // Found via stable marker — check if this comment belongs to a different (newer) run.
+                        // If so, skip the update to avoid corrupting a newer run's report with stale data.
+                        const runMarkerPattern = /<!-- unified-ci-report-run:(\d+)-(\d+) -->/;
+                        const commentRunMatch = commentToUpdate.body.match(runMarkerPattern);
+                        const currentRunMatch = marker.match(runMarkerPattern);
+                        if (commentRunMatch && currentRunMatch) {
+                          const commentRunId = parseInt(commentRunMatch[1]);
+                          const currentRunId = parseInt(currentRunMatch[1]);
+                          const commentAttempt = parseInt(commentRunMatch[2]);
+                          const currentAttempt = parseInt(currentRunMatch[2]);
+                          if (commentRunId > currentRunId || (commentRunId === currentRunId && commentAttempt > currentAttempt)) {
+                            core.info(`CI report belongs to a newer run (run ${commentRunMatch[1]}-${commentRunMatch[2]} > ${currentRunMatch[1]}-${currentRunMatch[2]}). Skipping stale update.`);
+                            return;
+                          }
+                        }
+                        core.info(`Found CI report via stable marker (fallback). Updating section ${section}.`);
+                      }
+                    }
+
+                    if (!commentToUpdate) {
+                      core.warning(`No CI report comment found for this PR. The comment may have been deleted by a newer CI run. Skipping update for section: ${section}.`);
+                      return;
+                    }
+                  }
+
+                  const statusIcons = {
+                    success: '✅',
+                    failure: '❌',
+                    in_progress: '⏳',
+                    queued: '🔘'
+                  };
+                  const icon = statusIcons[status.toLowerCase()] || '❓';
+
+                  const runtimeDisplay = runtime ? ` (\`${runtime}\`)` : '';
+                  const newSectionContent = `${sectionStart}\n### ${icon} ${section.charAt(0).toUpperCase() + section.slice(1)}${runtimeDisplay}\n${body}\n${sectionEnd}`;
+
+                  if (commentToUpdate) {
+                    let currentBody = commentToUpdate.body;
+                    let newBody;
+
+                    if (currentBody.includes(sectionStart)) {
+                      // Replace existing section
+                      const regex = new RegExp(`${sectionStart}[\\s\\S]*?${sectionEnd}`);
+                      newBody = currentBody.replace(regex, newSectionContent);
+                    } else {
+                      // Append new section before the footer if footer exists, otherwise just append
+                      if (currentBody.includes('---')) {
+                         newBody = currentBody.replace('---', `${newSectionContent}\n\n---`);
+                      } else {
+                         newBody = currentBody + `\n\n${newSectionContent}`;
+                      }
+                    }
+
+                    // Update timestamp
+                    const timestampRegex = /\*Last updated:.*?\*/;
+                    const newTimestamp = `*Last updated: ${new Date().toUTCString()}*`;
+                    if (newBody.match(timestampRegex)) {
+                      newBody = newBody.replace(timestampRegex, newTimestamp);
+                    } else {
+                      newBody += `\n\n${newTimestamp}`;
+                    }
+
+                    try {
+                      await github.rest.issues.updateComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        comment_id: commentToUpdate.id,
+                        body: newBody
+                      });
+                      core.info(`Updated section ${section} in unified report.`);
+                    } catch (error) {
+                      core.error(`Failed to update PR comment: ${error.message}`);
+                      // Try a simplified update if the content is too large
+                      if (error.message.includes('body is too long') || error.status === 422) {
+                        core.warning('Comment body too large, attempting simplified update...');
+                        const simplifiedBody = `${sectionStart}\n### ${icon} ${section.charAt(0).toUpperCase() + section.slice(1)}${runtimeDisplay}\n[Content truncated due to size limits]\n${sectionEnd}`;
+                        const simplifiedNewBody = currentBody.replace(new RegExp(`${sectionStart}[\\s\\S]*?${sectionEnd}`), simplifiedBody);
+                        try {
+                          await github.rest.issues.updateComment({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            comment_id: commentToUpdate.id,
+                            body: simplifiedNewBody
+                          });
+                          core.info(`Updated section ${section} with simplified content.`);
+                        } catch (retryError) {
+                          core.error(`Failed to update PR comment even with simplified content: ${retryError.message}`);
+                          throw retryError;
+                        }
+                      } else {
+                        throw error;
+                      }
+                    }
+                  } else {
+                    // The reporter should never create new comments — that is the orchestrator's
+                    // initialize job responsibility. If we reach here, the comment was likely
+                    // deleted by a newer CI run or the initialize job hasn't completed yet.
+                    // Creating a comment here would produce orphans missing the stable marker
+                    // that can never be cleaned up, leading to duplicate reports on the PR.
+                    core.warning(`No CI report comment found to update for section: ${section}. Skipping — the orchestrator initialize job is responsible for comment creation.`);
+                  }

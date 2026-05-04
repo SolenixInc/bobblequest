@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_infrastructure_4xx_badrequesterror_ts",
+      "label": "BadRequestError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "badrequesterror_badrequesterror",
+      "label": "BadRequestError",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "badrequesterror_badrequesterror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "badrequesterror_badrequesterror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "badrequesterror_badrequesterror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "badrequesterror_badrequesterror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L65"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_infrastructure_4xx_badrequesterror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_4xx_badrequesterror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_4xx_badrequesterror_ts",
+      "target": "badrequesterror_badrequesterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "badrequesterror_badrequesterror",
+      "target": "badrequesterror_badrequesterror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "badrequesterror_badrequesterror",
+      "target": "badrequesterror_badrequesterror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "badrequesterror_badrequesterror",
+      "target": "badrequesterror_badrequesterror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "badrequesterror_badrequesterror",
+      "target": "badrequesterror_badrequesterror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "badrequesterror_badrequesterror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\infrastructure\\4xx\\BadRequestError.ts",
+      "source_location": "L74"
+    }
+  ]
+}

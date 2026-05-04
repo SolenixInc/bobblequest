@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_schemas_configvaluesschema_ts",
+      "label": "ConfigValuesSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_auth0configschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_authconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_gcpconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_stripeconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_appleconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_appstoreconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_androidconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_systemconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_posthogconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_analyticsconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_revenuecatconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_redisconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_config_entities_schemas_configvaluesschema_ts",
+      "target": "packages_config_entities_schemas_dbconfigschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\ConfigValuesSchema.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

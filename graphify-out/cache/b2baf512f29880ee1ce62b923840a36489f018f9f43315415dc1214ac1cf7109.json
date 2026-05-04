@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_errorserializer_ts",
+      "label": "errorSerializer.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "errorserializer_serializeerror",
+      "label": "serializeError()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "errorserializer_walk",
+      "label": "walk()",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L17"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_errorserializer_ts",
+      "target": "winston",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_errorserializer_ts",
+      "target": "errorserializer_serializeerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_errorserializer_ts",
+      "target": "errorserializer_walk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "errorserializer_walk",
+      "target": "errorserializer_serializeerror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "errorserializer_walk",
+      "callee": "isArray",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "errorserializer_walk",
+      "callee": "map",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "errorserializer_walk",
+      "callee": "entries",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "errorserializer_walk",
+      "callee": "getOwnPropertySymbols",
+      "source_file": "packages\\logging\\infrastructure\\errorSerializer.ts",
+      "source_location": "L28"
+    }
+  ]
+}

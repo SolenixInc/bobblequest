@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "id": "apps_mobile_app_auth_login_tsx",
+      "label": "login.tsx",
+      "file_type": "code",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "login_onsignin",
+      "label": "onSignIn()",
+      "file_type": "code",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_mobile_app_auth_login_tsx",
+      "target": "expo_router",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_app_auth_login_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_app_auth_login_tsx",
+      "target": "react_native",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_app_auth_login_tsx",
+      "target": "apps_mobile_src_lib_supabase",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_app_auth_login_tsx",
+      "target": "login_onsignin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "login_onsignin",
+      "callee": "setError",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L13"
+    },
+    {
+      "caller_nid": "login_onsignin",
+      "callee": "setLoading",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "login_onsignin",
+      "callee": "signInWithPassword",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "login_onsignin",
+      "callee": "setLoading",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "login_onsignin",
+      "callee": "setError",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "login_onsignin",
+      "callee": "replace",
+      "source_file": "apps\\mobile\\app\\(auth)\\login.tsx",
+      "source_location": "L24"
+    }
+  ]
+}

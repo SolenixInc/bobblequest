@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build artifacts
+dist/
+build/
+.next/
+.expo/
+out/
+**/*.tsbuildinfo
+
+# Environment files — must never enter the image; env is injected at runtime
+# via docker-compose env_file / environment blocks or platform secrets.
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Test / coverage artefacts
+coverage/
+playwright-report/
+test-results/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Turbo cache
+.turbo/
+
+# Agent / graph outputs (large, not needed at runtime)
+graphify-out/
+.claude/
+
+# Git history
+.git/

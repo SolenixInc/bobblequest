@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "apps_mobile_doc",
+      "label": "apps/mobile Architecture",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_mobile_platform_matrix",
+      "label": "Platform Integration Matrix (mobile)",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_mobile_request_flow",
+      "label": "Request Flow users.me",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apps_mobile_supabase_retired",
+      "label": "Prior Supabase Plan Superseded (mobile)",
+      "file_type": "document",
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_mobile_doc",
+      "target": "apps_mobile_platform_matrix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_doc",
+      "target": "apps_mobile_request_flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_doc",
+      "target": "apps_mobile_supabase_retired",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_doc",
+      "target": "architecture_long_term_progress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_doc",
+      "target": "auth_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_doc",
+      "target": "billing_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apps_mobile_doc",
+      "target": "analytics_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.8,
+      "source_file": "docs/architecture/apps/mobile.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

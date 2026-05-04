@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "packages_cache_tests_inmemorycacheimpl_test_ts",
+      "label": "InMemoryCacheImpl.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\InMemoryCacheImpl.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "inmemorycacheimpl_test_release",
+      "label": "release()",
+      "file_type": "code",
+      "source_file": "packages\\cache\\tests\\InMemoryCacheImpl.test.ts",
+      "source_location": "L162"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_cache_tests_inmemorycacheimpl_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\InMemoryCacheImpl.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_inmemorycacheimpl_test_ts",
+      "target": "packages_cache_src_infrastructure_inmemorycacheimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\InMemoryCacheImpl.test.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_cache_tests_inmemorycacheimpl_test_ts",
+      "target": "inmemorycacheimpl_test_release",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\cache\\tests\\InMemoryCacheImpl.test.ts",
+      "source_location": "L162",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

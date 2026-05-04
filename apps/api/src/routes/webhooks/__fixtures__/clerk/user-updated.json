@@ -1,0 +1,25 @@
+{
+  "type": "user.updated",
+  "data": {
+    "id": "user_2xyz9UVWxyzABC0defGHI1jkl",
+    "first_name": "Bob",
+    "last_name": "Okafor",
+    "image_url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nX3h5ejQ1NiJ9",
+    "primary_email_address_id": "idn_2xyz9BobEmail00002",
+    "email_addresses": [
+      {
+        "id": "idn_2xyz9BobEmail00002",
+        "email_address": "bob.okafor@example.org"
+      },
+      {
+        "id": "idn_2xyz9BobEmail00003",
+        "email_address": "b.okafor@work.example.org"
+      }
+    ],
+    "public_metadata": {
+      "role": "admin"
+    },
+    "created_at": 1743379200000,
+    "updated_at": 1746144000000
+  }
+}

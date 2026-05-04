@@ -1,0 +1,52 @@
+---
+title: "Hello, world"
+date: "2026-04-19"
+description: "The first post on the template website — what this scaffold is and where it goes."
+tags: ["meta", "announcement"]
+author: "Template Team"
+---
+
+# Hello, world
+
+Welcome to the template website blog. This post marks the start of a real content pipeline: frontmatter-driven MDX posts, a typed content collection, and syntax-highlighted code blocks powered by `rehype-pretty-code` and Shiki.
+
+## What this scaffold gives you
+
+The template ships with:
+
+- **Next.js 15 App Router** — server components by default, client components when required
+- **Tailwind CSS v4** — CSS-first configuration, `@theme` tokens, no `tailwind.config.ts`
+- **shadcn/ui** — composable primitives without the kitchen sink
+- **Turborepo + Bun** — fast monorepo workspace with shared config packages
+- **Clerk auth** — wired to `apps/web` and `apps/api`, ready to extend
+
+## The blog pipeline
+
+Posts live in `src/content/blog/` as `.mdx` files. Frontmatter is parsed by `gray-matter` and validated with Zod at build time — a malformed post fails the build loudly rather than silently skipping.
+
+```ts
+// src/content/collection.ts — the entry point
+import { getAllPosts } from '@/content/collection'
+
+const posts = getAllPosts() // sorted by date desc, validated
+```
+
+Each post exports its default MDX component. The `[slug]/page.tsx` route does a dynamic import:
+
+```ts
+const { default: Content } = await import(`@/content/blog/${slug}.mdx`)
+```
+
+This keeps the collection module pure (no `import()` at list time) and lets Next.js code-split each post automatically.
+
+## What comes next
+
+The roadmap for this scaffold includes:
+
+- OG image generation per post via `@vercel/og`
+- Reading-time estimates from word count
+- Tag filtering on the index page
+- RSS feed at `/blog/feed.xml`
+- `@next/bundle-analyzer` integration for monitoring bundle growth
+
+The goal is a scaffold that teams can fork and ship from day one without archaeology.

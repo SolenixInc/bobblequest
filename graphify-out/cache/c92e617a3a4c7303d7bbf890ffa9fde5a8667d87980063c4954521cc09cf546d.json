@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_errors",
+      "label": "@t/errors bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/errors.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_errors_no_package_json",
+      "label": "Errors package missing package.json + broken aliases",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/errors.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_errors_hono_handler",
+      "label": "Hono errorHandler middleware (delivery layer)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/errors.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_errors",
+      "target": "prd_pkg_errors_no_package_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/errors.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_errors",
+      "target": "prd_pkg_errors_hono_handler",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/errors.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

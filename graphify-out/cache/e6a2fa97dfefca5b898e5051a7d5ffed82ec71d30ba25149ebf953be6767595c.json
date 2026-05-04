@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_schemas_auth0configschema_ts",
+      "label": "Auth0ConfigSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\Auth0ConfigSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_entities_schemas_auth0configschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\Auth0ConfigSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

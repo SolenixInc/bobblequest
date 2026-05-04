@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_infrastructure_5xx_badgatewayerror_ts",
+      "label": "BadGatewayError.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "badgatewayerror_badgatewayerror",
+      "label": "BadGatewayError",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "badgatewayerror_badgatewayerror_name",
+      "label": ".name()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "badgatewayerror_badgatewayerror_status",
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L43"
+    },
+    {
+      "id": "badgatewayerror_badgatewayerror_details",
+      "label": ".details()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "badgatewayerror_badgatewayerror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L62"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_infrastructure_5xx_badgatewayerror_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_badgatewayerror_ts",
+      "target": "errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_infrastructure_5xx_badgatewayerror_ts",
+      "target": "badgatewayerror_badgatewayerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "badgatewayerror_badgatewayerror",
+      "target": "badgatewayerror_badgatewayerror_name",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "badgatewayerror_badgatewayerror",
+      "target": "badgatewayerror_badgatewayerror_status",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "badgatewayerror_badgatewayerror",
+      "target": "badgatewayerror_badgatewayerror_details",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "badgatewayerror_badgatewayerror",
+      "target": "badgatewayerror_badgatewayerror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "badgatewayerror_badgatewayerror_constructor",
+      "callee": "super",
+      "source_file": "packages\\errors\\infrastructure\\5xx\\BadGatewayError.ts",
+      "source_location": "L67"
+    }
+  ]
+}

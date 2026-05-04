@@ -1,0 +1,96 @@
+---
+title: "Building with MDX"
+date: "2026-04-20"
+description: "How the MDX pipeline works end-to-end: @next/mdx, remark-gfm, rehype-pretty-code, and the content collection."
+tags: ["mdx", "next.js", "tooling"]
+author: "Template Team"
+---
+
+# Building with MDX
+
+MDX is Markdown that can import and render React components. Combined with Next.js App Router, it gives you server-rendered content that can still embed interactive islands. This post walks through exactly how the pipeline in this template is wired together.
+
+## The compiler chain
+
+When Next.js encounters a `.mdx` file, `@next/mdx` runs the source through a chain of plugins before handing the result to the React renderer:
+
+```
+.mdx source
+  → remark plugins  (Markdown AST transforms)
+  → rehype plugins  (HTML AST transforms)
+  → React component (JSX output)
+```
+
+In `next.config.ts`:
+
+```ts
+import createMDX from '@next/mdx'
+import remarkGfm from 'remark-gfm'
+import rehypePrettyCode from 'rehype-pretty-code'
+
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [[rehypePrettyCode, { theme: 'github-dark-dimmed' }]],
+  },
+})
+```
+
+`remark-gfm` adds GitHub Flavored Markdown support: tables, strikethrough, task lists, and autolinks. `rehype-pretty-code` wraps Shiki for syntax highlighting — every fenced code block gets token-level coloring from a real grammar.
+
+## Frontmatter and the content collection
+
+Each post carries frontmatter that the Zod schema validates at build time:
+
+```ts
+export const BlogPostMetaSchema = z.object({
+  title: z.string(),
+  date: z.string().datetime({ offset: true }).or(
+    z.string().regex(/^\d{4}-\d{2}-\d{2}$/)
+  ),
+  description: z.string(),
+  tags: z.array(z.string()).optional(),
+  author: z.string().optional(),
+})
+```
+
+`gray-matter` strips the frontmatter from the raw `.mdx` source and returns `{ data, content }`. The collection module reads every file from `src/content/blog/`, parses each one, and sorts by `date` descending.
+
+The body of the post is loaded separately — the `[slug]/page.tsx` route does:
+
+```ts
+const { default: Content } = await import(`@/content/blog/${slug}.mdx`)
+```
+
+This split matters: the collection can run at list-page render time without bundling every post's MDX component into the list route.
+
+## GFM features
+
+Because `remark-gfm` is enabled, posts support extended Markdown syntax.
+
+| Feature | Syntax |
+|---|---|
+| Tables | `\| col \| col \|` |
+| Strikethrough | `~~text~~` |
+| Task lists | `- [ ] item` |
+| Autolinks | `https://example.com` |
+
+Task list example:
+
+- [x] Install `remark-gfm`
+- [x] Wire `rehype-pretty-code`
+- [ ] Add OG image generation
+
+## Type declarations
+
+The `.mdx` module declaration in `src/types/mdx.d.ts` tells TypeScript what a `*.mdx` import looks like. With frontmatter-based metadata the old `export const meta` pattern is gone — the default export is the React component and metadata comes from `gray-matter` at collection build time, not from the MDX module itself.
+
+```ts
+declare module '*.mdx' {
+  import type { ComponentType } from 'react'
+  const Component: ComponentType
+  export default Component
+}
+```
+
+This keeps type imports clean and avoids any module augmentation gymnastics.

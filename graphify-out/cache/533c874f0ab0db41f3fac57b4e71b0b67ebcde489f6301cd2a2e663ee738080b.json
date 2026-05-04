@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_entities_enums_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\entities\\enums\\index.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

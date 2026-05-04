@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "label": "provider.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "provider_trpcprovider",
+      "label": "TrpcProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "target": "clerk",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "target": "react_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_web_src_lib_trpc_provider_tsx",
+      "target": "provider_trpcprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "provider_trpcprovider",
+      "callee": "useAuth",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "provider_trpcprovider",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "provider_trpcprovider",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\web\\src\\lib\\trpc\\provider.tsx",
+      "source_location": "L12"
+    }
+  ]
+}

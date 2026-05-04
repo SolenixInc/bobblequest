@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "label": "CompositeBillingImpl.test.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "compositebillingimpl_test_makestripemock",
+      "label": "makeStripeMock()",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "compositebillingimpl_test_makercmock",
+      "label": "makeRCMock()",
+      "file_type": "code",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L34"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "target": "packages_billing_src_infrastructure_compositebillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "target": "packages_billing_src_infrastructure_revenuecatbillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "target": "packages_billing_src_infrastructure_stripebillingimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "target": "compositebillingimpl_test_makestripemock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_billing_tests_infrastructure_compositebillingimpl_test_ts",
+      "target": "compositebillingimpl_test_makercmock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "mockRejectedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makestripemock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "mockRejectedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "mockRejectedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "mockResolvedValue",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "compositebillingimpl_test_makercmock",
+      "callee": "fn",
+      "source_file": "packages\\billing\\tests\\infrastructure\\CompositeBillingImpl.test.ts",
+      "source_location": "L48"
+    }
+  ]
+}

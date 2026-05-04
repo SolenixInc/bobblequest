@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "apps_desktop_src_renderer_lib_trpc_ts",
+      "label": "trpc.ts",
+      "file_type": "code",
+      "source_file": "apps\\desktop\\src\\renderer\\lib\\trpc.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps_desktop_src_renderer_lib_trpc_ts",
+      "target": "api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\lib\\trpc.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apps_desktop_src_renderer_lib_trpc_ts",
+      "target": "react_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "apps\\desktop\\src\\renderer\\lib\\trpc.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_delivery_utils_extractvalidationerrors_ts",
+      "label": "extractValidationErrors.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\extractValidationErrors.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "extractvalidationerrors_extractvalidationerrors",
+      "label": "extractValidationErrors()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\delivery\\utils\\extractValidationErrors.ts",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_delivery_utils_extractvalidationerrors_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\extractValidationErrors.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_delivery_utils_extractvalidationerrors_ts",
+      "target": "extractvalidationerrors_extractvalidationerrors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\delivery\\utils\\extractValidationErrors.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "extractvalidationerrors_extractvalidationerrors",
+      "callee": "map",
+      "source_file": "packages\\errors\\delivery\\utils\\extractValidationErrors.ts",
+      "source_location": "L12"
+    }
+  ]
+}

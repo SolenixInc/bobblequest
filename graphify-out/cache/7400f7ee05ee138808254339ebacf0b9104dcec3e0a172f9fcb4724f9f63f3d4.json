@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "prd_website_status",
+      "label": "apps/website bootstrap status",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_website_mdx_skeletal",
+      "label": "Website MDX pipeline skeletal (no collection)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_website_config_unused",
+      "label": "Website @t/config declared but unused",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_website_shadcn_partial",
+      "label": "Website Shadcn tokens partial",
+      "file_type": "document",
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_website_status",
+      "target": "prd_website_mdx_skeletal",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_website_status",
+      "target": "prd_website_config_unused",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_website_status",
+      "target": "prd_website_shadcn_partial",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/apps/website.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

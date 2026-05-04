@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "analytics_spec_target",
+      "label": "@t/analytics target spec",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_tracker_port",
+      "label": "AnalyticsTracker port (11 methods)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_request_tracker_port",
+      "label": "RequestAnalyticsTracker port",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_posthog_impl",
+      "label": "PostHogAnalyticsTrackerImpl",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_reserved_super_props",
+      "label": "Reserved super-properties",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_register_di",
+      "label": "registerAnalyticsDI",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_config_schema",
+      "label": "AnalyticsConfigSchema",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "analytics_old_doc_superseded",
+      "label": "Older parent analytics.md (superseded)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_tracker_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_request_tracker_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_posthog_impl",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_reserved_super_props",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_register_di",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_config_schema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_posthog_impl",
+      "target": "analytics_tracker_port",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_request_tracker_port",
+      "target": "analytics_tracker_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "analytics_spec_target",
+      "target": "analytics_old_doc_superseded",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "analytics_port_implementation_triad",
+      "label": "Analytics port + impl + DI triad",
+      "nodes": [
+        "analytics_tracker_port",
+        "analytics_posthog_impl",
+        "analytics_register_di",
+        "analytics_config_schema"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/analytics/analytics.md"
+    }
+  ]
+}

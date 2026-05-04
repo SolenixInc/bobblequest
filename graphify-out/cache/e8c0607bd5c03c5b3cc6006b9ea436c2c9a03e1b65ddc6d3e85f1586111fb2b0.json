@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "label": "convertZodErrorToValidationError.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "label": "convertZodErrorToValidationError()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_infrastructure_4xx_validationerror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_extractvalidationerrors_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_packages_errors_delivery_utils_convertzoderrortovalidationerror_ts",
+      "target": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "callee": "extractValidationErrors",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "callee": "join",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L13"
+    },
+    {
+      "caller_nid": "convertzoderrortovalidationerror_convertzoderrortovalidationerror",
+      "callee": "map",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\packages\\errors\\delivery\\utils\\convertZodErrorToValidationError.ts",
+      "source_location": "L13"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_config",
+      "label": "@t/config bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_config_legacy_carryovers",
+      "label": "Config legacy auth0/gcp/mongoUri carryovers",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_config_test_runner_mismatch",
+      "label": "Config tests use bun:test not Vitest",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_config_overloaded",
+      "label": "Config package overloaded (also ships tooling configs)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_config",
+      "target": "prd_pkg_config_legacy_carryovers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_config",
+      "target": "prd_pkg_config_test_runner_mismatch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_config",
+      "target": "prd_pkg_config_overloaded",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/config.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

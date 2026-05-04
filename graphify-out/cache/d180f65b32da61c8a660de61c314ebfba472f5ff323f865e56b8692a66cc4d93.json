@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "packages_errors_applications_tounknownerrorresponse_ts",
+      "label": "toUnknownErrorResponse.ts",
+      "file_type": "code",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tounknownerrorresponse_sanitizeerrormessage",
+      "label": "sanitizeErrorMessage()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "tounknownerrorresponse_tounknownerrorresponse",
+      "label": "toUnknownErrorResponse()",
+      "file_type": "code",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L58"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "http_status",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "packages_errors_entities_index_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "node_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "tounknownerrorresponse_sanitizeerrormessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_errors_applications_tounknownerrorresponse_ts",
+      "target": "tounknownerrorresponse_tounknownerrorresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "tounknownerrorresponse_tounknownerrorresponse",
+      "target": "tounknownerrorresponse_sanitizeerrormessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "test",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "replace",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "trim",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "substring",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "trim",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_sanitizeerrormessage",
+      "callee": "substring",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "tounknownerrorresponse_tounknownerrorresponse",
+      "callee": "String",
+      "source_file": "packages\\errors\\applications\\toUnknownErrorResponse.ts",
+      "source_location": "L63"
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "label": "PostHogAnalyticsTrackerImpl.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "label": "PostHogAnalyticsTrackerImpl",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "label": ".stampAndStrip()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capture",
+      "label": ".capture()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_captureexception",
+      "label": ".captureException()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturerevenue",
+      "label": ".captureRevenue()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturellm",
+      "label": ".captureLlm()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L90"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_identify",
+      "label": ".identify()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L105"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_alias",
+      "label": ".alias()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L111"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_group",
+      "label": ".group()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L116"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_sessionid",
+      "label": ".sessionId()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L128"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_isfeatureenabled",
+      "label": ".isFeatureEnabled()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L135"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_getallflags",
+      "label": ".getAllFlags()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L140"
+    },
+    {
+      "id": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_shutdown",
+      "label": ".shutdown()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L144"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "posthog_node",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_ports_analyticstracker_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_analyticstrackeroptions_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_environment_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_service_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_revenueevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_llmevent_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "packages_analytics_src_entities_types_reservedsuperprops_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capture",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_captureexception",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturerevenue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturellm",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_identify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_alias",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_group",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_sessionid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_isfeatureenabled",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_getallflags",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_shutdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capture",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_captureexception",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_captureexception",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capture",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturerevenue",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturerevenue",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capture",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturellm",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capturellm",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_capture",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_identify",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_group",
+      "target": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L118",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_constructor",
+      "callee": "super",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_constructor",
+      "callee": "createGlobalLogger",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_stampandstrip",
+      "callee": "warning",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_group",
+      "callee": "groupIdentify",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L120"
+    },
+    {
+      "caller_nid": "posthoganalyticstrackerimpl_posthoganalyticstrackerimpl_sessionid",
+      "callee": "randomUUID",
+      "source_file": "packages\\analytics\\src\\infrastructure\\PostHogAnalyticsTrackerImpl.ts",
+      "source_location": "L130"
+    }
+  ]
+}

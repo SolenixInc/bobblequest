@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_config_entities_schemas_posthogconfigschema_ts",
+      "label": "PostHogConfigSchema.ts",
+      "file_type": "code",
+      "source_file": "packages\\config\\entities\\schemas\\PostHogConfigSchema.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_config_entities_schemas_posthogconfigschema_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\config\\entities\\schemas\\PostHogConfigSchema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

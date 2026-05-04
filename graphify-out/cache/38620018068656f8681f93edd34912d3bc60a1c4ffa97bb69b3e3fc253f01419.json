@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "config_doc",
+      "label": "@t/config Module Doc",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "config_port",
+      "label": "ConfigRepository Port + getAll snapshot",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "config_env_vars_table",
+      "label": "Env Vars Read Today Table",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "config_legacy_drop",
+      "label": "Legacy Schema Drop (Auth0, GCP, K_SERVICE)",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "config_canonical_template_rationale",
+      "label": "Config as Canonical Module Template",
+      "file_type": "document",
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "config_doc",
+      "target": "config_port",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "config_doc",
+      "target": "config_env_vars_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "config_doc",
+      "target": "config_legacy_drop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "config_doc",
+      "target": "config_canonical_template_rationale",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "config_canonical_template_rationale",
+      "target": "architecture_module_shape",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "docs/architecture/platform/config.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "label": "providers.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "providers_trpcprovider",
+      "label": "TrpcProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "providers_providers",
+      "label": "Providers()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L36"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "react_query",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_clerk",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_trpc",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "providers_trpcprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "c_users_jager_onedrive_documents_github_template_repo_apps_mobile_src_lib_providers_tsx",
+      "target": "providers_providers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "providers_trpcprovider",
+      "callee": "useAuth",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L13"
+    },
+    {
+      "caller_nid": "providers_trpcprovider",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "providers_trpcprovider",
+      "callee": "useState",
+      "source_file": "C:\\Users\\jager\\OneDrive\\Documents\\GitHub\\template-repo\\apps\\mobile\\src\\lib\\providers.tsx",
+      "source_location": "L15"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_db_src_entities_types_vectorsearchresult_ts",
+      "label": "VectorSearchResult.ts",
+      "file_type": "code",
+      "source_file": "packages\\db\\src\\entities\\types\\VectorSearchResult.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_db_src_entities_types_vectorsearchresult_ts",
+      "target": "packages_db_src_entities_types_embedding_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\db\\src\\entities\\types\\VectorSearchResult.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "packages_billing_src_entities_types_billingsource_ts",
+      "label": "BillingSource.ts",
+      "file_type": "code",
+      "source_file": "packages\\billing\\src\\entities\\types\\BillingSource.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_billing_src_entities_types_billingsource_ts",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\billing\\src\\entities\\types\\BillingSource.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

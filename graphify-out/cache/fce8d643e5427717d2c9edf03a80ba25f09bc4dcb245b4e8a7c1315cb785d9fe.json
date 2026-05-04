@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "id": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "label": "ClerkAuthProvider.ts",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider",
+      "label": "ClerkAuthProvider",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider_verify",
+      "label": ".verify()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider_currentuser",
+      "label": ".currentUser()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L75"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider_syncfromwebhook",
+      "label": ".syncFromWebhook()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider_hydrateuser",
+      "label": ".hydrateUser()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L92"
+    },
+    {
+      "id": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "label": ".wrapVerifyError()",
+      "file_type": "code",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L122"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "backend",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_ports_authprovider_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_schemas_authuserschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_schemas_sessionclaimsschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_schemas_webhookeventschema_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_types_autherror_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_types_authprovideroptions_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "packages_auth_src_entities_types_usersynccallback_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_auth_src_infrastructure_clerk_clerkauthprovider_ts",
+      "target": "clerkauthprovider_clerkauthprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider",
+      "target": "clerkauthprovider_clerkauthprovider_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider",
+      "target": "clerkauthprovider_clerkauthprovider_verify",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider",
+      "target": "clerkauthprovider_clerkauthprovider_currentuser",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider",
+      "target": "clerkauthprovider_clerkauthprovider_syncfromwebhook",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider",
+      "target": "clerkauthprovider_clerkauthprovider_hydrateuser",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider",
+      "target": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider_verify",
+      "target": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider_verify",
+      "target": "clerkauthprovider_clerkauthprovider_hydrateuser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "clerkauthprovider_clerkauthprovider_currentuser",
+      "target": "clerkauthprovider_clerkauthprovider_verify",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_constructor",
+      "callee": "super",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_constructor",
+      "callee": "factory",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_verify",
+      "callee": "tokenVerifier",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_verify",
+      "callee": "safeParse",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_syncfromwebhook",
+      "callee": "userSync",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L87"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_hydrateuser",
+      "callee": "getUser",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_hydrateuser",
+      "callee": "find",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_hydrateuser",
+      "callee": "parse",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "String",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "toLowerCase",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "includes",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "includes",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "includes",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "includes",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "clerkauthprovider_clerkauthprovider_wrapverifyerror",
+      "callee": "includes",
+      "source_file": "packages\\auth\\src\\infrastructure\\clerk\\ClerkAuthProvider.ts",
+      "source_location": "L131"
+    }
+  ]
+}

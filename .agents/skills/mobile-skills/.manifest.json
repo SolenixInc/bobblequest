@@ -1,0 +1,5 @@
+{
+  "name": "mobile-skills",
+  "default": "react-native-architecture",
+  "members": ["react-native-architecture", "react-native-design", "vercel-react-native-skills"]
+}

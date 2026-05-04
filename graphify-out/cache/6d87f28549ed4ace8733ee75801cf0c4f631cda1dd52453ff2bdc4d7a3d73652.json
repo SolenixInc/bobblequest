@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "prd_pkg_billing",
+      "label": "@t/billing bootstrap status (PRD)",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_billing_revenuecat_primary",
+      "label": "RevenueCat-primary across all apps",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prd_pkg_billing_persistence_stub",
+      "label": "Billing syncEntitlement persistence stubbed",
+      "file_type": "document",
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-24",
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prd_pkg_billing",
+      "target": "prd_pkg_billing_revenuecat_primary",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_billing",
+      "target": "prd_pkg_billing_persistence_stub",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prd_pkg_billing",
+      "target": "readme_billing",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "prd_pkg_billing_revenuecat_primary",
+      "target": "readme_billing_revenuecat_primary",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "prd_pkg_billing_revenuecat_primary",
+      "target": "prd_mobile_revenuecat_missing",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd-status/packages/billing.md",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": []
+}

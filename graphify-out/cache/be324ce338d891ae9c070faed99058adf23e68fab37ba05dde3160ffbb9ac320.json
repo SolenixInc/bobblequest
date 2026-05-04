@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "id": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "label": "registerAnalyticsDI.ts",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "registeranalyticsdi_registeranalyticsdi",
+      "label": "registerAnalyticsDI()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "registeranalyticsdi_pickglobaltracker",
+      "label": "pickGlobalTracker()",
+      "file_type": "code",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L70"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "dependency_injection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "logging",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "packages_analytics_src_entities_ports_analyticstracker_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "packages_analytics_src_entities_types_environment_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "packages_analytics_src_entities_types_service_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "packages_analytics_src_infrastructure_noopanalyticstracker_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "packages_analytics_src_infrastructure_posthoganalyticstrackerimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "packages_analytics_src_infrastructure_requestanalyticstrackerimpl_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "registeranalyticsdi_registeranalyticsdi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_analytics_src_dependency_injection_registeranalyticsdi_ts",
+      "target": "registeranalyticsdi_pickglobaltracker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "registeranalyticsdi_registeranalyticsdi",
+      "target": "registeranalyticsdi_pickglobaltracker",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "registeranalyticsdi_registeranalyticsdi",
+      "callee": "register",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "registeranalyticsdi_registeranalyticsdi",
+      "callee": "singleton",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "registeranalyticsdi_registeranalyticsdi",
+      "callee": "asClass",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "registeranalyticsdi_registeranalyticsdi",
+      "callee": "scoped",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "registeranalyticsdi_registeranalyticsdi",
+      "callee": "asClass",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "registeranalyticsdi_pickglobaltracker",
+      "callee": "createGlobalLogger",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "registeranalyticsdi_pickglobaltracker",
+      "callee": "warning",
+      "source_file": "packages\\analytics\\src\\dependency-injection\\registerAnalyticsDI.ts",
+      "source_location": "L97"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@t/analytics",
+  "description": "Node analytics tracker — PostHog adapter for the API server.",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "check": "biome check .",
+    "typecheck": "tsc --noEmit",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@t/analytics-types": "workspace:*",
+    "@t/config": "workspace:*",
+    "@t/dependency-injection": "workspace:*",
+    "@t/logging": "workspace:*",
+    "posthog-node": "^4.0.0",
+    "zod": "^3.23.0"
+  },
+  "peerDependencies": {
+    "awilix": "^12.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@types/node": "^25.6.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.5"
+  }
+}

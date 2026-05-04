@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "../..",
+    "outDir": "./dist",
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "index.ts",
+    "entities/**/*.ts",
+    "infrastructure/**/*.ts",
+    "dependency-injection/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "packages_logging_infrastructure_globallogger_ts",
+      "label": "globalLogger.ts",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\globalLogger.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "globallogger_globallogger",
+      "label": "GlobalLogger",
+      "file_type": "code",
+      "source_file": "packages\\logging\\infrastructure\\globalLogger.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "packages_logging_infrastructure_globallogger_ts",
+      "target": "packages_logging_infrastructure_winstonlogger_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\globalLogger.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "packages_logging_infrastructure_globallogger_ts",
+      "target": "globallogger_globallogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages\\logging\\infrastructure\\globalLogger.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}
