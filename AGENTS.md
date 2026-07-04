@@ -1,5 +1,11 @@
 # AGENTS.md -- Template Repository
 
+<!-- OPENWIKI START -->
+When the `openwiki/` directory exists, read it first for repository structure,
+domain context, and implementation notes before making code or documentation
+changes.
+<!-- OPENWIKI END -->
+
 Production-ready monorepo template. See README.md for the quick-start guide.
 
 ## Scope Routing — READ THIS FIRST
