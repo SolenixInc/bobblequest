@@ -30,7 +30,7 @@ jobs:
           OPENWIKI_PROVIDER: openai
           OPENAI_BASE_URL: https://litellm-production-6261.up.railway.app/v1
           OPENAI_API_KEY: ${{ secrets.LITELLM_MASTER_KEY }}
-          OPENWIKI_MODEL_ID: gpt-oss-120b
+          OPENWIKI_MODEL_ID: fast
 
       - name: Create OpenWiki update pull request
         uses: peter-evans/create-pull-request@v7
