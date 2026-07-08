@@ -26,7 +26,7 @@ const mockInstance = {
 const mockConfigure = vi.fn().mockReturnValue(mockInstance)
 
 vi.mock('@revenuecat/purchases-js', () => ({
-  default: { configure: mockConfigure },
+  Purchases: { configure: mockConfigure },
 }))
 
 // ─── Mock clientConfig ───────────────────────────────────────────────────────
