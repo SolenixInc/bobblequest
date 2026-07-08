@@ -1,4 +1,8 @@
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitest/config'
+
+const packageRoot = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   test: {
@@ -8,7 +12,15 @@ export default defineConfig({
     globals: false,
     coverage: {
       provider: 'v8',
-      include: ['src/**/*.ts'],
+      // Vitest 4's coverage.include is matched with picomatch's `contains: true`
+      // mode, i.e. unanchored substring matching against the full absolute file
+      // path. A plain relative pattern like 'src/**/*.ts' therefore also matches
+      // sibling workspace packages reached through @t/analytics-types' barrel
+      // re-exports (e.g. packages/analytics-types/src/ports/AnalyticsTracker.ts),
+      // since that path also contains a 'src/**/*.ts' suffix. Anchoring the
+      // pattern to this package's own absolute directory keeps the match scoped
+      // to packages/analytics/src only.
+      include: [resolve(packageRoot, 'src/**/*.ts')],
       exclude: [
         'src/**/*.test.ts',
         'src/**/index.ts',
