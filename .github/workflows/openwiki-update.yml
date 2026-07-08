@@ -35,10 +35,11 @@ jobs:
       - name: Create OpenWiki update pull request
         uses: peter-evans/create-pull-request@v7
         with:
-          add-paths: |
-            openwiki
-            AGENTS.md
-            CLAUDE.md
+          # No add-paths: `git add -- openwiki ...` is fatal when one of
+          # openwiki/, AGENTS.md, or CLAUDE.md hasn't been created or
+          # touched this run (see SolenixInc/the-library#7). The action's
+          # default (git add -A) stages exactly what the openwiki step
+          # touched, since the checkout is otherwise clean.
           branch: openwiki/update
           commit-message: "docs: update OpenWiki"
           title: "docs: update OpenWiki"
