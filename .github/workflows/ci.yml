@@ -515,7 +515,15 @@ jobs:
             bunx turbo run build ${{ steps.filter.outputs.filter }}
           fi
         env:
+          # CI-safe placeholders — turbo.json declares these on the build task
+          # so turbo's strict env mode passes them through instead of
+          # stripping them. SITE_URL: apps/website hard-fails resolveWebsiteConfig()
+          # without it. POSTHOG_API_KEY: apps/web eagerly resolves its analytics
+          # DI container from the root layout, which hard-fails without it
+          # (set POSTHOG_ENABLED=false instead to disable analytics rather than
+          # supply a key).
           SITE_URL: http://localhost:3002
+          POSTHOG_API_KEY: phc_test0000000000000000000000000000000000000000000
 
       - name: Record build
         if: always()
@@ -637,6 +645,12 @@ jobs:
         if: steps.e2e-gate.outputs.run == 'true'
         run: bunx playwright test
         working-directory: apps/web
+        env:
+          # CI-safe placeholder — playwright.config.ts's webServer runs `next dev`,
+          # whose root layout eagerly resolves the analytics DI container on the
+          # first request; that hard-fails (500) without POSTHOG_API_KEY (Clerk
+          # vars are already stubbed inside playwright.config.ts itself).
+          POSTHOG_API_KEY: phc_test0000000000000000000000000000000000000000000
 
       - name: Upload Playwright report (web)
         if: always() && steps.e2e-gate.outputs.run == 'true'
