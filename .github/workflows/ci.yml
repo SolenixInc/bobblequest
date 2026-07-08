@@ -59,7 +59,7 @@ jobs:
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: template_test
         ports:
-          - 5433:5432
+          - 5434:5432
         options: >-
           --health-cmd "pg_isready -U postgres"
           --health-interval 5s
@@ -478,7 +478,7 @@ jobs:
             bunx turbo run test:coverage ${{ steps.filter.outputs.filter }}
           fi
         env:
-          TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5433/template_test
+          TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5434/template_test
           REDIS_URL: redis://localhost:6380
 
       - name: Record test
