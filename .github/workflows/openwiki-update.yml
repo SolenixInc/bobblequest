@@ -25,7 +25,12 @@ jobs:
         run: npm install --global openwiki
 
       - name: Run OpenWiki
-        run: openwiki --update --print
+        run: |
+          openwiki --update --print || {
+            echo "retrying after 60s (transient gateway error)"
+            sleep 60
+            openwiki --update --print
+          }
         env:
           OPENWIKI_PROVIDER: openai
           OPENAI_BASE_URL: https://litellm-production-6261.up.railway.app/v1
