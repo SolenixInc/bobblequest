@@ -64,7 +64,9 @@ vi.mock('../trpc', () => ({
 }))
 
 vi.mock('@tanstack/react-query', () => ({
-  QueryClient: vi.fn(() => ({})),
+  QueryClient: vi.fn(function () {
+    return {}
+  }),
   QueryClientProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
 }))
 

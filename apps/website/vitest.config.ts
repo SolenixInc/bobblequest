@@ -7,6 +7,10 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
+  // tsconfig uses "jsx": "preserve" (required by Next.js); esbuild would fall
+  // back to the classic runtime, breaking components that never import React.
+  // Match Next.js by compiling JSX with the automatic runtime.
+  esbuild: { jsx: 'automatic' },
   test: {
     setupFiles: ['./src/__test__/setup.ts'],
     include: [

@@ -20,7 +20,9 @@ const mockPosthogInstance = vi.hoisted(() => ({
 }))
 
 vi.mock('posthog-react-native', () => ({
-  PostHog: vi.fn(() => mockPosthogInstance),
+  PostHog: vi.fn(function () {
+    return mockPosthogInstance
+  }),
 }))
 
 const buildConfig = (overrides?: Partial<ConfigRepository>): ConfigRepository => {
