@@ -6,6 +6,17 @@ domain context, and implementation notes before making code or documentation
 changes.
 <!-- OPENWIKI END -->
 
+## Issue tracker and triage labels
+
+Issues and PRDs for this repo live in GitHub Issues for `SolenixInc/bobblequest`. Use the `gh` CLI for issue operations.
+
+Use the current four-label mapping: `needs-triage`, `needs-info`, `human-required`, and `wontfix`.
+
+When creating GitHub issues, ask or infer whether the user wants the issue held for human handling. Add `human-required` when a human must handle, approve, or decide the work. Omit `human-required` when Hermes/Kanban may intake and dispatch the issue automatically.
+
+Do not create, apply, or require any legacy agent-ready or ready-for-agent opt-in label; that path is retired.
+
+
 Production-ready monorepo template. See README.md for the quick-start guide.
 
 ## Scope Routing — READ THIS FIRST
