@@ -5,7 +5,9 @@ import { describe, expect, test, vi } from 'vitest'
 // with a lightweight spy that captures the JSX node passed to it.
 // ---------------------------------------------------------------------------
 vi.mock('next/og', () => ({
-  ImageResponse: vi.fn().mockImplementation((node: unknown) => ({ node })),
+  ImageResponse: vi.fn().mockImplementation(function (node: unknown) {
+    return { node }
+  }),
 }))
 
 import { ImageResponse } from 'next/og'

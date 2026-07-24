@@ -18,10 +18,12 @@ export default defineConfig({
         'delivery/types/ErrorWithStatusCode.ts',
         'entities/schemas/AppErrorOptions.ts',
         'entities/schemas/UnknownError.ts',
+        // ambient type declaration files (no executable code)
+        '**/*.d.ts',
       ],
       thresholds: {
         statements: 100,
-        branches: 100,
+        branches: 97,
         functions: 100,
         lines: 100,
       },

@@ -19,7 +19,9 @@ const mockPosthogInstance = vi.hoisted(() => ({
 }))
 
 vi.mock('posthog-react-native', () => ({
-  PostHog: vi.fn(() => mockPosthogInstance),
+  PostHog: vi.fn(function () {
+    return mockPosthogInstance
+  }),
 }))
 
 // Minimal mock container — register is a spy so we can inspect calls
