@@ -1,0 +1,838 @@
+name: CI Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  merge_group:
+  workflow_dispatch:
+    inputs:
+      force_e2e:
+        description: 'Force E2E tests even if apps/web is unaffected'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  checks: write
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+env:
+  TURBO_TELEMETRY_DISABLED: 1
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+  FORCE_FULL_CI: ${{ github.event.inputs.force_e2e == 'true' }}
+
+jobs:
+  ci-gate:
+    name: ci-gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    services:
+      # Used by: drizzle-check step
+      postgres-drizzle:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5433:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+      # Used by: test step
+      postgres-test:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: template_test
+        ports:
+          - 5434:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+      # Used by: test step
+      # NOTE: --requirepass is a Redis server arg, not a docker create flag.
+      # Pass auth via REDIS_PASSWORD env var and command override if needed.
+      # For CI (no security requirement), no password is used.
+      redis:
+        image: redis:8.0-alpine
+        ports:
+          - 6380:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      # -----------------------------------------------------------------------
+      # 1. Checkout
+      # -----------------------------------------------------------------------
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+
+      # -----------------------------------------------------------------------
+      # 2. Setup — Bun + caches (once for the entire job)
+      # -----------------------------------------------------------------------
+      - uses: ./.github/actions/setup-bun-monorepo
+        with:
+          turbo-cache: 'true'
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # -----------------------------------------------------------------------
+      # 3. Compute base SHA for path scoping (PR diff vs merge base)
+      #    On pull_request: base.sha is the merge-base of the PR's target branch.
+      #    On push to main: github.event.before is the pre-push HEAD (post-merge delta).
+      #    fetch-depth: 0 above ensures both refs are available in the local clone.
+      # -----------------------------------------------------------------------
+      - name: Compute base sha for path scoping
+        id: base
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "base_sha=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "base_sha=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Compute turbo filter
+        id: filter
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "filter=--filter=...[${{ steps.base.outputs.base_sha }}]" >> "$GITHUB_OUTPUT"
+          else
+            echo "filter=" >> "$GITHUB_OUTPUT"
+          fi
+
+      # -----------------------------------------------------------------------
+      # 4. Initialize CI report (PRs only — if: always() so it runs before
+      #    any potential failure in subsequent steps)
+      # -----------------------------------------------------------------------
+      - name: Initialize CI report
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const runId = context.runId;
+            const attempt = '${{ github.run_attempt }}';
+            const stableMarker = '<!-- unified-ci-report -->';
+            const runMarker = `<!-- unified-ci-report-run:${runId}-${attempt} -->`;
+            const prNumber = context.payload.pull_request.number;
+
+            const checks = [
+              'Commit message lint',
+              'PR title lint',
+              'Format check',
+              'Lint',
+              'Dependency audit',
+              'Markdown lint',
+              'Link check',
+              'Typecheck',
+              'Drizzle migrations in sync',
+              'Test & coverage',
+              'Build',
+              'Bundle size budget',
+              'Doctor',
+              'E2E tests',
+            ];
+
+            const rows = checks.map(c => `| ${c} | ⏳ queued |`).join('\n');
+            const body = [
+              stableMarker,
+              runMarker,
+              '## CI Gate',
+              '',
+              '| Check | Status |',
+              '|-------|--------|',
+              rows,
+              '',
+              '---',
+              `*Last updated: ${new Date().toUTCString()}*`
+            ].join('\n');
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber
+            });
+            for (const c of comments.filter(c => c.body && c.body.includes(stableMarker))) {
+              await github.rest.issues.deleteComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: c.id
+              });
+            }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body
+            });
+            core.info(`Created CI Gate report comment on PR #${prNumber}`);
+
+      # -----------------------------------------------------------------------
+      # 5. Commit message lint (PRs only)
+      # -----------------------------------------------------------------------
+      - name: Commit message lint
+        id: commitlint
+        if: github.event_name == 'pull_request'
+        run: |
+          bunx commitlint --from=${{ github.event.pull_request.base.sha }} --to=${{ github.event.pull_request.head.sha }} --verbose
+
+      - name: Record commit message lint
+        if: always() && github.event_name == 'pull_request'
+        run: |
+          case "${{ steps.commitlint.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Commit message lint\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 6. PR title lint (PRs only — title becomes squash-merge commit message)
+      # -----------------------------------------------------------------------
+      - name: PR title lint
+        id: pr-title-lint
+        if: github.event_name == 'pull_request'
+        uses: amannn/action-semantic-pull-request@48f256284bd46cdaab1048c3721360e808335d50 # v6.1.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Types from @commitlint/config-conventional
+          types: |
+            feat
+            fix
+            docs
+            style
+            refactor
+            perf
+            test
+            build
+            ci
+            chore
+            revert
+          requireScope: false
+          ignoreLabels: |
+            release-please
+
+      - name: Record PR title lint result
+        if: always() && github.event_name == 'pull_request'
+        run: |
+          case "${{ steps.pr-title-lint.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"PR title lint\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 7. Format check
+      # -----------------------------------------------------------------------
+      - name: Format check
+        id: format-check
+        run: bun run format:check
+
+      - name: Record format check
+        if: always()
+        run: |
+          case "${{ steps.format-check.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Format check\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 7. Lint
+      # -----------------------------------------------------------------------
+      - name: Lint
+        id: lint
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            bunx turbo run check
+          else
+            bunx turbo run check ${{ steps.filter.outputs.filter }}
+          fi
+
+      - name: Record lint
+        if: always()
+        run: |
+          case "${{ steps.lint.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Lint\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 8. Dependency audit
+      # -----------------------------------------------------------------------
+      - name: Dependency audit
+        id: audit
+        run: bun audit
+
+      - name: Record dependency audit
+        if: always()
+        run: |
+          case "${{ steps.audit.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Dependency audit\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 9. Markdown lint
+      # -----------------------------------------------------------------------
+      - name: Get changed markdown files
+        id: md-changed
+        if: github.event_name == 'pull_request'
+        uses: tj-actions/changed-files@v47
+        with:
+          files: "**/*.md"
+          separator: ","
+
+      - name: Markdown lint
+        id: markdownlint
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            GLOBS="**/*.md"
+          elif [[ "${{ steps.md-changed.outputs.any_changed }}" == "true" ]]; then
+            GLOBS="${{ steps.md-changed.outputs.all_changed_files }}"
+          else
+            echo "path-filter-skip=true" >> "$GITHUB_OUTPUT"
+            echo "No markdown changes — path-filter skip."
+            exit 0
+          fi
+          bunx markdownlint-cli2 --config .markdownlint.jsonc "$GLOBS"
+
+      - name: Record markdown lint
+        if: always()
+        run: |
+          if [[ "${{ steps.markdownlint.outputs.path-filter-skip }}" == "true" ]]; then
+            # Intentional path-filter skip — no markdown changes
+            STATUS="skipped"
+          else
+            case "${{ steps.markdownlint.outcome }}" in
+              success)   STATUS="pass" ;;
+              failure)   STATUS="fail" ;;
+              cancelled) STATUS="cancelled" ;;
+              skipped)   STATUS="cancelled" ;;
+              *)         STATUS="cancelled" ;;
+            esac
+          fi
+          echo "{\"name\":\"Markdown lint\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 10. Link check (PRs and workflow_dispatch only, markdown changes only)
+      # -----------------------------------------------------------------------
+      - name: Check if markdown files changed
+        id: link-check-gate
+        if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
+            CHANGED=$(git diff --name-only ${{ steps.base.outputs.base_sha }}...HEAD || true)
+            if echo "$CHANGED" | grep -qE '\.md$'; then
+              echo "run=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run=false" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Restore lychee cache
+        if: (github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch') && steps.link-check-gate.outputs.run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Link check
+        id: link-check
+        if: (github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch') && steps.link-check-gate.outputs.run == 'true'
+        timeout-minutes: 3
+        uses: lycheeverse/lychee-action@v2.8.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          args: >-
+            --root-dir "$(pwd)"
+            --cache
+            --max-cache-age 1d
+            --timeout 10
+            --max-concurrency 8
+            --max-retries 1
+            --no-progress
+            './*.md' 'docs/**/*.md' 'apps/**/*.md' 'packages/**/*.md'
+          # fail: true — broken doc links are real bugs and should block merge.
+          # The lychee exit code is non-zero when broken links are found, so the
+          # step outcome is "failure" and the gate records it as "fail" naturally.
+          # lychee.toml excludes localhost, private ranges, and LinkedIn (known flaky).
+          fail: true
+
+      - name: Record link-check result
+        if: always() && (github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch')
+        run: |
+          if [[ "${{ steps.link-check-gate.outputs.run }}" != "true" ]]; then
+            # Intentional path-filter skip — no markdown changes
+            STATUS="skipped"
+          else
+            case "${{ steps.link-check.outcome }}" in
+              success)   STATUS="pass" ;;
+              failure)   STATUS="fail" ;;
+              cancelled) STATUS="cancelled" ;;
+              skipped)   STATUS="cancelled" ;;
+              *)         STATUS="cancelled" ;;
+            esac
+          fi
+          echo "{\"name\":\"Link check\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 11. Typecheck — turbo fans out to all apps in parallel inside the runner
+      # -----------------------------------------------------------------------
+      - name: Typecheck
+        id: typecheck
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            bunx turbo run typecheck
+          else
+            bunx turbo run typecheck ${{ steps.filter.outputs.filter }}
+          fi
+
+      - name: Record typecheck
+        if: always()
+        run: |
+          case "${{ steps.typecheck.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Typecheck\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 12. Drizzle migrations in sync
+      # -----------------------------------------------------------------------
+      - name: Drizzle migrations in sync
+        id: drizzle-check
+        run: bunx drizzle-kit check
+        working-directory: packages/db
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/postgres
+
+      - name: Record drizzle check
+        if: always()
+        run: |
+          case "${{ steps.drizzle-check.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Drizzle migrations in sync\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 13. Test & coverage
+      # -----------------------------------------------------------------------
+      - name: Test & coverage
+        id: test
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            bunx turbo run test:coverage
+          else
+            bunx turbo run test:coverage ${{ steps.filter.outputs.filter }}
+          fi
+        env:
+          TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5434/template_test
+          REDIS_URL: redis://localhost:6380
+
+      - name: Record test
+        if: always()
+        run: |
+          case "${{ steps.test.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Test & coverage\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      - name: Upload coverage & junit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            **/coverage/**
+            **/junit.xml
+          retention-days: 7
+
+      # -----------------------------------------------------------------------
+      # 14. Build
+      # -----------------------------------------------------------------------
+      - name: Build
+        id: build
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            bunx turbo run build
+          else
+            bunx turbo run build ${{ steps.filter.outputs.filter }}
+          fi
+        env:
+          SITE_URL: http://localhost:3002
+
+      - name: Record build
+        if: always()
+        run: |
+          case "${{ steps.build.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Build\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      - name: Upload build artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: |
+            apps/*/dist/**
+            apps/*/.next/**
+            apps/*/.expo/**
+            .turbo/**
+          retention-days: 3
+          if-no-files-found: warn
+
+      # -----------------------------------------------------------------------
+      # 15. Bundle size budget
+      # -----------------------------------------------------------------------
+      - name: Determine if bundle size check applies
+        id: size-limit-gate
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
+            CHANGED=$(git diff --name-only ${{ steps.base.outputs.base_sha }}...HEAD || true)
+            if echo "$CHANGED" | grep -qE '^(apps/web/|apps/api/|packages/)'; then
+              echo "run=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run=false" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Bundle size budget (web)
+        id: size-limit-web
+        if: steps.size-limit-gate.outputs.run == 'true'
+        run: bunx size-limit
+        working-directory: apps/web
+
+      - name: Bundle size budget (api)
+        id: size-limit-api
+        if: steps.size-limit-gate.outputs.run == 'true'
+        run: bunx size-limit
+        working-directory: apps/api
+
+      - name: Record bundle size budget
+        if: always()
+        run: |
+          if [[ "${{ steps.size-limit-gate.outputs.run }}" != "true" ]]; then
+            # Intentional path-filter skip — no web/api/packages changes
+            STATUS="skipped"
+          elif [[ "${{ steps.size-limit-web.outcome }}" == "failure" || "${{ steps.size-limit-api.outcome }}" == "failure" ]]; then
+            STATUS="fail"
+          elif [[ "${{ steps.size-limit-web.outcome }}" == "success" && "${{ steps.size-limit-api.outcome }}" == "success" ]]; then
+            STATUS="pass"
+          else
+            # skipped or cancelled outcome means cascade-skip from upstream failure
+            STATUS="cancelled"
+          fi
+          echo "{\"name\":\"Bundle size budget\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 16. Doctor
+      # -----------------------------------------------------------------------
+      - name: Doctor
+        id: doctor
+        run: bun run doctor --ci --fast
+
+      - name: Record doctor
+        if: always()
+        run: |
+          case "${{ steps.doctor.outcome }}" in
+            success)   STATUS="pass" ;;
+            failure)   STATUS="fail" ;;
+            cancelled) STATUS="cancelled" ;;
+            skipped)   STATUS="cancelled" ;;
+            *)         STATUS="cancelled" ;;
+          esac
+          echo "{\"name\":\"Doctor\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 17. E2E tests
+      # -----------------------------------------------------------------------
+      - name: Determine if E2E applies
+        id: e2e-gate
+        run: |
+          if [[ "${FORCE_FULL_CI}" == "true" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
+            CHANGED=$(git diff --name-only ${{ steps.base.outputs.base_sha }}...HEAD || true)
+            if echo "$CHANGED" | grep -qE '^(apps/web/|apps/website/|packages/)'; then
+              echo "run=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run=false" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Playwright browsers (web)
+        if: steps.e2e-gate.outputs.run == 'true'
+        run: bunx playwright install --with-deps chromium
+        working-directory: apps/web
+
+      - name: E2E tests (web)
+        id: e2e-web
+        if: steps.e2e-gate.outputs.run == 'true'
+        run: bunx playwright test
+        working-directory: apps/web
+
+      - name: Upload Playwright report (web)
+        if: always() && steps.e2e-gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-web
+          path: apps/web/playwright-report/
+          retention-days: 7
+
+      - name: Install Playwright browsers (website)
+        if: steps.e2e-gate.outputs.run == 'true' && steps.e2e-web.conclusion == 'success'
+        run: bunx playwright install --with-deps chromium
+        working-directory: apps/website
+
+      - name: E2E tests (website)
+        id: e2e-website
+        if: steps.e2e-gate.outputs.run == 'true' && steps.e2e-web.conclusion == 'success'
+        run: bunx playwright test
+        working-directory: apps/website
+        env:
+          SITE_URL: http://localhost:3002
+
+      - name: Upload Playwright report (website)
+        if: always() && steps.e2e-gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-website
+          path: apps/website/playwright-report/
+          retention-days: 7
+
+      - name: Record E2E result
+        if: always()
+        run: |
+          if [[ "${{ steps.e2e-gate.outputs.run }}" != "true" ]]; then
+            # Intentional path-filter skip — no web/website/packages changes
+            STATUS="skipped"
+          elif [[ "${{ steps.e2e-web.outcome }}" == "failure" || "${{ steps.e2e-website.outcome }}" == "failure" ]]; then
+            STATUS="fail"
+          elif [[ "${{ steps.e2e-web.outcome }}" == "success" && "${{ steps.e2e-website.outcome }}" == "success" ]]; then
+            STATUS="pass"
+          else
+            # skipped or cancelled outcome means cascade-skip from upstream failure
+            STATUS="cancelled"
+          fi
+          echo "{\"name\":\"E2E tests\",\"status\":\"$STATUS\"}" >> "$RUNNER_TEMP/ci-status.jsonl"
+
+      # -----------------------------------------------------------------------
+      # 18. Final sticky comment — full per-step status table (if: always())
+      #
+      # Each step has a dedicated "if: always()" recorder that writes its
+      # outcome to ci-status.jsonl:
+      #   success  -> "pass"
+      #   failure  -> "fail"
+      #   skipped  -> "cancelled"  (cascade-skip caused by an upstream failure)
+      #   cancelled-> "cancelled"
+      # Path-filter gate steps write "skipped" explicitly for intentional skips.
+      #
+      # Gate logic:
+      #   - fail      : step wrote status="fail"
+      #   - cancelled : step wrote status="cancelled" (cascade from upstream fail)
+      #   - skipped   : step wrote status="skipped"  (intentional path-filter)
+      #   - pass      : step wrote status="pass"
+      #   - absent    : treated as "cancelled" (safety net — recorder didn't run)
+      #
+      # PASS/FAIL gate keys ONLY off fail count.
+      # "cancelled" alone does NOT fail the gate — there is already an upstream
+      # "fail" that caused the cascade.
+      # -----------------------------------------------------------------------
+      - name: Post CI Gate summary to PR
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const statusFile = path.join(process.env.RUNNER_TEMP, 'ci-status.jsonl');
+
+            // Checks that are only expected on PR events (not push:main)
+            // When run is a push, these are absent from JSONL legitimately.
+            const prOnlyChecks = new Set([
+              'Commit message lint',
+              'PR title lint',
+              'Link check',
+            ]);
+
+            const isPR = context.eventName === 'pull_request';
+
+            // Parse the JSONL status file — last write wins; fail always overrides
+            const recorded = {};
+            if (fs.existsSync(statusFile)) {
+              const lines = fs.readFileSync(statusFile, 'utf8').trim().split('\n').filter(Boolean);
+              for (const line of lines) {
+                try {
+                  const { name, status } = JSON.parse(line);
+                  // fail is terminal — once set, nothing overrides it
+                  if (!recorded[name] || status === 'fail') {
+                    recorded[name] = status;
+                  }
+                } catch (e) {
+                  core.warning(`Could not parse status line: ${line}`);
+                }
+              }
+            }
+
+            const allChecks = [
+              'Commit message lint',
+              'PR title lint',
+              'Format check',
+              'Lint',
+              'Dependency audit',
+              'Markdown lint',
+              'Link check',
+              'Typecheck',
+              'Drizzle migrations in sync',
+              'Test & coverage',
+              'Build',
+              'Bundle size budget',
+              'Doctor',
+              'E2E tests',
+            ];
+
+            // Determine effective status for each check.
+            // Every step now has an if:always() recorder, so absence is rare
+            // (job cancelled before the recorder ran). Treat absence as cancelled,
+            // not fail — the real upstream failure is already recorded explicitly.
+            const effectiveStatus = (name) => {
+              if (name in recorded) return recorded[name];
+              if (prOnlyChecks.has(name) && !isPR) return 'skipped'; // legitimately absent on push
+              return 'cancelled'; // safety net — recorder didn't get to run (job cancelled)
+            };
+
+            // Four display states:
+            //   pass      -> check ran and succeeded
+            //   fail      -> check ran and failed (the root cause)
+            //   cancelled -> skipped due to upstream failure (not the root cause)
+            //   skipped   -> intentional path-filter skip (not applicable to this PR)
+            const icon = s => {
+              if (s === 'pass')      return '✅ pass';
+              if (s === 'fail')      return '❌ fail';
+              if (s === 'cancelled') return '⚪ cancelled';
+              return '⏭ skipped'; // intentional path-filter skip
+            };
+
+            const rows = allChecks.map(name => {
+              const status = effectiveStatus(name);
+              return `| ${name} | ${icon(status)} |`;
+            }).join('\n');
+
+            // Gate passes if NO check has status="fail".
+            // cancelled is NOT a failure — it means an upstream step already failed
+            // and caused the cascade. skipped is also not a failure.
+            const anyFail = allChecks.some(name => effectiveStatus(name) === 'fail');
+            const overallIcon = anyFail ? '❌' : '✅';
+            const overallText = anyFail ? 'FAILED' : 'PASSED';
+
+            const stableMarker = '<!-- unified-ci-report -->';
+            const runId = context.runId;
+            const attempt = '${{ github.run_attempt }}';
+            const runMarker = `<!-- unified-ci-report-run:${runId}-${attempt} -->`;
+            const prNumber = context.payload.pull_request.number;
+
+            const body = [
+              stableMarker,
+              runMarker,
+              `## CI Gate — ${overallIcon} ${overallText}`,
+              '',
+              '| Check | Status |',
+              '|-------|--------|',
+              rows,
+              '',
+              '---',
+              `*Last updated: ${new Date().toUTCString()}*`
+            ].join('\n');
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber
+            });
+            const existing = comments.find(c => c.body && c.body.includes(stableMarker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              });
+              core.info(`Updated CI Gate report on PR #${prNumber}`);
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body
+              });
+              core.info(`Created CI Gate report on PR #${prNumber}`);
+            }

@@ -111,3 +111,7 @@ Examples:
 - `feat(api): add user authentication endpoint`
 - `fix(web): resolve hydration mismatch on login page`
 - `chore: bump dependencies`
+
+## Required check
+
+Org baseline requires the check name exactly **`ci-gate`** (workflow `ci-gate.yml`). Do not rename the final job.

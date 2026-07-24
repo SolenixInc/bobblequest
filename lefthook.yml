@@ -2,7 +2,7 @@
 # placeholder), and runs typecheck + test scoped to affected packages via
 # turbo's --filter=...[HEAD] (staged+unstaged working-tree delta vs HEAD, plus
 # every dependent package). Heavy CI-only checks (full build, integration,
-# size-limit, OS matrix, gitleaks-full, SBOM) live in .github/workflows/ci.yml.
+# size-limit, OS matrix, gitleaks-full, SBOM) live in .github/workflows/ci-gate.yml.
 #
 # rtk is on PATH but plain bunx is used here for portability across team members.
 # To opt into rtk tracking per-command, swap: bunx X  ->  rtk proxy bunx X

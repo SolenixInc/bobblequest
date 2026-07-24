@@ -1,0 +1,91 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "api: debug",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": [
+        "run",
+        "--hot",
+        "--inspect=6499",
+        "--env-file",
+        "apps/api/.env",
+        "apps/api/src/index.ts"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "PORT": "3000",
+        "API_HOST_PORT": "3000"
+      },
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "web: debug",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "cwd": "${workspaceFolder}/apps/web",
+      "console": "integratedTerminal",
+      "env": {
+        "PORT": "3001",
+        "WEB_HOST_PORT": "3001"
+      },
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "website: debug",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "cwd": "${workspaceFolder}/apps/website",
+      "console": "integratedTerminal",
+      "env": {
+        "PORT": "3002",
+        "WEBSITE_HOST_PORT": "3002"
+      },
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "attach: node",
+      "type": "node",
+      "request": "attach",
+      "port": 6499,
+      "restart": true,
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "apps: debug (api+web+website)",
+      "configurations": [
+        "api: debug",
+        "web: debug",
+        "website: debug"
+      ],
+      "stopAll": true,
+      "presentation": {
+        "group": "stack",
+        "order": 1
+      }
+    }
+  ]
+}
